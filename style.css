@@ -351,10 +351,10 @@ main #home {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 5rem;
+    padding: 3rem 5rem 0 5rem;
     justify-content: space-between;
     width: 100%;
-    height: calc(100vh - 3.5rem);
+    height: calc(100vh - 3rem);
     background-color: #c5edfa;
     
     /* margin: auto;
@@ -416,7 +416,7 @@ main #projects {
     background-repeat: no-repeat;
     background-position: 100% 0%;
     background-size: 70%; */
-    height: 100vh;
+    min-height: 100vh;
     padding: 3rem 1rem 0 1rem;
     width: 100%;
     background-color: white;
@@ -544,7 +544,6 @@ main #projects .project-content .project-info h3:hover{
     /* ------------------- ABOUT ME PAGE --------------------- */
 
 main #about-me{
-    height: 100vh;
     width: 100%;
     background: #63c7eb;
     position: relative;
@@ -612,7 +611,7 @@ main #about-me .imgBox img:hover{
     /* ----------X-------- ABOUT ME PAGE ----------X---------- */
     /* ------------------- CONTACT ME PAGE -------------------- */
 main #contact{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     position: relative;
     padding-top: 3rem;
@@ -810,7 +809,7 @@ main #contact .container{
 
 /* -----------XX----------HAMBURGER MENU-----------XX-------------- */
 
-/* ----------------------RESPONSIVE MEDIA QUERY--------------------------- */
+/* ---------------------------------- RESPONSIVE MEDIA QUERY ------------------------------------------- */
 
 @keyframes menuGradualAppear{
     from{
@@ -984,6 +983,13 @@ main #contact .container{
    main #projects, main #about-me{
        height: auto;
        padding-bottom: 3rem;
+   }
+
+
+   /* -------------- FOOTER ---------------- */
+
+   footer{
+       display: none;
    }
 }
 
