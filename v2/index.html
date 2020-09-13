@@ -1,0 +1,430 @@
+<!-- <?php
+
+
+    if (isset($_POST['submit'])){
+
+        // echo "<pre>";
+        // print_r($_POST);
+        // echo "</pre>";
+        
+        $userName = $_POST['name'];
+        $userEmail = $_POST['email'];
+        $messageSubject = $_POST['subject'];
+        $message = $_POST['message'];
+    
+        $myEmail = "ayanajg@gmail.com";
+        $body = "";
+    
+        $body .= "From: ".$userName. "\r\n";
+        $body .= "Email: ".$userEmail. "\r\n";
+        $body .= "Message: ".$message. "\r\n";
+    
+        mail($myEmail,$messageSubject,$body);
+    }
+   
+
+
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome for menu icons (arrows) -->
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"> </script>
+    <!-- carousel style sheets -->
+    <link rel="stylesheet" type="text/css" href="../owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="../owl.theme.default.min.css">
+    <!-- custom style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Ayana Griffin</title>
+</head>
+
+<body>
+    <!------------------------ NAVIGATION BAR ---------------------------->
+    <header>
+
+        <div class="nav-bar-container">
+            <input type="checkbox" id="check">
+            <div class="logo-container">
+                <a href="#">
+                    <h3 class="logo">Ayana <span>Griffin</span></h3>
+                </a>
+            </div>
+            <div class="nav-links-container">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s"><a href="#">Home</a></li>
+                        <li class="nav-link" style="--i: .8s"><a href="#about-me">About Me</a></li>
+                        <li class="nav-link" style="--i: 1s">
+                            <a href="#projects">Projects<i class="fas fa-caret-down"></i></a>
+                            <!-- DROPDOWN MENU -->
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#projects" class="featured">featured</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 2</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 3
+                                            <i class="fas fa-caret-down"></i>
+                                            <!-- SECONDARY DROPDOWN MENU -->
+                                        </a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 1</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 2</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 3
+                                                        <i class="fas fa-caret-down"></i>
+                                                    </a>
+                                                    <!-- TERTIARY DROPDOWN MENU -->
+                                                    <div class="dropdown second">
+                                                        <ul>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">Link 1</a>
+                                                            </li>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">Link 2</a>
+                                                            </li>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">Link 3
+                                                                </a>
+                                                            </li>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">link 4</a>
+                                                            </li>
+                                                            <div class="arrow"></div>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">link 4</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#" class="view-all">view all</a>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- <li class="nav-link" style="--i: 1.2s"><a href="#">For fun!<i class="fas fa-caret-down"></i></a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li class="dropdown-link">
+                                            <a href="#">Link 1</a>
+                                        </li>
+                                        <li class="dropdown-link">
+                                            <a href="#">Link 2</a>
+                                        </li>
+                                        <li class="dropdown-link">
+                                            <a href="#">Link 3
+
+                                            </a>
+
+                                        </li>
+                                        <li class="dropdown-link">
+                                            <a href="#" class="view-all">view all</a>
+                                        </li>
+                                        <div class="arrow"></div>
+                                    </ul>
+                                </div>
+                            </li> -->
+                        <li class="nav-link" style="--i: 1.2s"><a href="#contact">Contact</a></li>
+                        <li class="nav-link" style="--i: 1.4s"><a target="_blank"
+                                href="https://drive.google.com/file/d/1r7EStbvxASYgSoBgq8hS7hb5Eq7_vUfu/view?usp=sharing">Resume</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- SOCIAL MEDIA ICONS -->
+
+                <ul class="socials">
+                    <li><a target="_blank" href="https://www.facebook.com/ayana.griffin.315"> <img
+                                src="../images/fb-logo.png"></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/ayana-griffin/"> <img
+                                src="../images/li-logo.png"></a></li>
+                    <li><a target="_blank" href="https://github.com/ayanagriffin"> <img src="../images/gh-logo.png"></a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!------------X---------- NAVIGATION BAR ------------X-------------->
+
+    <!---------------------- MAIN PAGE CONTENT -------------------------->
+    <main>
+        <!------------------------ HOME PAGE ---------------------------->
+        <section id="home">
+            <div class="textBox">
+                <h2>hey! i'm</h2>
+                <h1><span>hey! i'm</span> Ayana</h1>
+                <p id="subText">Stanford '25 | BS Computer Science </p>
+                <a class="btn" target="_blank" href="all-projects.html"> View All Projects</a>
+            </div>
+            <div class="imgBox">
+                <img src="../images/me-computer.png" class="home mainPicture">
+            </div>
+
+        </section>
+        <!------------X----------- HOME PAGE ------------X--------------->
+
+        <!------------------------ ABOUT ME PAGE ------------------------->
+        <section id="about-me">
+            <div class="container">
+                <div class="textBox">
+                    <h1>About Me</h1>
+                    <div class="icons">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis assumenda minus
+                        eveniet amet voluptates doloremque voluptas harum id aperiam voluptatem, perspiciatis eligendi
+                        reprehenderit numquam quos quibusdam exercitationem? Necessitatibus, perferendis.</p>
+                    <div class="icons">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="quote">
+
+                        <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipisicing.<i
+                                class="fas fa-quote-right"></i></p>
+                        <p><span>- Author</span></p>
+                    </div>
+                </div>
+                <div class="imgBox">
+                    <img class="aboutMePicture" src="../images/me-waving.png" alt="image">
+                </div>
+            </div>
+        </section>
+        <!------------X----------- ABOUT ME PAGE -------------X----------->
+        <!------------------- FEATURED PROJECTS PAGE --------------------->
+        <section id="projects">
+            <div class="container">
+                <h1>Featured Projects</h1>
+                <a class="btn title-btn" target="_blank" href="all-projects.html">View All projects</a>
+                <div class="card-container">
+                    <div class="card card1">
+                        <div class="imgBox">
+                            <img src="../images/happyturtle.png" alt="">
+                        </div>
+                        <div class="cardContent">
+                            <h2>EcoBuds</h2>
+                            <p>EcoBuds makes living sustainably and fighting environmental issues enjoyable with an
+                                adorable companion that is counting on YOU to take action. </p>
+                            <a class="btn card-footer" href="">learn more</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/me-computer-smile.png" alt="">
+                        </div>
+                        <div class="cardContent">
+                            <h2>Portfolio</h2>
+                            <p>EcoBuds makes living sustainably and fighting environmental issues enjoyable with an
+                                adorable companion that is counting on YOU to take action. </p>
+                            <a class="btn card-footer" href="">learn more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/bee.png" alt="">
+                        </div>
+                        <div class="cardContent">
+                            <h2>Browserbug</h2>
+                            <p>EcoBuds makes living sustainably and fighting environmental issues enjoyable with an
+                                adorable companion that is counting on YOU to take action. </p>
+                            <a class="btn card-footer" href="">learn more</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- <div class="owl-carousel owl-theme project">
+                    <div class="project-content">
+                        <img src="../images/extendedlogo.png" alt="cloud">
+                        <div class="project-info">
+                            <h3>EcoBud</h3>
+                            <p>one sentence desc</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <img src="../images/extendedlogo.png" alt="cloud">
+                        <div class="project-info">
+                            <h3>Browserbug</h3>
+                            <p>one sentence desc</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <img src="../images/extendedlogo.png" alt="cloud">
+                        <div class="project-info">
+                            <h3>Portfolio</h3>
+                            <p>one sentence desc</p>
+                        </div>
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-angle-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-angle-right"></i></span>
+                    </div> -->
+            </div>
+            </div>
+
+        </section>
+        <!---------X---------- FEATURED PROJECTS PAGE ---------X---------->
+        <!------------------------ CONTACT ME PAGE ------------------------>
+        <section id="contact">
+           
+            <div class="container">
+                <div class="contact-info">
+                    <h2>Get in touch!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facilis expedita eveniet hic
+                        quisquam rerum tenetur possimus dolore vitae quibusdam delectus officiis, id cum qui ab. Rerum
+                        animi maiores beatae!</p>
+                    <ul class="socials">
+                        <li><a target="_blank" href="https://www.facebook.com/ayana.griffin.315"> <img
+                                    src="../images/fb-logo.png"></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/ayana-griffin/"> <img
+                                    src="../images/li-logo.png"></a></li>
+                        <li><a target="_blank" href="https://github.com/ayanagriffin"> <img
+                                    src="../images/gh-logo.png"></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h2>Send a message</h2>
+                    <div class="form-box">
+                        <form action="index.php" method="POST" class="form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" 
+                                    tabindex="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                     tabindex="2" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject"
+                                     tabindex="3" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="5" 
+                                    tabindex="4"></textarea>
+                            </div>
+                            <div>
+                                <button name="submit" id="submit" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------X-------------- CONTACT ME PAGE -------------X---------->
+    </main>
+    <!-------------X-------- MAIN PAGE CONTENT ------------X------------->
+
+    <!---------------------- FOOTER -------------------------->
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="about">
+                <h2>about me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt suscipit perspiciatis ea cumque,
+                    velit sed recusandae tempora est necessitatibus!</p>
+            </div>
+
+            <div class="contact-me">
+                <h2>contact me</h2>
+                <p>Want to get in touch?</p>
+                <a class="btn" href="#contact"> contact me</a>
+            </div>
+            <div class="projects">
+                <h2>projects</h2>
+                <div class="project-images">
+                    <img src="../images/bee.png" alt="bee">
+                    <img src="../images/bee.png" alt="bee">
+                    <img src="../images/bee.png" alt="bee">
+                    <img src="../images/bee.png" alt="bee">
+                    <img src="../images/bee.png" alt="bee">
+                    <img src="../images/bee.png" alt="bee">
+                </div>
+            </div>
+            <div class="connect">
+                <h2>let's connect</h2>
+                <p>see what i've been up to!</p>
+                <ul class="socials">
+                    <li><a target="_blank" href="https://www.facebook.com/ayana.griffin.315"> <img
+                                src="../images/fb-logo.png"></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/ayana-griffin/"> <img
+                                src="../images/li-logo.png"></a></li>
+                    <li><a target="_blank" href="https://github.com/ayanagriffin"> <img src="../images/gh-logo.png"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <ul>
+                <p>made from scratch by Ayana Griffin</p>
+                <p>|</p>
+                <p>2020</p>
+
+            </ul>
+
+        </div>
+
+        <!-- <div class="back-to-top">
+            <a href="#"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+            <p>back to top</p>
+        </div> -->
+    </footer>
+
+
+    <!-------------X-------- FOOTER ------------X------------->
+
+
+
+    <!----------------------- JAVASCRIPT FILES ----------------------------->
+    <script src="../jquery3.5.1.min.js" defer></script>
+    <script src="../owl.carousel.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <!--------------X-------- JAVASCRIPT FILES ------------X---------------->
+
+</body>
+
+</html>

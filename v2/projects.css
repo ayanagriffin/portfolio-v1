@@ -1,0 +1,102 @@
+
+
+
+section{
+    margin: 2% 4%;
+    min-height: calc(100vh - 3rem);
+}
+
+
+section .categories ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+section .categories ul li{
+    background: #eeeeee;
+    padding: 8px 20px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+section .categories ul li:hover{
+    background: #e3e3e3;
+}
+section  .categories ul li.active{
+    background: #4a869e;
+    color: #ffffff;
+}
+section .projects{
+    display: flex;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    background: transparent;
+    width: 320px;
+    height: 410px;
+    text-align: left;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, .05);
+    transition: .3s ease-out;
+    margin: 2rem;
+    margin-left: 0;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    
+}
+
+
+.card .imgBox img{
+    width: 100%;
+
+}
+
+.card .cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+}
+.card .card-categories ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1% 3%;
+}
+
+.card .card-categories ul li{
+    background: #ee8279;
+    padding: 0 8px;
+    margin: 3px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.card p{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.card .btn{
+    padding:0 10px;
+    margin: 0;
+    background: transparent;
+    
+}
+
+.card .cardContent .btn:hover{
+    color: #5ab6d7;
+}
+.card h2{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: #5ab6d7;
+    padding: 5px 10px;
+    
+}

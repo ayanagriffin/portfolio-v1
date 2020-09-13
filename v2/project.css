@@ -1,0 +1,83 @@
+/* ----------- FOR THE SINGULAR PROJECT BLOG PAGE ------------------ */
+
+
+h1{
+    text-align: left;
+}
+
+section{
+    margin: 3%;
+    position: relative;
+
+}
+
+h2{
+    margin-top: 20px;
+}
+
+section .content{
+    position: relative;
+    display: grid;
+    grid-template-columns: 70% 30%;
+  
+}
+
+.post-text p{
+    margin: 10px 0;
+}
+
+.post-image{
+    position: relative;
+}
+.post-info{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 275px;
+    align-items: center;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 25px;
+    bottom: -2%;
+    left: 50%;
+    transform: translateX(-65%);
+    
+}
+
+.post-text{
+    display: inline-block;
+}
+.post-image img{
+    width: 85%;
+}
+
+.category{
+    margin-bottom: 20%;
+}
+.category-list{
+    margin: 5% 0;
+    width: 80%;
+}
+
+.category-list li{
+    text-align: center;
+    padding: 10px 0;
+    background-color: lightblue;
+    margin: 4% 0;
+    border-radius: 25px;
+}
+
+.built-with-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.built-with-list li{
+    text-align: center;
+    padding: 10px 20px;
+    background-color: lightblue;
+    margin: 2% 1%;
+    border-radius: 25px;
+}
+
