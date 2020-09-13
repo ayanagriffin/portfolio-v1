@@ -240,7 +240,7 @@ header{
 
 .dropdown-link > a{
     display: flex;
-    background-color: #ffffff;
+    background-color: #fcfcfc;
     padding: .5rem 1rem;
     font-size: .9rem;
     align-items: center;
@@ -282,7 +282,7 @@ header{
     top: -5.5px;
     left: 32px;
     transform: rotate(45deg);
-    background-color: #ffffff;
+    background-color: #fcfcfc;
     cursor: pointer;
     transition: .3s;
 }
@@ -826,6 +826,9 @@ main #contact .container{
 
 @media (max-width: 920px) {
 
+    /* body{
+        overflow-y: hidden;
+    } */
  /* --------------------- NAVIGATION ------------------------- */
     .hamburger-menu-container{
         display: flex;
