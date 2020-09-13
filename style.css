@@ -368,7 +368,7 @@ main #home .textBox p{
 
 
 main #home .imgBox img{
-    width: calc(max(35vw, 100px)); 
+    width: calc(max(35vw, 200px)); 
     transition: .3s;
     transform: scale(1);
 }
@@ -942,7 +942,13 @@ main #contact .container{
 
    main #home h1{
        margin-top: -4rem;
+       white-space: nowrap;
    }
+
+   main #home .textBox h1 span{
+    display: inline-block;
+    
+}
    /* main #home {
        align-content: center;
        justify-content: center;
