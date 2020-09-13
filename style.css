@@ -580,7 +580,7 @@ main #about-me p{
 }
 
 main #about-me .imgBox img{
-    width: calc(max(40vw, 100px)); 
+    width: calc(max(40vw, 250px)); 
     transition: .3s;
     transform: scale(1);
     order: 2;
@@ -1005,6 +1005,20 @@ main #contact .container{
        padding-bottom: 3rem;
    }
 
+   main #about-me .container{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin: 0 2rem;
+   }
+
+   
+
+   main #about-me .container p, main #about-me .container h2, main #about-me .container h1, main #about-me .container .textBox{
+       text-align: center;
+       padding: 0;
+       margin: 0;
+   }
 
    /* -------------- FOOTER ---------------- */
 
