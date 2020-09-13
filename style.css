@@ -927,6 +927,7 @@ main #contact .container{
        text-align: center;
        flex-direction: column;
        padding-bottom: 3rem;
+       padding-top: 0rem;
        min-height: calc(100vh - 3rem);
    }
 
@@ -945,10 +946,7 @@ main #contact .container{
        white-space: nowrap;
    }
 
-   main #home .textBox h1 span{
-    display: inline-block;
-    
-}
+  
    /* main #home {
        align-content: center;
        justify-content: center;
