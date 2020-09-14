@@ -946,6 +946,10 @@ main #contact .container{
        white-space: nowrap;
    }
 
+   main #contact{
+    overflow-y: hidden;
+
+   }
   
    /* main #home {
        align-content: center;
@@ -1035,6 +1039,7 @@ footer.footer{
     height: 100%;
     background: #4792ad;
     position: relative;
+    overflow-y: hidden;
 }
 
 footer.footer .container{
