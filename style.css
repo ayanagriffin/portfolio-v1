@@ -1001,8 +1001,9 @@ main #contact .container{
    }  */
 
    main #projects, main #about-me{
-       height: auto;
-       padding-bottom: 3rem;
+        min-height: calc(100vh - 3rem);
+        padding-bottom: 50px;
+
    }
 
    main #about-me .container{
