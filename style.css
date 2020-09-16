@@ -952,8 +952,21 @@ main #contact .container{
     }
 }
 
+@media only screen and (max-width: 1130px){
 
-@media (max-width: 920px) {
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr)!important;
+    }
+}
+
+
+@media only screen and (max-width: 920px) {
 
     /* body{
         overflow-y: hidden;
@@ -1177,9 +1190,9 @@ main #contact .container{
  
    /* -------------- FOOTER ---------------- */
 
-   footer{
+   /* footer{
        display: none;
-   }
+   } */
 }
 
 
@@ -1213,10 +1226,16 @@ footer .btn:hover{
     color:#1d4452;
 }
 
+footer .project-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 250px;
+}
+
 footer .projects div > img{
     display: inline-block;
-    width: 25%;
-    height: 50%;
+    width: 70px;
+   
     margin: .3rem .4rem;
     background-color: #ffffff;
 
