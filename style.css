@@ -744,6 +744,7 @@ main #contact .container .contactInfo .box .text h3{
 
 main #contact .container .contact-form{
     width:50%;
+    height: 400px;
     background: white;
     padding: 40px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, .3)
@@ -1192,6 +1193,10 @@ main #contact .container{
 
    main #contact .container .contactInfo .box .text{
        text-align: left;
+   }
+
+   main #contact .container .contact-form{
+       margin-bottom: 3rem;
    }
  
    /* -------------- FOOTER ---------------- */
