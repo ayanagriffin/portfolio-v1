@@ -634,6 +634,7 @@ main #contact fieldset input:valid ~ label
 main #contact button{
     width: 100px;
     height: 40px;
+    margin-top: 20px;
     border: none;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
@@ -810,6 +811,20 @@ main #contact .container .contact-form h2{
         top: 40px!important;
         
     }
+
+    main #contact fieldset label{
+        position: relative;
+
+    }
+ 
+    /* main #contact fieldset input:focus ~ label,
+    main #contact fieldset input:valid ~ label
+    {
+        color: #000000;
+        font-size: 12px;
+        transform: translateY(-5px);
+        background: transparent;
+    } */
 }
 
 @media only screen and (max-width: 750px) {
