@@ -28,27 +28,34 @@ section .content{
 
 .post-image{
     position: relative;
+    width: 85%;
 }
 .post-info{
-    position: absolute;
     display: flex;
     justify-content: space-around;
-    width: 275px;
+    min-width: 40%;
     align-items: center;
     padding: 10px;
     background-color: lightblue;
     border-radius: 25px;
-    bottom: -2%;
-    left: 50%;
-    transform: translateX(-65%);
+    font-size: calc(max(1.2vw, 10px));
+    white-space: nowrap;
     
+}
+
+.test{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
 }
 
 .post-text{
     display: inline-block;
 }
 .post-image img{
-    width: 85%;
+    width: 100%;
 }
 
 .category{

@@ -79,11 +79,11 @@ section .projects{
 
 .card p{
     font-size: 14px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .card .btn{
-    padding:0 10px;
+    padding:0 20px;
     margin: 0;
     background: transparent;
     
