@@ -77,7 +77,7 @@
 
           var thankYouMessage = form.querySelector(".thankyou_message");
           if (thankYouMessage) {
-            thankYouMessage.innerHTML = "<h2>I'll get back soon!<h2>";
+            thankYouMessage.innerHTML = "<h2>Thank you for reaching out, I'll get back to you soon!<h2>";
           }
         }
     };
