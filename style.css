@@ -491,53 +491,7 @@ main #projects .card-container{
     width: 100%;
 }
 
-/* main #projects .project-content{
-    padding: 0;
-    margin: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 75%;
-    background: transparent;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
-    cursor: pointer;
-}
 
-main #projects .project-content:hover{
-    transform: scale(1.05);
-}
-
-
-main #projects .project-content .project-info{
-    padding: 1rem .5rem;
-}
-
-main #projects .project-content .project-info h3:hover{
-    color: gray;
-}
-
-.owl-nav .owl-prev .owl-nav-prev,
-.owl-nav .owl-next .owl-nav-next{
-    position: absolute;
-    top: 35%;
-    margin: 1rem;
-    font-size: 3rem;
-    background: transparent;
-    color:#c5edfa;
-}
-
-.owl-nav .owl-prev .owl-nav-prev{
-    left: 0;
-}
-
-.owl-nav .owl-next .owl-nav-next{
-    right: 0;
-}
-
-.owl-theme .owl-nav [class*='owl-']:hover{
-    background: transparent;
-    color: #000000;
-} */
     /* ----------X------- PROJECT CAROUSEL ----------X--------- */
 
     /* ------------------- ABOUT ME PAGE --------------------- */
@@ -754,112 +708,6 @@ main #contact .container .contact-form h2{
     font-weight: 500;
 }
 
-/* main #contact::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: #63c7eb;
-    z-index: -1;
-
-} */
-/* 
-main #contact .container{
-    position: relative;
-    min-width: 1100px;
-    min-height: 550px;
-    display: flex;
-}
-
-
-main #contact .container .contact-info{
-    position: absolute;
-    background: #1d4452;
-    top: 40px;
-    width: 350px;
-    height: calc(100% - 80px);
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, .3);
-    padding: 20px;
-    color: #ffffff;
-    z-index: 1000;
-}
-
-
-main #contact .container .contact-info p{
-    font-weight: 200;
-}
-
-#contact .socials{
-    align-items: flex-end;
-}
-
-main #contact .container .contact-form{
-    position: absolute;
-    background: #fff;
-    width: calc(100% - 150px);
-    margin-left: 150px;
-    padding: 70px 50px;
-    padding-left: 250px;
-    height: 93%;
-    box-shadow: 0 50px 50px rgba(0, 0, 0, .5);
-
-}
-
-main #contact .container .contact-form h2{
-    color: #0f3959;
-    font-weight: 500;
-}
-
-main #contact .container .contact-form .form-box{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-main #contact .container .contact-form .form-box .form-group{
-    position: relative;
-    margin: 10px 0;
-}
-
-main #contact .container .contact-form .form-box .form-group input, main #contact .container .contact-form .form-box .form-group textarea{
-    border: none;
-    border-bottom: 1px solid #777777;
-    color: #333333;
-    width: 200%;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    resize: none;
-}
-
-main #contact form button{
-    width: 50%;
-    height: 40px;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-    
-    color: #ffffff;
-    cursor: pointer;
-    background: #ee8279;
-
-}
-
-main #contact form button:hover{
-    background: #e17a70;
-    
-}
-main #contact .container{
-    width: 60%;
-    margin: 0 20%;
-    padding: 20px;
-    display: flex;
-} */
 
 
     /* ----------X-------- CONTACT ME PAGE ----------X---------- */
@@ -1101,58 +949,7 @@ main #contact .container{
 
    }
   
-   /* main #home {
-       align-content: center;
-       justify-content: center;
-       position: relative;
-       overflow-y: auto;
-       flex-direction: column;
-    
-     
-   }
-
-  
    
-   main #home .textBox{
-       height: 50%;
-       order: 2;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       align-items: center;
-       
-       
-      
-       
-   }
-
-   main #home .textBox{
-       display: flex;
-       flex-wrap: nowrap;
-   }
-
-   main #home .textBox h2{
-    display: none;
-   
-
-   }
-
-   main #home .textBox h1{
-    margin-top:-10%;
-
-   }
-  
-
-   
-   main #home .textBox h1 span{
-       display: block;
-       
-   } */
-
-   /* main #home .imgBox img{
-       width: 80%;
-      
-   }  */
 
    main #projects, main #about-me{
         min-height: calc(100vh - 3rem);
