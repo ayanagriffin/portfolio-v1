@@ -411,10 +411,10 @@ main #home .textBox h1 span{
 
 
 main #projects {
-    /* background: url('../images/blob.png');
+    background: url('../images/blob.png');
     background-repeat: no-repeat;
-    background-position: 100% 0%;
-    background-size: 70%; */
+    background-position: right bottom;
+    background-size: 700px;
     min-height: 100vh;
     padding: 3rem 1rem 0 1rem;
     width: 100%;
