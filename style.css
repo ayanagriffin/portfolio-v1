@@ -957,12 +957,18 @@ main #contact .container{
     footer.footer .container{
         grid-template-columns: repeat(2, 1fr)!important;
     }
+
+    footer .back-to-top{
+        top: 40px!important;
+        
+    }
 }
 
 @media only screen and (max-width: 750px) {
     footer.footer .container{
         grid-template-columns: repeat(1, 1fr)!important;
     }
+
 }
 
 

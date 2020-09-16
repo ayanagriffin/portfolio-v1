@@ -38,7 +38,7 @@ section .content{
     padding: 10px;
     background-color: lightblue;
     border-radius: 25px;
-    font-size: calc(max(1.2vw, 10px));
+    font-size: calc(max(1.2vw, 12px));
     white-space: nowrap;
     
 }
@@ -88,3 +88,19 @@ section .content{
     border-radius: 25px;
 }
 
+
+@media only screen and (max-width: 750px) {
+    section{
+        margin: 6%;
+        margin-bottom: 80px;
+    
+    }
+
+    section .content{
+        grid-template-columns: 100%!important;
+    }
+
+    .post-image{
+        width: 100%;
+    }
+}
