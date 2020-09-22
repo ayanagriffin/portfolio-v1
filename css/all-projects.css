@@ -22,7 +22,7 @@ section .categories ul li{
 section .categories ul li::before {
     content: "";
     position: absolute;
-    width: 80%;
+    width: 87%;
     height: 2px;
     bottom: 0;
     left: 10%;
