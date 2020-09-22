@@ -6,13 +6,13 @@ RewriteCond %{THE_REQUEST} /index.html HTTP [NC]
 RewriteRule (.*)index.html$ /$1 [R=301,L]
 
 RewriteCond %{THE_REQUEST} /index#about-me HTTP [NC]
-RewriteRule (.*)index.html$ /about$1 [R=301,L]
+RewriteRule (.*)index#about-me$ /about$1 [R=301,L]
 
 RewriteCond %{THE_REQUEST} /index#projects HTTP [NC]
-RewriteRule (.*)index.html$ /projects$1 [R=301,L]
+RewriteRule (.*)index#projects$ /projects$1 [R=301,L]
 
 RewriteCond %{THE_REQUEST} /index#contact HTTP [NC]
-RewriteRule (.*)index.html$ /contact$1 [R=301,L]
+RewriteRule (.*)index#contact$ /contact$1 [R=301,L]
 
 
 
