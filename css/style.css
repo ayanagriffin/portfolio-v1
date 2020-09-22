@@ -1042,10 +1042,9 @@ footer .project-images{
     width: 250px;
 }
 
-footer .projects div > img{
+footer .projects .project-images img{
     display: inline-block;
     width: 70px;
-   
     margin: .3rem .4rem;
     background-color: #ffffff;
 
