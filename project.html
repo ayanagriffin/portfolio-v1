@@ -153,7 +153,7 @@
                         <div>
                             <img src="../images/extendedlogo.png" alt="logo">
                         </div>
-                        <div class="test">
+                        <div class="caption-container">
                             <div class="post-info">
                                 <span><i class="fas fa-user"></i>&nbsp;&nbsp;Solo Project&nbsp;&nbsp;</span>
                                 <span><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;August 2020</span>
@@ -163,7 +163,8 @@
                     <div class="post-text">
                         <h1>EcoBuds</h1>
                         <h2>What it Does</h2>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora incidunt blanditiis
+                        <p id="function"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora incidunt
+                            blanditiis
                             perferendis commodi
                             nesciunt quaerat possimus exercitationem eos ab id, autem sit aperiam doloremque quae nam
                             sunt est eius.
@@ -268,12 +269,21 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="menu.js" defer></script>
     <script type="text/javascript">
 
+        const ecobud = { "name": "EcoBud", "function": "some sample text" };
+        const allProjects = { "ecobud": ecobud }
+
         $(document).ready(function () {
-            const project = sessionStorage.getItem('project');
-            document.title = project;
-            $("#title").html(project);
+            const projectId = sessionStorage.getItem('project');
+            const project = allProjects[projectId];
+            document.title = project.name;
+            $("h1").html(project.name);
+            $("#function").html(project.function);
+
+
+
 
         })
 

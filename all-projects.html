@@ -177,7 +177,7 @@
                     
                     <p>EcoBuds makes living sustainably and fighting environmental issues enjoyable with an
                         adorable companion that is counting on YOU to take action. </p>
-                    <a class="btn learnMore" id="ecoBud" href="project.html" >learn more</a>
+                    <a class="btn learnMore" id="0" href="project.html" >learn more</a>
                 </div>
             </div>
             
@@ -244,11 +244,10 @@
 
     <!-------------X-------- FOOTER ------------X------------->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="menu.js" defer></script>
     <script type="text/javascript">
-    // function test(input){
-    //     sessionStorage.setItem('val', input);
-    // }
         $(document).ready(function(){
+            // FILTERS
             $('.list').click(function(){
                 const value =  $(this).attr('data-filter');
                 if(value == 'all'){
@@ -266,8 +265,10 @@
 
             })
 
+            // SELECTING PROJECT
+
             $('.learnMore').click(function(){
-                const value =  $(this).attr('id');
+                const value =  parseInt($(this).attr('id'));
                 sessionStorage.setItem('project', value);
 
             })
@@ -277,5 +278,6 @@
         })
     
     </script>
+    <script src="project-selector.js"></script>
 </body>
 </html>
