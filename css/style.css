@@ -210,6 +210,10 @@ header{
     text-transform: capitalize;
 }
 
+.dropdown-link > a{
+    font-weight: 500;
+}
+
 .nav-link > a > i {
     margin-left: .2rem;
 }
@@ -259,22 +263,22 @@ header{
     transform: rotate(-90deg);
 }
 
-.dropdown-link .view-all{
+/* .dropdown-link .view-all{
     font-weight:600;
     text-transform: uppercase; 
     background-color:#f0f0f0;
     color: #5ab6d7;
 
-}
+} */
 
-.dropdown-link .view-all:hover{
+/* .dropdown-link .view-all:hover{
     color: #3c94b8;
     background-color: #cfcfcf
 }
 
 .dropdown-link .featured{
     font-weight: 600;
-}
+} */
 .arrow{
     position: absolute;
     width: 11px;
@@ -998,6 +1002,7 @@ main #contact .container .contact-form h2{
        margin-bottom: 3rem;
    }
  
+  
    /* -------------- FOOTER ---------------- */
 
    /* footer{
@@ -1047,9 +1052,14 @@ footer .projects .project-images img{
     width: 70px;
     margin: .3rem .4rem;
     background-color: #ffffff;
+    opacity: 1;
 
 }
 
+footer .projects .project-images img:hover{
+    transition: .3s;
+    opacity: .75;
+}
 footer .socials{
     margin: .5rem 0;
 }
