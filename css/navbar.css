@@ -1,0 +1,303 @@
+/* ------------------------- TOP MENU ------------------------------ */
+header{
+    position: sticky;
+    top: 0px;
+    background-color:#5ab6d7;
+    width: 100%;
+    z-index: 1001;
+}
+
+.nav-bar-container {
+    max-width: 65rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    
+}
+
+.logo-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+   
+
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 3.5rem;
+    letter-spacing: -1px;
+    color: white;
+    white-space: nowrap;
+    
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+.logo span{
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+/* ------------------------- NAVIGATION LINKS ------------------------------ */
+
+.nav-links-container{
+    flex: 3;
+    display: flex;
+    
+    
+}
+
+
+
+.nav-links-container > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 2;
+}
+
+
+.nav-links > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+    position: relative;
+}
+
+
+.nav-link > a{
+    line-height: 3.5rem;
+    padding: 0 .8rem;
+    font-size: .95rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-link > a, .dropdown-link > a {
+    text-transform: capitalize;
+}
+
+.dropdown-link > a{
+    font-weight: 500;
+}
+
+.nav-link > a > i {
+    margin-left: .2rem;
+}
+
+.nav-link:hover > a{
+    transform: scale(1.1);
+}
+
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 10rem;
+    transform: translateY(10px);
+    opacity: 0; 
+    pointer-events: none;
+}
+
+.dropdown-link:not(:nth-last-child(2)){
+    border-bottom: 1px solid #dbdbdb;
+
+}
+
+
+.dropdown > ul{
+    position: relative;
+}
+
+.dropdown-link > a{
+    display: flex;
+    background-color: #fcfcfc;
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s;
+    color: #3c94b8;
+
+}
+
+.dropdown-link:hover > a{
+    background-color: #3c94b8;
+    color: #ffffff;
+}
+
+.dropdown-link > a > i{
+    transform: rotate(-90deg);
+}
+
+/* .dropdown-link .view-all{
+    font-weight:600;
+    text-transform: uppercase; 
+    background-color:#f0f0f0;
+    color: #5ab6d7;
+
+} */
+
+/* .dropdown-link .view-all:hover{
+    color: #3c94b8;
+    background-color: #cfcfcf
+}
+
+.dropdown-link .featured{
+    font-weight: 600;
+} */
+.arrow{
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: -5.5px;
+    left: 32px;
+    transform: rotate(45deg);
+    background-color: #fcfcfc;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.dropdown-link:first-child:hover ~ .arrow {
+    background-color: #3c94b8;
+}
+
+.dropdown-link{
+    position: relative;
+}
+
+.dropdown.second{
+    top: 0;
+    left: 100%;
+    padding-left: .6rem;
+    transition: .3s;
+    transform: translateX(10px);
+}
+
+.dropdown.second .arrow{
+    top: 10px;
+    left: -5.5px;
+}
+
+/* displays the dropdown menu on hover */
+
+.nav-link:hover > .dropdown,
+.dropdown-link:hover > .dropdown {
+    transform: translate(0, 0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ------------------------ SOCIAL MEDIA ICONS ----------------------------- */
+.socials{
+    display: flex;
+    /* justify-content: flex-end;
+    align-items: center; */
+    padding-top: .5rem;
+    flex: .65;
+    
+}
+
+.socials li {
+    padding: 0 .4rem;
+}
+
+.socials li img {
+    width: 1.75rem;
+}
+
+.socials li img:hover {
+    opacity: 100%;
+    transform: scale(1.25);
+}
+
+
+/* ------------X----------------------- TOP MENU ----------------X------------------------------------------------ */
+
+/* -------------------------------------- HAMBURGER MENU -------------------------------------------------- */
+.hamburger-menu-container{
+    flex: 1;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hamburger-menu{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu div{
+    width: 1.6rem;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: relative;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.hamburger-menu div:before,
+.hamburger-menu div:after{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #ffffff;
+    border-radius: inherit;
+    transition: 0.5s;
+}
+
+.hamburger-menu div:before{
+    transform: translateY(-7px);
+}
+
+.hamburger-menu div:after{
+    transform: translateY(7px);
+}
+
+#check{
+    position: absolute;
+    display: none;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    z-index: 3;
+    opacity: 0;
+
+}
+
+#check:checked ~ .hamburger-menu-container .hamburger-menu div{
+    background-color: transparent;
+
+}
+
+#check:checked ~ .hamburger-menu-container .hamburger-menu div:before{
+    transform: rotate(45deg);
+
+}
+#check:checked ~ .hamburger-menu-container .hamburger-menu div:after{
+    transform: rotate(-45deg);
+
+}
+
+/* -----------XX----------HAMBURGER MENU-----------XX-------------- */
