@@ -523,16 +523,7 @@ main #contact .thankyou_message{
 
 }
 
-@media only screen and (max-width: 750px) {
-    footer.footer .container{
-        grid-template-columns: repeat(1, 1fr)!important;
-    }
 
-    main #contact .container .contact-form, main #contact .container .contactInfo{
-        width: 100%;
-    }
-
-}
 
 
 
@@ -738,4 +729,14 @@ main #contact .thankyou_message{
     }
  
   
+}
+@media only screen and (max-width: 750px) {
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr)!important;
+    }
+
+    main #contact .container .contact-form, main #contact .container .contactInfo{
+        width: 100%;
+    }
+
 }
