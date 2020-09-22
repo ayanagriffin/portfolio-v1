@@ -17,8 +17,6 @@ section .categories ul li{
     padding: 8px 20px;
     margin: 5px;
     cursor: pointer;
-    border-bottom: 3px solid transparent;
-
 }
 
 section .categories ul li::before {
@@ -52,7 +50,6 @@ section .categories ul li:hover > i{
 section  .categories ul li.active{
     transition: .3s;
     color: #000;
-    /* border-bottom: 3px solid #c5edfa; */
 }
 section  .categories ul li.active > i{
     color: #c5edfa;
