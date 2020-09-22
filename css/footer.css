@@ -7,9 +7,23 @@ footer.footer{
     overflow-y: hidden;
 }
 
+footer.footer .contact-me a:not(.social), footer.footer .quick-links a{
+    color: #c5edfa;
+    opacity: .8;
+}
+
+footer.footer .contact-me a:hover, footer.footer .quick-links a:hover{
+    opacity: 1;
+}
 footer.footer .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+.contact-me p{
+    padding-right: 50px;
+}
+.about{
+    margin-left: -50px;
 }
 
 footer.footer .container > div{
@@ -48,7 +62,7 @@ footer .projects .project-images img:hover{
     opacity: .75;
 }
 footer .socials{
-    margin: .5rem 0;
+    margin: 2rem 0 .5rem 0;
 }
 
 footer .bottom{
@@ -78,9 +92,9 @@ footer .back-to-top{
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: 2%;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 1%;
+    top: 5%;
+    /* transform: translateY(-50%); */
 }
 
 footer .back-to-top i{

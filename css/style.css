@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura:wght@400&display=swap');
+@import url('navbar.css');
+@import url('footer.css');
 
 *{
     padding: 0;
@@ -188,7 +190,7 @@ main #home .textBox h1 span{
 
 
 main #projects {
-    background: url('../images/blob.png');
+    background: url('../images/main-site/blob.png');
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 700px;
@@ -478,7 +480,8 @@ main #contact .container .contact-form{
     width:50%;
     background: white;
     padding: 40px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, .3)
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .3);
+    margin-bottom: 20px;
 
 }
 
@@ -486,7 +489,13 @@ main #contact .container .contact-form h2{
     font-weight: 500;
 }
 
-
+main #contact .thankyou_message{
+    display: none; 
+    color: #777; 
+    padding-top: 20px; 
+    font-size: 1rem;
+    margin-bottom: -10px;
+}
 
     /* ----------X-------- CONTACT ME PAGE ----------X---------- */
 
@@ -505,23 +514,13 @@ main #contact .container .contact-form h2{
     }
 }
 
-@media only screen and (max-width: 1130px){
 
-    footer.footer .container{
-        grid-template-columns: repeat(2, 1fr)!important;
-    }
-
-    footer .back-to-top{
-        top: 40px!important;
+@media only screen and (max-width: 400px) {
+    main #home .textBox h1{
+        font-size: 7rem;
         
     }
 
-    main #contact fieldset label{
-        position: relative;
-
-    }
- 
-  
 }
 
 @media only screen and (max-width: 750px) {
@@ -529,7 +528,13 @@ main #contact .container .contact-form h2{
         grid-template-columns: repeat(1, 1fr)!important;
     }
 
+    main #contact .container .contact-form, main #contact .container .contactInfo{
+        width: 100%;
+    }
+
 }
+
+
 
 
 @media only screen and (max-width: 920px) {
@@ -684,7 +689,7 @@ main #contact .container .contact-form h2{
    }
 
    main #contact .container .contact-form, main #contact .container .contactInfo{
-       width: 80%;
+       width: 90vw;
    }
 
    main #contact .container .contactInfo .box .text{
@@ -694,8 +699,43 @@ main #contact .container .contact-form h2{
    main #contact .container .contact-form{
        margin-bottom: 3rem;
    }
+
+   footer .back-to-top{
+       right: 7%;
+   }
  
   
 }
 
 
+@media only screen and (max-width: 1130px){
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+
+    footer .back-to-top{
+        top: 40px!important;
+        
+    }
+
+    main #contact fieldset label{
+        position: relative;
+
+    }
+
+    footer.footer .about{
+        margin-left: 0;
+        
+    }
+
+    footer.footer .about p{
+        padding-right: 100px;
+    }
+
+    footer.footer .contact-me p{
+        padding-right: 0;
+    }
+ 
+  
+}
