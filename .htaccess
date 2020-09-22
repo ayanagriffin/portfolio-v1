@@ -5,6 +5,10 @@ RewriteEngine On
 RewriteCond %{THE_REQUEST} /index.html HTTP [NC]
 RewriteRule (.*)index.html$ /$1 [R=301,L]
 
+RewriteCond %{REQUEST_FILE} !-f
+RewriteCond %{REQUEST_FILE} !-l
+RewriteCond %{REQUEST_URI} !^/index\.html [NC]
+RewriteRule ^(.+)$ /index.html/$1 [L]
 
 
 
