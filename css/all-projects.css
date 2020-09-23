@@ -60,69 +60,109 @@ section .projects{
     flex-wrap: wrap;
 }
 
+.projects{
+    padding-left: calc(max(50px, 3vw));
+}
+img{
+    width: 100%;
+}
+
 .card{
+    width: 100%;
+    max-width: 550px;
+    padding:2rem 5rem;
+    padding-right: 0;
+    background: #fff;
+    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
     position: relative;
-    background: transparent;
-    width: 320px;
-    height: 410px;
-    text-align: left;
-    box-shadow: 0 1px 15px rgba(0, 0, 0, .05);
-    transition: .3s ease-out;
-    margin: 2rem;
-    margin-left: 0;
 }
 
-.card:hover{
-    transform: scale(1.05);
-    
-}
 
+.card .imgBox{
+    min-width: 12rem;
+    max-width:12rem;
+    transform: translateX(-8rem);
+    position: relative;
+}
 
 .card .imgBox img{
     width: 100%;
-
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.card .cardContent{
+.card .imgBox::before{
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 242, 254, .5);
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,.05);
+}
+
+.card .card-info{
+    margin-left: -6rem;
+}
+
+.date-and-categories, .card h2{
+    margin-bottom: 10px;
+}
+
+.card a{
+
+    color: #aaa;
+}
+.date-and-categories ul{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 140px;
-}
-.card .card-categories ul{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1% 3%;
 }
 
-.card .card-categories ul li{
-    background: #ee8279;
-    padding: 0 8px;
-    margin: 3px;
-    border-radius: 20px;
-    font-size: 12px;
+.date-and-categories ul li{
+    margin-right: 5px;
 }
 
 .card p{
     font-size: 14px;
-    padding: 20px;
+    padding-right: 30px;
 }
 
-.card .btn{
-    padding:0 20px;
-    margin: 0;
-    background: transparent;
-    
+.card ul li{
+    font-size: 12px;
 }
 
-.card .cardContent .btn:hover{
-    color: #5ab6d7;
-}
-.card h2{
-    position: absolute;
-    top: 10px;
-    left: 0;
-    background: #5ab6d7;
-    padding: 5px 10px;
+@media only screen and (max-width: 655px){
+    .projects{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        
+    }
     
+   .card{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 30px;
+       margin: 3rem 0;
+      
+   }
+   .card .card-info{
+        margin-left: 0;
+    }
+
+    .card .imgBox{
+        min-width: 15rem;
+        max-width:15rem;
+
+        transform: translate(0, -3rem);
+    
+        position: relative;
+    }
+    
+
 }
