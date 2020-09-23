@@ -1,6 +1,6 @@
 
 section{
-    margin: 2% 4%;
+    margin: 2% 0;
     min-height: calc(100vh - 3rem);
 }
 
@@ -8,6 +8,7 @@ section{
 section .categories ul{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 4%;
 
 }
 
@@ -30,6 +31,7 @@ section .categories ul li::before {
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
+    
   }
 
  section .categories ul li.active::before {
@@ -58,11 +60,11 @@ section .projects{
     display: flex;
     margin-top: 2%;
     flex-wrap: wrap;
-}
-
-.projects{
+    justify-content: space-around;
     padding-left: calc(max(50px, 3vw));
 }
+
+
 img{
     width: 100%;
 }
@@ -73,13 +75,22 @@ img{
     padding:2rem 5rem;
     padding-right: 0;
     background: #fff;
-    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+    box-shadow: 0 .05rem 1rem rgba(0,0,0,.05);
     display: flex;
     align-items: center;
     border-radius: .8rem;
     position: relative;
+    
 }
 
+.card:nth-child(odd){
+   
+    margin-right: 4rem;
+}
+
+.card:hover{
+    transform: scale(1.01);
+}
 
 .card .imgBox{
     min-width: 12rem;
@@ -93,9 +104,11 @@ img{
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: .8rem;
+
 }
 
-.card .imgBox::before{
+/* .card .imgBox::before{
     content: '';
     left: 0;
     top: 0;
@@ -104,7 +117,8 @@ img{
     position: absolute;
     background: rgba(0, 242, 254, .5);
     box-shadow: .5rem .5rem 3rem rgba(0,0,0,.05);
-}
+    border-radius: .8rem;
+} */
 
 .card .card-info{
     margin-left: -6rem;
@@ -135,6 +149,12 @@ img{
     font-size: 12px;
 }
 
+@media only screen and (max-width: 1220px){
+    .card{
+        margin: 1rem 4rem;
+    }
+}
+
 @media only screen and (max-width: 655px){
     .projects{
         justify-content: center;
@@ -148,7 +168,9 @@ img{
        justify-content: center;
        align-items: center;
        padding: 30px;
-       margin: 3rem 0;
+       /* margin: 3rem 0; */
+       margin-left: 0;
+       margin-top: 2.5rem;
       
    }
    .card .card-info{
