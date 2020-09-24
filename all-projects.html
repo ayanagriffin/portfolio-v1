@@ -36,7 +36,67 @@
         <div class="projects">
             <div class="card frontend school">
                 <div class="sliders">
-                    <label for="" id="ecobud" class="testing tap tap-1"></label>
+                    <label for="" id="ecobud" class="active-slide tap tap-1"></label>
+                    <label for="" id="ecobud" class="tap tap-2"></label>
+                    <label for="" id="ecobud" class="tap tap-3"></label>
+                </div>
+                <div class="right-content">
+                    <div class="imgBox">
+                        <img src="../images/projects/logo.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="date-and-categories">
+                            <p>August 2020</p>
+                            <ul>
+                                <li>personal</li>
+                                <li>school</li>
+                                <li>frontend</li>
+                                <li>backend</li>
+
+                            </ul>
+                        </div>
+                        <h2 class="ecobud">Title</h2>
+                        <p style="margin-bottom: 10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                            amet fuga omnis!</p>
+                        <a href="project" class="learnMore" id="ecobud">learn more</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="card frontend school">
+                <div class="sliders">
+                    <label for="" id="test" class="active-slide tap tap-1"></label>
+                    <label for="" id="test" class="tap tap-2"></label>
+                    <label for="" id="test" class="tap tap-3"></label>
+                </div>
+                <div class="right-content">
+                    <div class="imgBox">
+                        <img src="../images/projects/logo.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="date-and-categories">
+                            <p>August 2020</p>
+                            <ul>
+                                <li>personal</li>
+                                <li>school</li>
+                                <li>frontend</li>
+                                <li>backend</li>
+
+                            </ul>
+                        </div>
+                        <h2>Title</h2>
+                        <p style="margin-bottom: 10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                            amet fuga omnis!</p>
+                        <a href="project" class="learnMore" id="ecobud">learn more</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="card frontend school">
+                <div class="sliders">
+                    <label for="" id="ecobud" class="active-slide tap tap-1"></label>
                     <label for="" id="ecobud" class="tap tap-2"></label>
                     <label for="" id="ecobud" class="tap tap-3"></label>
                 </div>
@@ -57,14 +117,14 @@
                         </div>
                         <h2>Title</h2>
                         <p style="margin-bottom: 10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                            earum
-                            distinctio eligendi inventore ad. Ipsum aperiam exercitationem amet fuga omnis!</p>
+                            amet fuga omnis!</p>
                         <a href="project" class="learnMore" id="ecobud">learn more</a>
                     </div>
                 </div>
 
 
             </div>
+            
 
 
 
@@ -107,16 +167,19 @@
             const ecobud = { "t1": "EcoBud1", "t2": "sample2", "t3": "wooo3" };
             const allProjects = { "ecobud": ecobud }
             $('.tap').click(function () {
-                const project = allProjects[$(this).attr('id')]
+                const id = $(this).attr('id')
+                const project = allProjects[id]
+                
+                console.log(project)
                 if ($(this).hasClass('tap-2')) {
-                    $("h2").html(project.t2);
+                    $("h2." + id).html(project.t2);
                 }else if ($(this).hasClass('tap-3')){
-                    $("h2").html(project.t3);
+                    $("h2." + id).html(project.t3);
                 }else{
-                    $("h2").html(project.t1);
+                    $("h2." + id).html(project.t1);
                 }
                 
-                $(this).addClass('testing').siblings().removeClass('testing');
+                $(this).addClass('active-slide').siblings().removeClass('active-slide');
             });
 
 
