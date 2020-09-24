@@ -35,7 +35,7 @@ header{
     
 }
 
-.logo:hover{
+.logo-container .logo:hover{
     transform: scale(1.05);
 }
 .logo span{
