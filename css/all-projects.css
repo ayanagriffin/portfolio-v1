@@ -211,7 +211,7 @@ img{
     font-size: 12px;
 }
 
-@media only screen and (max-width: 1220px){
+/* @media only screen and (max-width: 1220px){
     .card{
         margin: 1rem 4rem;
     }
@@ -230,7 +230,7 @@ img{
        justify-content: center;
        align-items: center;
        padding: 30px;
-       /* margin: 3rem 0; */
+
        margin-left: 0;
        margin-top: 2.5rem;
       
@@ -249,4 +249,4 @@ img{
     }
     
 
-}
+} */
