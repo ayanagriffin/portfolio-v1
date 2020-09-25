@@ -326,11 +326,15 @@ main #about-me{
     position: relative;
     padding: 6rem 5rem;
     min-height: 100vh;
-    /* overflow-x: hidden; */
+    overflow: hidden;
     /* overflow-x: hidden;
     overflow-y: visible; */
 
     
+}
+
+#about-me .container{
+    /* margin-top: 10rem; */
 }
 
 .textContainer{
@@ -432,6 +436,7 @@ main #about-me .textBox{
     transform: translateY(-50%);
     z-index: 6;
     transition: 1.8s ease-in-out;
+    overflow-y: visible;
 }
 
 .tb1{
@@ -841,12 +846,12 @@ main #contact .thankyou_message{
    
 
    main #projects, main #about-me{
-        min-height: calc(100vh - 3rem);
+        min-height: 100vh;
         padding-bottom: 50px;
 
    }
 
-   main #about-me .container{
+   /* main #about-me .container{
        flex-direction: column;
        align-items: center;
        justify-content: center;
@@ -859,7 +864,7 @@ main #contact .thankyou_message{
        text-align: center;
        padding: 0;
        margin: 0;
-   }
+   } */
 
    main #contact .container{
        flex-direction: column;
