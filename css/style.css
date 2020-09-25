@@ -84,11 +84,11 @@ h1{
 .btn{
     display: inline-block;
     background: #ffffff;
-    color: #3c94b8;
+    color: #60BEF5;
     transition: .3s;
     /* padding: .75rem;
     margin: 1rem 0; */
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: 600;
     font-size: .75rem;
     border-radius: 20px;
@@ -96,7 +96,7 @@ h1{
 }
 
 .btn:hover{
-    background-color: #3c94b8;
+    background-color: #48b1ee;
     color: #ffffff;
 }
 
@@ -223,14 +223,14 @@ main #home .textBox h1 span{
 
 
 main #projects {
-    background: url('../images/main-site/blob.png');
+    /* background: url('../images/main-site/blob.png');
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: 700px;
+    background-size: 700px; */
     min-height: 100vh;
     padding: 3rem 1rem 0 1rem;
     width: 100%;
-    background-color: white;
+    background-color: #f7f7f7;
     
 }
 
@@ -257,15 +257,23 @@ main #projects .card-container{
     box-shadow: 0 3px 15px rgba(0, 0, 0, .3);
     transition: .3s ease-out;
     margin: 5% 3%;
+    border-radius: 10px;
     
+}
+
+#projects .cardContent{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 #projects .card .cardContent h2{
     margin: .5rem;
+    color: #fff;
 }
 
 #projects .card .cardContent p{
     margin: .5rem;
     margin-top: 0;
+    color: #fff;
 }
 
 #projects .card:hover .cardContent{
@@ -277,6 +285,8 @@ main #projects .card-container{
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    border-radius: 10px;
+    background: rgba(42, 61, 84, .85);
 }
 
 #projects .card:hover{
@@ -292,7 +302,7 @@ main #projects .card-container{
     height: 50px;
     left:0;
     bottom: 0;
-    background: #c5edfa;
+    background: #2a3d54;
     box-sizing: border-box;
     overflow: hidden;
     transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.15);
@@ -310,7 +320,7 @@ main #projects .card-container{
 
 main #about-me{
     width: 100%;
-    background: #63c7eb;
+    background: #f7f7f7;
     position: relative;
     padding-top: 6rem;
     min-height: 100vh;
@@ -322,6 +332,7 @@ main #about-me .container{
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 0 5rem 0 0;
 
 }
@@ -329,6 +340,8 @@ main #about-me .container{
 main #about-me .textBox{
     text-align: right;
     order: 1;
+    width: 50%;
+   
 }
 
 main #about-me h1{
@@ -336,7 +349,7 @@ main #about-me h1{
 }
 
 main #about-me i{
-    color: white;
+    color: #60BEF5;
     margin: .6rem;
     font-size: .5rem;
 }

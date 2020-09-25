@@ -2,20 +2,17 @@
 header{
     position: sticky;
     top: 0px;
-    background-color:#fcfcfc;
+    background-color:#60BEF5;
     
     width: 100%;
     z-index: 1001;
     box-shadow: .1rem 0rem .5rem rgba(0,0,0,0.2);
 }
 
-header .socials{
-    -webkit-filter: invert(80%); /* Safari/Chrome */
-    filter: invert(80%);
-}
 
-header a, header .socials{
-    color: #0F1C33;
+
+header a{
+    color: #fcfcfc;
 }
 .nav-bar-container {
     max-width: 65rem;
@@ -40,7 +37,7 @@ header a, header .socials{
     text-transform: uppercase;
     line-height: 3.5rem;
     letter-spacing: -1px;
-    color: #0F1C33;
+    
     white-space: nowrap;
     
 }
