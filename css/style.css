@@ -230,7 +230,7 @@ main #projects {
     min-height: 100vh;
     padding: 3rem 1rem 0 1rem;
     width: 100%;
-    background-color: #f7f7f7;
+    background-color: #fff;
     
     
 }
@@ -846,7 +846,7 @@ main #contact .thankyou_message{
    
 
    main #projects, main #about-me{
-        min-height: 100vh;
+        min-height: 70vh;
         padding-bottom: 50px;
 
    }
