@@ -89,31 +89,84 @@
         <!---------X---------- FEATURED PROJECTS PAGE ---------X---------->
         <!------------------------ ABOUT ME PAGE ------------------------->
         <section id="about-me">
-            <div class="container">
-                <div class="textBox">
-                    <h1>About Me</h1>
-                    <div class="icons">
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis assumenda minus
-                        eveniet amet voluptates doloremque voluptas harum id aperiam voluptatem, perspiciatis eligendi
-                        reprehenderit numquam quos quibusdam exercitationem? Necessitatibus, perferendis.</p>
-                    <div class="icons">
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <div class="quote">
+            <div class="container" id="about-me-container">
+                <div class="textContainer">
+                    <div class="about-me-test">
+                        <div class="textBox tb1">
+                            <h1>About Me</h1>
+                            <div class="icons">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis
+                                assumenda
+                                minus
+                                eveniet amet voluptates doloremque voluptas harum id aperiam voluptatem, perspiciatis
+                                eligendi
+                                reprehenderit numquam quos quibusdam exercitationem? Necessitatibus, perferendis.</p>
+                            <div class="icons">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="quote">
 
-                        <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipisicing.<i
-                                class="fas fa-quote-right"></i></p>
-                        <p><span>- Author</span></p>
+                                <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing.<i class="fas fa-quote-right"></i></p>
+                                <p><span>- Author</span></p>
+                            </div>
+                        </div>
+                        <!-- ------------------------------------- SECOND SET ------------------------------------- -->
+                        <div class="textBox tb2">
+                            <h1>About Me2</h1>
+                            <div class="icons">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis
+                                assumenda
+                                minus
+                                eveniet amet voluptates doloremque voluptas harum id aperiam voluptatem, perspiciatis
+                                eligendi
+                                reprehenderit numquam quos quibusdam exercitationem? Necessitatibus, perferendis.</p>
+                            <div class="icons">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="quote">
+
+                                <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing.<i class="fas fa-quote-right"></i></p>
+                                <p><span>- Author</span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="imgBox">
-                    <!-- <img class="aboutMePicture" src="../images/main-site/me-waving.png" alt="image"> -->
+                <div class="panels-container">
+                   <div class="panel left-panel">
+                       <div class="content">
+                           <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium unde quasi voluptatem! Praesentium, iure nobis.</p>
+                           <button class="btn" id="btn-1">Lorem, ipsum.</button>
+
+                       </div>
+
+                       <img src="/images/main-site/home.png" alt="home">
+                   </div>
+
+                   <div class="panel right-panel">
+                    <div class="content">
+                        <h3>some test text for the panel on the right</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium unde quasi voluptatem! Praesentium, iure nobis.</p>
+                        <button class="btn" id="btn-2">Lorem, IPSUMM.</button>
+
+                    </div>
+
+                    <img src="/images/main-site/home.png" alt="home">
+                </div>
                 </div>
             </div>
         </section>
@@ -233,6 +286,22 @@
             // }, function () {
             //     $(this).attr('src', '../images/main-site/me-waving.png');
             // });
+
+            const btn_1 = document.querySelector("#btn-1");
+            const btn_2 = document.querySelector("#btn-2");
+
+            const container = document.querySelector("#about-me-container");
+
+            btn_2.addEventListener('click', () =>{
+                container.classList.add("mode-1");
+                container.classList.remove("mode-2");
+            })
+
+            btn_1.addEventListener('click', () =>{
+                container.classList.add("mode-2");
+                container.classList.remove("mode-1");
+
+            })
         })
 
     </script>

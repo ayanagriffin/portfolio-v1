@@ -232,6 +232,7 @@ main #projects {
     width: 100%;
     background-color: #f7f7f7;
     
+    
 }
 
 
@@ -244,6 +245,7 @@ main #projects .card-container{
     text-align: center;
     flex-wrap: wrap;
     margin: 0 10%;
+    
     
 }
 
@@ -258,7 +260,7 @@ main #projects .card-container{
     transition: .3s ease-out;
     margin: 5% 3%;
     border-radius: 10px;
-    
+    z-index: 1000;
 }
 
 #projects .cardContent{
@@ -320,14 +322,78 @@ main #projects .card-container{
 
 main #about-me{
     width: 100%;
-    background: #f7f7f7;
+    background: #fff;
     position: relative;
-    padding-top: 6rem;
+    padding: 6rem 5rem;
     min-height: 100vh;
+    /* overflow-x: hidden; */
+    /* overflow-x: hidden;
+    overflow-y: visible; */
 
     
 }
 
+.textContainer{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+}
+
+
+.panels-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-panel{
+    padding: 3rem 17% 2rem 12%;
+    text-align: left;
+    pointer-events: all;
+}
+
+.right-panel{
+    padding: 3rem 12% 2rem 17%;
+    text-align: right;
+    pointer-events: none;
+
+}
+
+.panel .content{
+    color: #fff;
+    transition: .9s .6s ease-in-out;
+}
+
+.right-panel .content, .right-panel img{
+    transform: translateX(800px);
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    z-index: 7;
+}
+.panel img{
+    width: 100%;
+    transition: 1.1s .4s ease-in-out;
+}
+
+.about-me-test{
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+    transition: 1s 0.7s ease-in-out;
+}
+/* 
 main #about-me .container{
     height: 100%;
     display: flex;
@@ -335,15 +401,49 @@ main #about-me .container{
     justify-content: space-between;
     margin: 0 5rem 0 0;
 
-}
+} */
 
+.tb1, .tb2{
+    transition: 1s 0.7s ease-in-out;
+}
 main #about-me .textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     text-align: right;
-    order: 1;
-    width: 50%;
+    grid-column: 1 /2;
+    grid-row: 1 / 2;
+    /* width: 50%; */
+    transition: 1s 0.7s ease-in-out;
    
 }
 
+
+
+#about-me .container:before{
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 1500px;
+    border-radius: 50%;
+    background: #48b1ee;
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    z-index: 6;
+    transition: 1.8s ease-in-out;
+}
+
+.tb1{
+    z-index: 2;
+}
+
+.tb2{
+    z-index: 1;
+    opacity: 0;
+   
+
+}
 main #about-me h1{
     text-align: right;
 }
@@ -353,7 +453,7 @@ main #about-me i{
     margin: .6rem;
     font-size: .5rem;
 }
-main #about-me p{
+main #about-me .textContainer p{
     /* text-align: right; */
     margin: 1rem 0 1rem 5rem;
 }
@@ -386,6 +486,51 @@ main #about-me .imgBox img:hover{
     transform: scale(1.05);
 }
 
+
+
+#about-me .container.mode-2:before{
+    transform: translate(100%, -50%);
+    right: 52%;
+}
+
+#about-me .container.mode-2 .left-panel img, 
+#about-me .container.mode-2 .left-panel .content{
+    transform: translateX(-800px);
+}
+
+#about-me .container.mode-2 .right-panel .content, 
+#about-me .container.mode-2 .right-panel img{
+    transform: translateX(0px);
+}
+
+#about-me .container.mode-2 .left-panel{
+    pointer-events: none;
+}
+
+#about-me .container.mode-2 .right-panel{
+    pointer-events: all;
+}
+
+
+#about-me .container .textContainer{
+    transition: 1s 0.7s ease-in-out;
+
+    left: 50%;
+}
+#about-me .container.mode-2 .textContainer{
+    transition: 1s 0.7s ease-in-out;
+
+    left: -13%;
+}
+
+#about-me .container.mode-2 .tb1{
+    opacity: 0;
+}
+
+#about-me .container.mode-2 .tb2{
+    opacity: 1;
+    
+}
     /* ----------X-------- ABOUT ME PAGE ----------X---------- */
     /* ------------------- CONTACT ME PAGE -------------------- */
 main #contact{
