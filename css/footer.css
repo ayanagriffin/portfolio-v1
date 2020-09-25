@@ -66,10 +66,10 @@ footer .back-to-top p{
 }
 
 .quick-links p{
-    padding-right: 5px;
+    padding-right: 10px;
 }
 .quick-links ul li{
-    padding-right: 5px;
+    padding-right: 10px;
     text-decoration: underline;
     
 }
@@ -81,6 +81,10 @@ footer .back-to-top p{
 
 .quick-links ul li a:hover{
     color:#000;
+}
+
+footer .socials{
+    margin-left: -9px;
 }
 /* ---------X------- FOOTER -------------X---------- */
 
@@ -94,5 +98,6 @@ footer .back-to-top p{
         padding: 5px 0;
     }
 
+   
 
 }

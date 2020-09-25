@@ -27,48 +27,17 @@
         <section id="home">
             <div class="textBox">
                 <h2>hey! i'm</h2>
-                <h1><span>hey! i'm</span> Ayana</h1>
-                <p id="subText"><b>SITE UNDER CONSTRUCTION</b></p>
+                <h1><span>Hey! I'm</span> Ayana</h1>
+                <p id="subText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil numquam expedita a
+                    temporibus blanditiis? Ipsum excepturi vero voluptatem natus minus.</b></p>
                 <a class="btn" target="_blank" href="all-projects"> View All Projects</a>
             </div>
             <div class="imgBox">
-                <img src="../images/main-site/me-computer.png" class="home mainPicture">
+                <img src="../images/main-site/home.png" class="home mainPicture">
             </div>
 
         </section>
         <!------------X----------- HOME PAGE ------------X--------------->
-
-        <!------------------------ ABOUT ME PAGE ------------------------->
-        <section id="about-me">
-            <div class="container">
-                <div class="textBox">
-                    <h1>About Me</h1>
-                    <div class="icons">
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis assumenda minus
-                        eveniet amet voluptates doloremque voluptas harum id aperiam voluptatem, perspiciatis eligendi
-                        reprehenderit numquam quos quibusdam exercitationem? Necessitatibus, perferendis.</p>
-                    <div class="icons">
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <div class="quote">
-
-                        <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipisicing.<i
-                                class="fas fa-quote-right"></i></p>
-                        <p><span>- Author</span></p>
-                    </div>
-                </div>
-                <div class="imgBox">
-                    <img class="aboutMePicture" src="../images/main-site/me-waving.png" alt="image">
-                </div>
-            </div>
-        </section>
-        <!------------X----------- ABOUT ME PAGE -------------X----------->
         <!------------------- FEATURED PROJECTS PAGE --------------------->
         <section id="projects">
             <div class="container">
@@ -118,6 +87,38 @@
 
         </section>
         <!---------X---------- FEATURED PROJECTS PAGE ---------X---------->
+        <!------------------------ ABOUT ME PAGE ------------------------->
+        <section id="about-me">
+            <div class="container">
+                <div class="textBox">
+                    <h1>About Me</h1>
+                    <div class="icons">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis assumenda minus
+                        eveniet amet voluptates doloremque voluptas harum id aperiam voluptatem, perspiciatis eligendi
+                        reprehenderit numquam quos quibusdam exercitationem? Necessitatibus, perferendis.</p>
+                    <div class="icons">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="quote">
+
+                        <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipisicing.<i
+                                class="fas fa-quote-right"></i></p>
+                        <p><span>- Author</span></p>
+                    </div>
+                </div>
+                <div class="imgBox">
+                    <img class="aboutMePicture" src="../images/main-site/me-waving.png" alt="image">
+                </div>
+            </div>
+        </section>
+        <!------------X----------- ABOUT ME PAGE -------------X----------->
+
         <!------------------------ CONTACT ME PAGE ------------------------>
         <section id="contact">
             <div class="content">
@@ -154,7 +155,7 @@
 
                     <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
                         action="https://script.google.com/macros/s/AKfycbzSS_vsV2PJsdCRZy3SVxFXuSRqkJ71uDzA17A_1OAXhPst4W0/exec">
-                        <div >
+                        <div>
                             <h2>Send a message!</h2>
 
                         </div>
@@ -213,25 +214,25 @@
     <!----------------------- JAVASCRIPT FILES ----------------------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    
-    
+
+
     <script type="text/javascript">
         $(document).ready(function () {
             // LOAD THE HEADER AND FOOTER
             $('#navbar').load('navbar.html');
             $('#footer').load('footer.html');
             // ANIMATION OF IMAGES ON HOVER
-            $('.mainPicture').hover(function () {
-                $(this).attr('src', '../images/main-site/me-computer-smile.png');
-            }, function () {
-                $(this).attr('src', '../images/main-site/me-computer.png');
-            });
+            // $('.mainPicture').hover(function () {
+            //     $(this).attr('src', '../images/main-site/me-computer-smile.png');
+            // }, function () {
+            //     $(this).attr('src', '../images/main-site/me-computer.png');
+            // });
 
-            $('.aboutMePicture').hover(function () {
-                $(this).attr('src', '../images/main-site/me-waving-wink.png');
-            }, function () {
-                $(this).attr('src', '../images/main-site/me-waving.png');
-            });
+            // $('.aboutMePicture').hover(function () {
+            //     $(this).attr('src', '../images/main-site/me-waving-wink.png');
+            // }, function () {
+            //     $(this).attr('src', '../images/main-site/me-waving.png');
+            // });
         })
 
     </script>
