@@ -389,6 +389,7 @@ a{
     }
 
     #home .container.about-mode .home-about-me{
+        top: 10%;
         transform: translate(-50%, 55%);
     }
     #home .container.home-mode .home-about-me{
@@ -407,6 +408,8 @@ a{
     #home .container .home-content{
        align-items: center;
     }
+
+    
 }
 @media only screen and (max-width: 570px){
     #home .container .info-container .home-about-me div{
