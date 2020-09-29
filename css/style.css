@@ -285,6 +285,16 @@ a{
         top: 15vh;
     }
     
+    #home .left-panel {
+        margin: 20px;
+        margin-top: 0;
+        /* padding: 0 10px!important; */
+        align-items: flex-start!important;
+        width: 110px!important;
+        height: 80px;
+        
+        
+    }
     #home .container .home-content p{
         padding-bottom: 150px;
     }
@@ -444,6 +454,8 @@ a{
         
         
     }
+
+    
 
     #home .right-panel .content{
         padding-top: 2rem;
