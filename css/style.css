@@ -286,12 +286,15 @@ a{
     }
     
     #home .left-panel {
-        margin: 20px;
+        /* margin: 20px;
         margin-top: 0;
-        /* padding: 0 10px!important; */
+        
         align-items: flex-start!important;
         width: 110px!important;
-        height: 80px;
+        height: 80px; */
+        padding: 0!important;
+        align-items: flex-start!important;
+        margin-left: 5%;
         
         
     }
@@ -318,6 +321,13 @@ a{
     #home .right-panel .content{
         align-items: flex-start;
         padding-left: 2rem;
+    }
+
+    #home .left-panel .content{
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0!important;
+        margin: 0;
     }
     #home .panel .content h3{
         font-size: 1rem;
@@ -442,7 +452,7 @@ a{
         left: 50%;
     }
 
-    #home .panel{
+    #home .panel .right-panel{
         /* justify-content: space-between!important; */
         /* width: 80%;
         margin-left: 10%; */
