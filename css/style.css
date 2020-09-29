@@ -43,6 +43,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
 }
 
 .btn.transparent{
@@ -312,7 +313,7 @@ a{
     }
     
     #home .panel .content .btn{
-        width: 100px;
+        width: 110px;
         font-size: .8rem;
     }
     #home .panel img{
