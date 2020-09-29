@@ -23,8 +23,52 @@
 
     <!---------------------- MAIN PAGE CONTENT -------------------------->
     <main>
+        <div id="home">
+            <div class="container home-mode" id="home-container">
+                <div class="info-container">
+                    <div class="home-about-me">
+                        <div class="home-content main-home-content">
+                            <h2>Hey I'm</h2>
+                            <h1>Ayana</h1>
+                            <p>Stanford '25 | BS Computer Science</p>
+                            <a class="btn" target="_blank" href="all-projects"> View All Projects</a>
+
+                        </div>
+                        <div class="home-content about-me-content">
+                            <h2>About me</h2>
+                            <h1>Ayana</h1>
+                            <p>Stanford '25 | BS Computer Science</p>
+                            <a class="btn" target="_blank" href="all-projects"> View All Projects</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panels-container">
+                    <div class="panel left-panel">
+                        <div class="content">
+                            <h3>Thanks for stopping by!</h3>
+                            <a href="#" class="btn transparent" id="about-me-btn">About Me</a>
+                        </div>
+
+                        <img src="./images/main-site/home.svg" alt="">
+                    </div>
+
+                    <div class="panel right-panel">
+                        <div class="content">
+                            <h3>Thanks for stopping by!</h3>
+                            <a href="#" class="btn transparent" id="back-home-btn">Back Home</a>
+                        </div>
+
+                        <img src="./images/main-site/about.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
         <!------------------------ HOME PAGE ---------------------------->
-        <section id="home">
+        <!-- <section id="home">
             <div class="textBox">
                 <h2>hey! i'm</h2>
                 <h1><span>Hey! I'm</span> Ayana</h1>
@@ -36,10 +80,10 @@
                 <img src="../images/main-site/home.png" class="home mainPicture">
             </div>
 
-        </section>
+        </section> -->
         <!------------X----------- HOME PAGE ------------X--------------->
         <!------------------- FEATURED PROJECTS PAGE --------------------->
-        <section id="projects">
+        <!-- <section id="projects">
             <div class="container">
                 <h1>Featured Projects</h1>
                 <a class="btn title-btn" target="_blank" href="all-projects">View All projects</a>
@@ -85,10 +129,10 @@
             </div>
             </div>
 
-        </section>
+        </section> -->
         <!---------X---------- FEATURED PROJECTS PAGE ---------X---------->
         <!------------------------ ABOUT ME PAGE ------------------------->
-        <section id="about-me">
+        <!-- <section id="about-me">
             <div class="container" id="about-me-container">
                 <div class="textContainer">
                     <div class="about-me-test">
@@ -117,7 +161,6 @@
                                 <p><span>- Author</span></p>
                             </div>
                         </div>
-                        <!-- ------------------------------------- SECOND SET ------------------------------------- -->
                         <div class="textBox tb2">
                             <h1>About Me2</h1>
                             <div class="icons">
@@ -169,11 +212,11 @@
                 </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!------------X----------- ABOUT ME PAGE -------------X----------->
 
         <!------------------------ CONTACT ME PAGE ------------------------>
-        <section id="contact">
+        <!-- <section id="contact">
             <div class="content">
                 <h1>Contact Me</h1>
             </div>
@@ -243,21 +286,21 @@
                 </div>
             </div>
 
-            <!-- Submit the Form to Google Using "AJAX" -->
+           
             <script data-cfasync="false" src="../javascript/form-submission-handler.js"></script>
-            <!-- END -->
 
-        </section>
+
+        </section> -->
         <!---------X-------------- CONTACT ME PAGE -------------X---------->
     </main>
     <!-------------X-------- MAIN PAGE CONTENT ------------X------------->
 
     <!---------------------- FOOTER -------------------------->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
 
         <div id="footer"></div>
-    </footer>
+    </footer> -->
 
 
     <!-------------X-------- FOOTER ------------X------------->
@@ -270,6 +313,7 @@
 
 
     <script type="text/javascript">
+
         $(document).ready(function () {
             // LOAD THE HEADER AND FOOTER
             $('#navbar').load('navbar.html');
@@ -287,19 +331,19 @@
             //     $(this).attr('src', '../images/main-site/me-waving.png');
             // });
 
-            const btn_1 = document.querySelector("#btn-1");
-            const btn_2 = document.querySelector("#btn-2");
+            const back_btn = document.querySelector('#back-home-btn');
+            const about_btn = document.querySelector('#about-me-btn');
 
-            const container = document.querySelector("#about-me-container");
+            const container = document.querySelector("#home-container");
 
-            btn_2.addEventListener('click', () =>{
-                container.classList.add("mode-1");
-                container.classList.remove("mode-2");
+            about_btn.addEventListener('click', () =>{
+                container.classList.remove("about-mode");
+                container.classList.add("home-mode");
             })
 
-            btn_1.addEventListener('click', () =>{
-                container.classList.add("mode-2");
-                container.classList.remove("mode-1");
+            back_btn.addEventListener('click', () =>{
+                container.classList.remove("home-mode");
+                container.classList.add("about-mode");
 
             })
         })
