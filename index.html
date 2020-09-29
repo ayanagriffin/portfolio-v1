@@ -47,19 +47,19 @@
                     <div class="panel left-panel">
                         <div class="content">
                             <h3>Thanks for stopping by!</h3>
-                            <a href="#" class="btn transparent" id="about-me-btn">About Me</a>
+                            <a href="#" class="btn transparent" id="back-home-btn">Back Home</a>
                         </div>
 
-                        <img src="./images/main-site/home.svg" alt="">
+                        <img src="./images/main-site/about.svg" alt="">
                     </div>
 
                     <div class="panel right-panel">
                         <div class="content">
                             <h3>Thanks for stopping by!</h3>
-                            <a href="#" class="btn transparent" id="back-home-btn">Back Home</a>
+                            <a href="#" class="btn transparent" id="about-me-btn">About Me</a>
                         </div>
 
-                        <img src="./images/main-site/about.svg" alt="">
+                        <img src="./images/main-site/home.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -337,13 +337,13 @@
             const container = document.querySelector("#home-container");
 
             about_btn.addEventListener('click', () =>{
-                container.classList.remove("about-mode");
-                container.classList.add("home-mode");
+                container.classList.add("about-mode");
+                container.classList.remove("home-mode");
             })
 
             back_btn.addEventListener('click', () =>{
-                container.classList.remove("home-mode");
-                container.classList.add("about-mode");
+                container.classList.add("home-mode");
+                container.classList.remove("about-mode");
 
             })
         })

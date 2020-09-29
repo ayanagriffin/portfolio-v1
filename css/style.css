@@ -109,12 +109,12 @@ a{
 }
 
 #home .container .main-home-content{
-    z-index: 2;
+    z-index: 1;
+    opacity: 0;
 }
 
 #home .container .about-me-content{
-    z-index: 1;
-    opacity: 0;
+   z-index: 2;
 }
 #home .container .home-content{
     display: flex;
@@ -222,13 +222,13 @@ a{
 }
 
 #home .container.home-mode .main-home-content{
-    z-index: 1;
-    opacity: 0;
+    z-index: 2;
+    opacity: 1;
 }
 
 #home .container.home-mode .about-me-content{
-    z-index: 2;
-    opacity: 1;
+    z-index: 1;
+    opacity: 0;
 }
 
 @media only screen and (max-width: 870px){
