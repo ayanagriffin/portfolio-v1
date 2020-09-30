@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="nav-bar-container">
         <input type="checkbox" id="check">
@@ -17,14 +19,17 @@
             <div class="nav-links">
                 <ul>
                     <li class="nav-link" style="--i: .6s"><a href="/">Home</a></li>
-                    <li class="nav-link" style="--i: .8s"><a href="/#about-me">About Me</a></li>
+                    <li class="nav-link" style="--i: .8s"><a id="about" href="">About Me</a></li>
                     <li class="nav-link" style="--i: 1s">
-                        <a href="/#projects">Projects<i class="fas fa-caret-down"></i></a>
+                        <a href="/#projects">My Work<i class="fas fa-caret-down"></i></a>
                         <!-- DROPDOWN MENU -->
                         <div class="dropdown">
                             <ul>
                                 <li class="dropdown-link">
-                                    <a href="/#projects" >featured</a>
+                                    <a href="/#up-to">current</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="/#projects">featured projects</a>
                                 </li>
                                 <!-- <li class="dropdown-link">
                                     <a href="#">Link 2</a>
@@ -74,14 +79,14 @@
                                     </div>
                                 </li> -->
                                 <li class="dropdown-link">
-                                    <a href="all-projects" >view all</a>
+                                    <a href="all-projects">all projects</a>
                                 </li>
                                 <div class="arrow"></div>
                             </ul>
                         </div>
                     </li>
 
-                   
+
                     <li class="nav-link" style="--i: 1.2s"><a href="/#contact">Contact</a></li>
                     <li class="nav-link" style="--i: 1.4s"><a target="_blank" href="#">Resume</a>
                     </li>
@@ -97,7 +102,8 @@
                             src="../images/socials/facebook.svg"></a></li>
                 <li><a target="_blank" href="https://www.linkedin.com/in/ayana-griffin/"> <img
                             src="../images/socials/linkedin.svg"></a></li>
-                <li><a  target="_blank" href="https://github.com/ayanagriffin"> <img src="../images/socials/github.svg"></a>
+                <li><a target="_blank" href="https://github.com/ayanagriffin"> <img
+                            src="../images/socials/github.svg"></a>
                 </li>
 
             </ul>
@@ -111,8 +117,20 @@
             </div>
         </div>
     </div>
-   
+
     <script src="../javascript/menu.js" defer></script>
     <script src="../javascript/project-selector.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+
+        
+        const aboutBtn = document.querySelector("#about");
+        aboutBtn.addEventListener('click', () => {
+            localStorage.setItem('about-me', 'true');
+           
+        });
+    </script>
 </body>
+
 </html>

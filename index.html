@@ -36,7 +36,10 @@
                         </div>
                         <div class="about-me-content">
                             <h2>About me</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quae dolor ut hic odit ducimus doloribus ea necessitatibus nulla vero soluta obcaecati molestias. Sit tempore ipsam assumenda sunt esse! Saepe itaque quasi odit sit voluptatum dolores aperiam consequatur illo laudantium.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quae dolor ut hic odit
+                                ducimus doloribus ea necessitatibus nulla vero soluta obcaecati molestias. Sit tempore
+                                ipsam assumenda sunt esse! Saepe itaque quasi odit sit voluptatum dolores aperiam
+                                consequatur illo laudantium.</p>
                             <!-- <a class="btn" target="_blank" href="all-projects"> View All Projects</a> -->
                         </div>
                     </div>
@@ -45,7 +48,7 @@
                 <div class="panels-container">
                     <div class="panel left-panel">
                         <div class="content">
-                           
+
                             <a href="#" class="btn transparent" id="back-home-btn">Back Home</a>
                         </div>
 
@@ -75,8 +78,8 @@
                     <div class="content">
                         <div>
                             <h3>school</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex labore sit error praesentium, impedit voluptatibus corrupti delectus fuga doloremque.</p>
-                            
+                            <p>I'm currently on a gap year but am taking a Human-Centered Design course with a team
+                                through Acumen Academy!</p>
                         </div>
                     </div>
                 </div>
@@ -88,25 +91,10 @@
                     <div class="content">
                         <div>
                             <h3>projects</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex labore sit error praesentium, impedit voluptatibus corrupti delectus fuga doloremque.</p>
-                            
+                            <p>My current projects include building this website and working on Browserbug!</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="imgBox" data-text="activities">
-                        <img src="./images/main-site/up-to/activities.svg" alt="">
-                    </div>
-                    <div class="content">
-                        <div>
-                            <h3>activities</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex labore sit error praesentium, impedit voluptatibus corrupti delectus fuga doloremque.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-
                 <div class="card">
                     <div class="imgBox" data-text="work">
                         <img src="./images/main-site/up-to/work.svg" alt="">
@@ -114,11 +102,25 @@
                     <div class="content">
                         <div>
                             <h3>work</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex labore sit error praesentium, impedit voluptatibus corrupti delectus fuga doloremque.</p>
-                            
+                            <p>I'm volunteering with Develop for Good to help non-profits with their technical needs!</p>
+
                         </div>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="imgBox" data-text="activities">
+                        <img src="./images/main-site/up-to/activities.svg" alt="">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h3>activities</h3>
+                            <p>I've been learning how to crochet, play the kalimba, and have been incorporating yoga into my mornings and evenings.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+               
             </div>
         </section>
 
@@ -380,16 +382,22 @@
 
             const container = document.querySelector("#home-container");
 
-            about_btn.addEventListener('click', () =>{
+            about_btn.addEventListener('click', () => {
                 container.classList.add("about-mode");
                 container.classList.remove("home-mode");
             })
 
-            back_btn.addEventListener('click', () =>{
+            back_btn.addEventListener('click', () => {
                 container.classList.add("home-mode");
                 container.classList.remove("about-mode");
 
             })
+
+            if(localStorage.getItem('about-me') == 'true'){
+                container.classList.add("about-mode");
+                container.classList.remove("home-mode");
+                localStorage.setItem('about-me', 'false');
+            }
         })
 
     </script>
