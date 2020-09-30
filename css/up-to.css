@@ -34,6 +34,9 @@
     width: 40%;
     margin: 30px 0;
     border-radius: 15px;
+    transition: .5s;
+    box-shadow: 0 0 0 rgba(0,0,0, 0);
+
 }
 
 #up-to .container .card .imgBox{
@@ -71,6 +74,7 @@
     margin-top: initial;
     position: initial;
     transition: 0.5s ease-in-out;
+   
 }
 
 #up-to .container .card:hover .imgBox{
@@ -143,6 +147,14 @@
         height: auto;
     }
 
+    /* #up-to .container .card .imgBox img{
+        position: relative;
+        margin-top: 0;
+        width: 150px!important;
+    }
+    #up-to .container .card .imgBox:before{
+        content: "";
+    }  */
     #up-to .container .card .imgBox{
         position: relative;
         border-bottom-left-radius: 0;
