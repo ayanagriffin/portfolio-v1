@@ -1,18 +1,18 @@
 
-section{
+#all-projects{
     margin: 2% 0;
     min-height: calc(100vh - 3rem);
 }
 
 
-section .categories ul{
+#all-projects .categories ul{
     display: flex;
     flex-wrap: wrap;
     margin: 0 4%;
 
 }
 
-section .categories ul li{
+#all-projects .categories ul li{
     position: relative;
    color: #999;
     padding: 8px 20px;
@@ -20,7 +20,7 @@ section .categories ul li{
     cursor: pointer;
 }
 
-section .categories ul li::before {
+#all-projects .categories ul li::before {
     content: "";
     position: absolute;
     width: 87%;
@@ -34,36 +34,37 @@ section .categories ul li::before {
     
   }
 
- section .categories ul li.active::before {
+ #all-projects .categories ul li.active::before {
     visibility: visible;
     transform: scaleX(1);
   }
-section .categories ul li i{
+#all-projects .categories ul li i{
     padding-right: 10px;
 }
 
-section .categories ul li:hover{
+#all-projects .categories ul li:hover{
     color: #000;
 }
-section .categories ul li:hover > i{
+#all-projects .categories ul li:hover > i{
     color: #c5edfa;
     
 }
-section  .categories ul li.active{
+#all-projects  .categories ul li.active{
     transition: .3s;
     color: #000;
 }
-section  .categories ul li.active > i{
+#all-projects  .categories ul li.active > i{
     color: #c5edfa;
 }
-section .projects{
+
+/* -------------------------------------------- CARD -------------------------------------------- */
+
+#all-projects .projects{
     display: flex;
     margin: 0 5%;
     margin-top: 2%;
     flex-wrap: wrap;
     justify-content: space-around;
-    
-    /* padding-left: calc(max(50px, 3vw)); */
 }
 
 .sliders{
@@ -108,15 +109,13 @@ section .projects{
     transform: scaleX(1);
     width: 100%;
 }
-img{
+#all-projects .card .right-content .imgBox img, #featured-projects .card .right-content .imgBox img{
     width: 100%;
 }
 
-.card{
+#all-projects .card, #featured-projects .card{
     width: 100%;
     max-width: 550px;
-    /* padding:2rem 5rem;
-    padding-right: 0; */
     padding:1rem;
     background: #fff;
     box-shadow: 0 .05rem 1rem rgba(0,0,0,.05);
@@ -131,33 +130,28 @@ img{
     
 }
 
-/* .card:nth-child(odd){
-   
-    margin-right: 4rem;
-} */
 
-.card:hover{
+#all-projects .card:hover, #featured-projects .card:hover{
     transform: scale(1.01);
     box-shadow: .1rem 1rem 1rem rgba(0,0,0,.05);
 
 }
 
-.card:hover img{
+#all-projects .card:hover img, #featured-projects .card:hover img{
     transform: scale(1.05);
 }
 
-.right-content{
+#all-projects .card .right-content, #featured-projects .card .right-content{
     display: flex;
     justify-content: space-between;
     
 }
 
 
-.card .imgBox{
+#all-projects .card .imgBox, #featured-projects .card .imgBox{
     min-width: 12rem;
     max-width:12rem;
     height: 217px;
-    /* transform: translateX(-8rem); */
     position: relative;
     margin-left: -1rem;
     margin-top: -1rem;
@@ -165,13 +159,11 @@ img{
     overflow: hidden;
 }
 
-.card .imgBox img{
+#all-projects .card .imgBox img, #featured-projects .card .imgBox img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* display: block; */
     border-radius: .8rem;
-    /* box-shadow: .5rem .5rem 3rem rgba(0,0,0,.05); */
     position: relative;
     transition: .1s;
     
@@ -181,65 +173,60 @@ img{
 
 
 
-.card .card-info{
-    /* margin-left: -6rem; */
-    /* align-self: end; */
+#all-projects .card .card-info, #featured-projects .card .card-info{
     margin-left: 20px;
 }
 
-.date-and-categories, .card h2{
+#all-projects .date-and-categories, #all-projects .card h2, #featured-projects .date-and-categories, #featured-projects .card h2 {
     margin-bottom: 10px;
 }
 
-.active-slide{
-    background-color: red;
-}
-.card a{
+
+#all-projects .card a, #featured-projects .card a{
 
     color: #aaa;
 }
-.date-and-categories ul{
+#all-projects .date-and-categories ul, #featured-projects .date-and-categories ul{
     display: flex;
     flex-wrap: wrap;
 }
 
-.date-and-categories ul li{
+#all-projects .date-and-categories ul li, #featured-projects .date-and-categories ul li{
     margin-right: 5px;
 }
 
-.card p{
+#all-projects .card p, #featured-projects .card p{
     font-size: 14px;
-    /* padding-right: 30px; */
 }
 
-.card ul li{
+#all-projects .card ul li, #featured-projects .card ul li{
     font-size: 12px;
 }
 @media only screen and (max-width: 520px){
 
-    .card{
+    #all-projects .card, #featured-projects .card{
         margin: 20px 0;
     }
-    .card .right-content{
+    #all-projects .card .right-content, #featured-projects .card .right-content{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .card .imgBox img{
+    #all-projects .card .imgBox img, #featured-projects .card .imgBox img{
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .card .imgBox{
+    #all-projects .card .imgBox, #featured-projects .card .imgBox{
         min-width: 10rem;
         max-width:10rem;
         height: 175px;
         
     }
 
-    .card-info{
+    #all-projects .card-info, #featured-projects .card-info{
         margin-top: 80px;
     }
 
@@ -251,42 +238,5 @@ img{
 
 }
 
-/* @media only screen and (max-width: 1220px){
-    .card{
-        margin: 1rem 4rem;
-    }
-}
 
-@media only screen and (max-width: 655px){
-    .projects{
-        justify-content: center;
-        align-items: center;
-        padding-left: 0;
-        
-    }
-    
-   .card{
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       padding: 30px;
 
-       margin-left: 0;
-       margin-top: 2.5rem;
-      
-   }
-   .card .card-info{
-        margin-left: 0;
-    }
-
-    .card .imgBox{
-        min-width: 15rem;
-        max-width:15rem;
-
-        transform: translate(0, -3rem);
-    
-        position: relative;
-    }
-    
-
-} */

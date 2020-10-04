@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: #fff;
 }
 
 #featured-projects .title{
@@ -114,4 +115,39 @@
     justify-self: flex-end;
     font-weight: 500;
     font-size: 1rem;
+}
+
+#featured-projects .projects{
+    display: flex;
+    margin: 0 5%;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: none;
+}
+@media only screen and (max-width: 1100px){
+    #featured-projects .projects{
+        display: flex;
+       
+    }
+    #featured-projects .container{
+        display: none;
+    }
+
+    #featured-projects .title{
+        position: relative;
+        text-align: center;
+        width: auto;
+        margin-bottom: 6rem;
+        /* text-align: left;
+        width: 1100px;
+        top: 4rem; */
+    }
+
+    #featured-projects{
+        position: relative;
+        display: block;
+        padding-bottom: 3rem;
+        
+    }
 }

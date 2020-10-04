@@ -137,6 +137,10 @@
         font-size: 5rem;
     }
 
+    #up-to .container .card{
+        box-shadow: .5rem .5rem 1rem rgba(0,0,0, 0.2);
+    }
+
     
 }
 
@@ -147,14 +151,6 @@
         height: auto;
     }
 
-    /* #up-to .container .card .imgBox img{
-        position: relative;
-        margin-top: 0;
-        width: 150px!important;
-    }
-    #up-to .container .card .imgBox:before{
-        content: "";
-    }  */
     #up-to .container .card .imgBox{
         position: relative;
         border-bottom-left-radius: 0;
@@ -200,5 +196,6 @@
         transition: 0.5s ease-in-out;
     }
 
+    
     
 }
