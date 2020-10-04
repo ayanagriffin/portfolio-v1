@@ -16,23 +16,26 @@
 
 #up-to .container{
     position: relative;
-    width: 75%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 20px 80px;
     margin-top: 7.5rem;
+    /* background: #fff; */
+    /* padding: 0 80px; */
     
     
 }
 
 #up-to .container .card{
     position: relative;
-    height: 210px;
+    height: 200px;
     background: #fff;
     display: flex;
-    width: 40%;
-    margin: 30px 0;
+    width: 38%;
+    margin: 30px 45px;
+    
     border-radius: 15px;
     transition: .5s;
     box-shadow: 0 0 0 rgba(0,0,0, 0);
