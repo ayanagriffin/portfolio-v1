@@ -69,6 +69,109 @@
 
 
         </section>
+        <section id="featured-projects">
+            <div class="title">
+            <h1>Featured Projects</h1>
+            <a href="#">view all projects</a>
+        </div>
+            <div class="container">
+               
+                <div class="content">
+                    <div class="contentBox active" id="content1">
+                        <div>
+                            <div class="text">
+                                <h2>Title1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat deleniti autem
+                                    error,
+                                    eveniet, harum mollitia veritatis quam consequatur voluptatum perferendis debitis at
+                                    nulla
+                                    labore cupiditate cumque quo illum qui earum? Ratione, esse neque, voluptate
+                                    voluptatem
+                                    rerum totam, commodi sit facilis repellendus sed molestias id maxime atque? Nostrum
+                                    consequuntur, distinctio deleniti natus nobis esse maxime quisquam non corporis
+                                    debitis
+                                    repudiandae perferendis!</p>
+                                    <a class="btn learnMore" target="_blank" href="">learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contentBox" id="content2">
+                        <div >
+                            <div class="text">
+                                <h2>Title2</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat deleniti autem
+                                    error,
+                                    eveniet, harum mollitia veritatis quam consequatur voluptatum perferendis debitis at
+                                    nulla
+                                 </p>
+                                    <a class="btn learnMore" target="_blank" href=""> learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contentBox" id="content3">
+                        <div>
+                            <div class="text">
+                                <h2>Title3</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat deleniti autem
+                                    error,
+                                    eveniet, harum mollitia veritatis quam consequatur voluptatum perferendis debitis at
+                                    nulla
+                                    labore cupiditate cumque quo illum qui earum? Ratione, esse neque, voluptate
+                                    voluptatem
+                                    rerum totam, commodi sit facilis repellendus sed molestias id maxime atque? Nostrum
+                                    consequuntur, distinctio deleniti natus nobis esse maxime quisquam non corporis
+                                    debitis
+                                    repudiandae perferendis!</p>
+                                    <a class="btn learnMore" target="_blank" href="">learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contentBox" id="content4">
+                        <div>
+                            <div class="text">
+                                <h2>Title4</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat deleniti autem
+                                    error,
+                                    eveniet, harum mollitia veritatis quam consequatur voluptatum perferendis debitis at
+                                    nulla
+                                    labore cupiditate cumque quo illum qui earum? Ratione, esse neque, voluptate
+                                    voluptatem
+                                    rerum totam, commodi sit facilis repellendus sed molestias id maxime atque? Nostrum
+                                    consequuntur, distinctio deleniti natus nobis esse maxime quisquam non corporis
+                                    debitis
+                                    repudiandae perferendis!</p>
+                                    <a class="btn learnMore" target="_blank" href=""> learn more</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="icon">
+                    <div class="iconBox active" data-id="content1">
+                        <img src="./images/projects/test.png" alt="" >
+                        <h3>Browserbug</h3>
+                    </div>
+                 
+                    <div class="iconBox" data-id="content2">
+                        <img src="./images/projects/test.png" alt="" >
+                        <h3>Browserbug2</h3>
+                    </div>
+                    <div class="iconBox" data-id="content3">
+                        <img src="./images/projects/test.png" alt="" >
+                        <h3>Browserbug3</h3>
+                    </div>
+                    <div class="iconBox" data-id="content4">
+                        <img src="./images/projects/test.png" alt="" >
+                        <h3>Browserbug4</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="up-to">
             <h1>What I've Been Up To!</h1>
             <div class="container">
@@ -103,7 +206,8 @@
                     <div class="content">
                         <div>
                             <h3>work</h3>
-                            <p>I'm volunteering with Develop for Good to help non-profits with their technical needs!</p>
+                            <p>I'm volunteering with Develop for Good to help non-profits with their technical needs!
+                            </p>
 
                         </div>
                     </div>
@@ -115,17 +219,17 @@
                     <div class="content">
                         <div>
                             <h3>activities</h3>
-                            <p>I've been learning how to crochet, play the kalimba, and have been incorporating yoga into my mornings and evenings.</p>
+                            <p>I've been learning how to crochet, play the kalimba, and have been incorporating yoga
+                                into my mornings and evenings.</p>
 
                         </div>
                     </div>
                 </div>
 
-               
+
             </div>
         </section>
-
-
+       
         <!------------------------ HOME PAGE ---------------------------->
         <!-- <section id="home">
             <div class="textBox">
@@ -276,7 +380,7 @@
 
         <!------------------------ CONTACT ME PAGE ------------------------>
         <section id="contact">
-           
+
             <div class="container">
                 <div class="contactInfo">
                     <h1>Contact me!</h1>
@@ -344,7 +448,7 @@
                 </div>
             </div>
 
-           
+
             <script data-cfasync="false" src="../javascript/form-submission-handler.js"></script>
 
 
@@ -372,6 +476,27 @@
 
     <script type="text/javascript">
 
+        const iconBox = document.querySelectorAll('.iconBox');
+        const contentBox = document.querySelectorAll('.contentBox');
+
+        for(let i = 0; i < iconBox.length; i++){
+            iconBox[i].addEventListener('mouseover', function(){
+
+                // removing ".active" from all other contentBoxes
+                for(let i = 0; i < contentBox.length; i++){
+                    contentBox[i].className = 'contentBox';
+                }
+
+                // adding ".active" to current contentBox
+                document.getElementById(this.dataset.id).className = "contentBox active";
+
+                for(let i = 0; i < iconBox.length; i++){
+                    iconBox[i].className = 'iconBox';
+                }
+
+                this.className = "iconBox active";
+            })
+        }
         $(document).ready(function () {
             // LOAD THE HEADER AND FOOTER
             $('#navbar').load('navbar.html');
@@ -393,7 +518,7 @@
 
             })
 
-            if(localStorage.getItem('about-me') == 'true'){
+            if (localStorage.getItem('about-me') == 'true') {
                 container.classList.add("about-mode");
                 container.classList.remove("home-mode");
                 localStorage.setItem('about-me', 'false');

@@ -4,6 +4,7 @@
 @import url('home.css');
 @import url('up-to.css');
 @import url('contact.css');
+@import url('featured-projects.css');
 
 *{
     padding: 0;
