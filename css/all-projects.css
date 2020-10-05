@@ -130,18 +130,16 @@
     
 }
 
-#featured-projects .card{
-    min-width: 500px;
-}
 
 
-#all-projects .card:hover, #featured-projects .card:hover{
+
+#all-projects .card:hover{
     transform: scale(1.01);
     box-shadow: .1rem 1rem 1rem rgba(0,0,0,.05);
 
 }
 
-#all-projects .card:hover img, #featured-projects .card:hover img{
+#all-projects .card:hover img{
     transform: scale(1.05);
 }
 

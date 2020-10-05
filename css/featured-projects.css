@@ -109,6 +109,10 @@
     opacity: 1;
 }
 
+#featured-projects .card{
+    min-width: 500px;
+}
+
 #featured-projects .btn.learnMore{
     width: 140px;
     height: 40px;
@@ -148,6 +152,10 @@
         width: 1100px;
         top: 4rem; */
     }
+    #featured-projects .card{
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
     #featured-projects{
         position: relative;
@@ -155,4 +163,12 @@
         padding-bottom: 3rem;
         
     }
+}
+
+@media only screen and (max-width: 550px){
+    #featured-projects .card{
+        
+        background: red;
+    }
+
 }
