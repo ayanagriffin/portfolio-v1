@@ -11,7 +11,7 @@
     position: absolute;
     text-align: left;
     width: 1100px;
-    top: 4rem;
+    top: 5rem;
 }
 
 #featured-projects .title h1{
@@ -117,17 +117,22 @@
     font-size: 1rem;
 }
 
-#featured-projects .projects{
+/* #featured-projects .projects{
     display: flex;
     margin: 0 5%;
     margin-top: 2%;
     flex-wrap: wrap;
     justify-content: space-around;
     display: none;
+} */
+
+#featured-projects .projects.owl-carousel{
+    display: none;
 }
 @media only screen and (max-width: 1100px){
-    #featured-projects .projects{
+    #featured-projects .projects.projects.owl-carousel{
         display: flex;
+       
        
     }
     #featured-projects .container{

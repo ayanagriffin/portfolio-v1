@@ -130,6 +130,10 @@
     
 }
 
+#featured-projects .card{
+    min-width: 500px;
+}
+
 
 #all-projects .card:hover, #featured-projects .card:hover{
     transform: scale(1.01);
@@ -171,7 +175,14 @@
 
 }
 
-
+#featured-projects .projects{
+    display: block;
+    /* flex-direction: row; */
+    /* margin: 0 5%;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+}
 
 #all-projects .card .card-info, #featured-projects .card .card-info{
     margin-left: 20px;
