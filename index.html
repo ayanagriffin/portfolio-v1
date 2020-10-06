@@ -13,9 +13,8 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/all-projects.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="../css/all-projects.css"> -->
 
     <title>Ayana Griffin</title>
@@ -185,8 +184,7 @@
                     </div>
                 </div>
             </div>
-            <div class="test">
-            <div class="projects owl-carousel">
+            <div class="projects owl-carousel owl-theme">
                 <div class="card frontend school">
                     <div class="sliders">
                         <label for="" id="ecobud" class="active-slide tap tap-1"></label>
@@ -313,10 +311,10 @@
                 </div>
 
 
-
-
+               
             </div>
-        </div>
+           
+
         </section>
 
         <section id="up-to">
@@ -631,10 +629,14 @@
             loop: true,
             items: 1,
             nav: true,
+            dots: true,
             // autoplay: true,
             // autoplayTimeout: 5000
+            
            
         });
+        $( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
         const iconBox = document.querySelectorAll('.iconBox');
         const contentBox = document.querySelectorAll('.contentBox');
 
