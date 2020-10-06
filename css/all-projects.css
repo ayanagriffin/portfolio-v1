@@ -113,7 +113,7 @@
     width: 100%;
 }
 
-#all-projects .card, #featured-projects .card{
+#all-projects .card{
     width: 100%;
     max-width: 550px;
     padding:1rem;
@@ -129,7 +129,6 @@
     
     
 }
-
 
 
 

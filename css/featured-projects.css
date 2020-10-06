@@ -113,9 +113,6 @@
     opacity: 1;
 }
 
-#featured-projects .card{
-    min-width: 500px;
-}
 
 #featured-projects .btn.learnMore{
     width: 140px;
@@ -123,6 +120,49 @@
     justify-self: flex-end;
     font-weight: 500;
     font-size: 1rem;
+}
+
+#featured-projects .projects .card .right-content a{
+    color: #fff;
+    background: #60BEF5;
+    padding: 3px 10px;
+    border-radius: 15px;
+    width: 115px;
+    text-align: center;
+    font-size: .9rem;
+}
+
+#featured-projects .projects .card .right-content a:hover{
+    background:#0E91DD;
+}
+
+
+#featured-projects .card{
+    width: 100%;
+    max-width: 550px;
+    min-width: 500px;
+    padding:1rem;
+    background: #fff;
+    box-shadow: 0 .05rem 1rem rgba(0,0,0,.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .8rem;
+    position: relative;
+    margin: 0 1% 4% 1%;
+    position: relative;
+   
+    
+    
+}
+
+#featured-projects .card .card-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 185px;
+
 }
 
 /* #featured-projects .projects{
@@ -144,6 +184,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 0%;
+    
     
 }
 
