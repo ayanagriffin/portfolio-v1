@@ -11,18 +11,38 @@
     position: absolute;
     text-align: left;
     width: 1100px;
-    top: 5rem;
+    top: 3rem;
 }
 
 #featured-projects .title h1{
-    color: #2DA4EA;
-    font-weight: 500;
+    margin-bottom: 20px;
 }
+
+
+#featured-projects .title h1:before{
+    width: 10%;
+    position: absolute;
+    height: 4px;
+    content: '';
+    background-color: #48b1ee;
+    top: 65%;
+    left: 0%;
+    /* transform: translateX(-50%); */
+}
+
+#featured-projects .title p, #featured-projects .title a{
+    color: rgba(0,0,0,0.5);
+    font-size: .9rem;
+}
+
+
+
+
 
 #featured-projects .title a{
-    color: rgba(0,0,0,0.5);
-}
+    /* text-decoration: underline; */
 
+}
 #featured-projects .title a:hover{
     color: rgba(0,0,0,0.7);
 }
@@ -258,6 +278,20 @@
         display: flex;
        
        
+    }
+
+    #featured-projects .title p span{
+        display: block!important;
+    }
+
+    #featured-projects .title a{
+        text-decoration: underline;
+    }
+    #featured-projects .title h1:before{
+    
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #featured-projects .container{
         display: none;
