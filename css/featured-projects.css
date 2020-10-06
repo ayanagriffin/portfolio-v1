@@ -133,6 +133,16 @@
 #featured-projects .projects.owl-carousel{
     display: none;
 }
+
+@media only screen and (max-width: 550px){
+    #featured-projects .card{
+        min-width: 250px;
+        width: 80vw!important;
+        
+    }
+
+
+}
 @media only screen and (max-width: 1100px){
     #featured-projects .projects.projects.owl-carousel{
         display: flex;
@@ -155,20 +165,16 @@
     #featured-projects .card{
         left: 50%;
         transform: translateX(-50%);
+        
     }
 
     #featured-projects{
         position: relative;
         display: block;
         padding-bottom: 3rem;
+        min-height: 45vh;
         
     }
 }
 
-@media only screen and (max-width: 550px){
-    #featured-projects .card{
-        
-        background: red;
-    }
 
-}
