@@ -250,6 +250,14 @@
         
     }
 
+    #featured-projects{
+        min-height: calc(100vh - 3rem)!important;
+    }
+
+    #featured-projects .title{
+      
+        top: 5rem;
+    }
 
 }
 
