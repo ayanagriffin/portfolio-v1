@@ -203,7 +203,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0%;
+    bottom: -10%;
     
     
 }
@@ -226,11 +226,14 @@
 
 .owl-prev{
     left: calc(50% - 350px);
+   
+   
 }
 
 .owl-next{
-   
-    left: calc(50% + 350px);
+  
+    left: calc(50% + 340px);
+    
 }
 
 .owl-next:hover, .owl-prev:hover{
@@ -251,9 +254,9 @@
 }
 
 @media only screen and (max-width: 640px){
-    .owl-prev, .owl-next{
+    /* .owl-prev, .owl-next{
         display: none!important;
-    }
+    } */
 
     .owl-dots{
         bottom: -5%;
@@ -315,8 +318,8 @@
     #featured-projects{
         position: relative;
         display: block;
-        padding-bottom: 3rem;
-        min-height: 45vh;
+        padding-bottom: 5rem;
+        min-height: 40vh;
         
     }
 }

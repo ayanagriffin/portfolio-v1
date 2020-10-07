@@ -82,8 +82,9 @@
             <div class="title">
                 <h2>my work</h2>
                 <h1>Featured Projects</h1>
-                
-                <p><span style="display:none">check out some of my current favorite projects, or </span><a href="#">view all projects</a></p>
+
+                <p><span style="display:none">check out some of my current favorite projects, or </span><a href="#">view
+                        all projects</a></p>
             </div>
             <div class="container">
 
@@ -632,9 +633,22 @@
             items: 1,
             nav: true,
             dots: true,
-            autoplay: false,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
+
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    nav: false,
+                   
+                },
+                640: {
+                    nav: true,
+                    
+                },
+                1048: {
+                    autoplay: false,
+                   
+                }
+            }
 
 
         });
