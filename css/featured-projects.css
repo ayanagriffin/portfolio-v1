@@ -11,7 +11,7 @@
     position: absolute;
     text-align: left;
     width: 1100px;
-    top: 3rem;
+    top: 6rem;
 }
 
 #featured-projects .title h1{
@@ -20,7 +20,7 @@
 
 
 #featured-projects .title h1:before{
-    width: 10%;
+    width: 80px;
     position: absolute;
     height: 4px;
     content: '';
@@ -51,6 +51,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 1100px;
+    top: 3rem;
 }
 
 #featured-projects .container .icon{
@@ -313,6 +314,7 @@
         text-align: center;
         width: auto;
         margin-bottom: 6rem;
+        top: 3rem;
         /* text-align: left;
         width: 1100px;
         top: 4rem; */
