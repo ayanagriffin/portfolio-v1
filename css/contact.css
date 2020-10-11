@@ -10,10 +10,24 @@ main #contact{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    background-color: #fafafa;
+    
     
 }
 
+#contact .title{
+    position: relative;;
+}
+#contact .title h1:before{
+    width: 80px;
+    position: absolute;
+    height: 4px;
+    content: '';
+    background-color: #48b1ee;
+    top: 70px;
+    left: 0%;
+    /* transform: translateX(-50%); */
+}
 
 
 main #contact fieldset{
@@ -26,7 +40,7 @@ main #contact fieldset{
 }
 
 main #contact h1{
-    padding-left: 55px;
+    /* padding-left: 55px; */
     font-weight: 500;
 }
 
@@ -37,11 +51,13 @@ main #contact fieldset input, main #contact textarea{
     margin: 10px 0;
     font-size: .9rem;
     border: none;
-    border-bottom: 2px solid #333333;
+    border-bottom: 2px solid #e3e3e3;
     resize: none;
     outline: none;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
+    background: #fafafa
+
 }
 
 main #contact fieldset label{
@@ -51,7 +67,7 @@ main #contact fieldset label{
     margin-top: -38px;
     z-index:1000;
     transition: 0.5s;
-    color: #666;
+    color: #9c9c9c;
 
 }
 
@@ -93,7 +109,8 @@ main #contact fieldset textarea:valid ~ label{
 }
 
 main #contact .container{
-    width: 80%;
+    width: 100%;
+    padding: 0 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,12 +119,15 @@ main #contact .container{
 
 main #contact .container .contactInfo{
     width: 50%;
-    padding-right: 100px;
+    padding-left: 125px;
     display: flex;
     flex-direction: column;
+    order: 1;
     
 }
-
+main #contact .container .contactInfo img{
+    width: 100%;
+}
 
 main #contact .container .contactInfo .box{
     padding: 10px 0;
@@ -145,7 +165,7 @@ main #contact .container .contactInfo .box .text p{
 
 main #contact .container .contact-form{
     width:50%;
-    background: #fff;
+    /* background: #fff; */
     border-radius: 15px;
     padding: 40px;
     /* box-shadow: 0 3px 15px rgba(0, 0, 0, .3); */
@@ -155,7 +175,7 @@ main #contact .container .contact-form{
 }
 
 main #contact .container .contact-form:hover{
-    box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
+    /* box-shadow: 0 2px 15px rgba(0, 0, 0, .1); */
 }
 
 main #contact .container .contact-form h2{
@@ -178,16 +198,38 @@ main #contact .thankyou_message{
         
     }
  
-    main #contact .container .contactInfo{
+    #contact .title{
         text-align: center;
+    }
+
+    #contact .title h1:before{
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    main #contact .container .contactInfo{
+        /* text-align: center;
         padding-right: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; */
+        /* display: none; */
+        order: 1;
+        padding-left: 20px;
+        justify-content: center;
+        align-items: center;
     }
  
+    main #contact .container .contactInfo img{
+        max-width: 250px;
+    }
     main #contact .container .contact-form, main #contact .container .contactInfo{
         width: 80vw;
     }
  
+
+    main #contact .container .contact-form{
+        order: 2;
+    }
     main #contact .container .contactInfo .box .text{
         text-align: left;
     }

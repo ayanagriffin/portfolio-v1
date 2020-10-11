@@ -14,7 +14,7 @@
     
 }
 
-#up-to .title h2, #featured-projects .title h2{
+#up-to .title h2, #featured-projects .title h2, #contact .title h2{
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #48b1ee;
@@ -22,7 +22,7 @@
     font-size: .9rem;
 }
 
-#up-to .title h1, #featured-projects .title h1{
+#up-to .title h1, #featured-projects .title h1, #contact .title h1{
     font-size: 1.8rem;
     font-weight: 700;
     color: #000;
