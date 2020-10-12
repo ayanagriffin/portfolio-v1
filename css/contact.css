@@ -225,7 +225,8 @@ main #contact .thankyou_message{
     }
  
     main #contact .container .contactInfo img{
-        max-width: 250px;
+        width: 60vw;
+        max-width: 300px;
     }
     main #contact .container .contact-form, main #contact .container .contactInfo{
         width: 80vw;
@@ -264,3 +265,9 @@ main #contact .thankyou_message{
     
     }
 }
+
+/* @media only screen and (max-width: 400px){
+    main #contact .container .contactInfo img{
+        max-width: 90vw;
+    }
+} */
