@@ -714,12 +714,16 @@
             $('input').blur(function () {
                 if ($(this).val()) {
                    $(this).addClass('filled')
+                }else{
+                    $(this).removeClass('filled')
                 }
             });
 
             $('textarea').blur(function () {
                 if ($(this).val()) {
                    $(this).addClass('filled')
+                }else{
+                    $(this).removeClass('filled')
                 }
             });
 

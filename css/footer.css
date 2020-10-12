@@ -20,7 +20,7 @@ footer .back-to-top{
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: 1%;
+    right: 2%;
     top: 10%;
     margin: -75px;
     /* transform: translateY(-50%); */
@@ -115,6 +115,9 @@ footer .socials{
         padding: 5px 0;
     }
 
-   
+    footer .back-to-top{
+        top: 5%;
+        right: 3%;
+    }
 
 }
