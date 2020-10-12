@@ -89,16 +89,8 @@ main #contact button{
     height: 40px;
     margin-top: 20px;
     border: none;
-    font-family: "Poppins", sans-serif;
     cursor: pointer;
-    background: #60BEF5;
-    border-radius: 15px;
-    transition: 0.3s;
-    color: #ffffff;
-    font-weight: 600;
-}
-main #contact button:hover{
-    background: #0E91DD;
+    
 }
 
 main #contact fieldset textarea:focus ~ label,

@@ -139,7 +139,7 @@
     width: 140px;
     height: 40px;
     justify-self: flex-end;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 1rem;
 }
 

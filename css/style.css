@@ -36,10 +36,11 @@ a{
     text-decoration: none;
 }
 
-.btn{
+.btn, button{
     text-transform: lowercase;
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 1rem;
     background: #60BEF5;
     padding: 10px;
     border-radius: 25px;
@@ -54,7 +55,7 @@ a{
     background: transparent;
     border: 3px solid #fff;
 }
-.btn:hover{
+.btn:hover, button:hover{
     background: #0E91DD;
 }
 
