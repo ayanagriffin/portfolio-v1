@@ -305,11 +305,11 @@ header a{
 @keyframes menuGradualAppear{
     from{
         opacity: 0;
-        transform: translateY(15px);
+        transform: translateX(30px);
     }
     to{
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateX(0px);
     }
 }
 
@@ -329,15 +329,20 @@ header a{
         height: calc(100vh -  3.5rem);
         top:  3.5rem;
         left: 0;
-        width: 100%;
+        width: 300px;
         background-color: #fcfcfc;
+       
         flex-direction: column;
-
+       justify-content: space-between;
+        align-items: flex-end;
         overflow-x: hidden;
         overflow-y: auto;
-        transform: translateX(100%);
-        transition: 1s;
-        padding-bottom: 8vh;
+        transform: translateX(300%);
+        transition: 1.5s;
+        /* padding-bottom: 8vh; */
+        padding-right: 30px;
+        padding-top: 15px;
+
     }
 
     .nav-link.nav-link.hamburger-only{
@@ -348,8 +353,11 @@ header a{
         display: none;
     }
     #check:checked ~ .nav-links-container{
-        transform: translateX(0);
+        transform: translateX(calc(100vw - 300px));
+        box-shadow: -10px 150px 50vh rgba(0,0,0,1);
     }
+
+   
 
     #check:checked ~ .nav-links-container .nav-link{
         animation: menuGradualAppear .5s ease forwards var(--i);
@@ -359,7 +367,7 @@ header a{
 
     .nav-links{
         flex: 3;
-        width: 100%;
+        /* width: 100%; */
         padding-bottom: 0;
         
         
@@ -367,8 +375,9 @@ header a{
 
     .nav-links > ul{
         flex-direction: column;
-        height: 80vh;
+        height: 70vh;
         justify-content: space-around;
+        align-items: flex-end;
    
         
     }
@@ -384,6 +393,8 @@ header a{
         /* height: calc(100vh / 7);
         line-height:1; */
         /* padding: 2.5rem 2rem; */
+        text-transform: uppercase;
+        font-weight: 700;
                 
     }
 

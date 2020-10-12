@@ -418,7 +418,7 @@
 
     #home .right-panel .content{
         padding-top: 1rem;
-        align-items: center;
+        /* align-items: center; */
         /* padding-left: 2rem; */
     }
 
