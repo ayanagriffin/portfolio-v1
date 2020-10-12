@@ -324,6 +324,16 @@ header a{
         display: block;
     }
 
+    .nav-bar-container .socials:before{
+        content: '';
+        position: absolute;
+        background-color: rgba(0,0,0,0.2);
+        width: 80%;
+        height: 1px;
+        top: 75vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .nav-links-container{
         position: fixed;
         height: calc(100vh -  3.5rem);
@@ -343,6 +353,11 @@ header a{
         padding-right: 30px;
         padding-top: 15px;
 
+    }
+
+    .nav-links-container .socials{
+        align-self: center;
+        margin-right: -30px;
     }
 
     .nav-link.nav-link.hamburger-only{
