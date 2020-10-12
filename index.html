@@ -533,9 +533,10 @@
                             </fieldset>
 
 
-                            <button class="button-success pure-button button-xlarge">
+                            <button id="send-btn" class="button-success pure-button button-xlarge">
                                 Send</button>
                             <p class="thankyou_message">Thanks for reaching out, I'll get back to you soon!</p>
+                           
                         </div>
 
 
@@ -721,6 +722,15 @@
                    $(this).addClass('filled')
                 }
             });
+
+            // MOVES LABELS BACK TO ORIGINAL POSITION WHEN USER SUBMITS FORM
+            const send_btn = document.querySelector('#send-btn');
+
+            send_btn.addEventListener('click', () => {
+                $('input').removeClass('filled');
+                $('textarea').removeClass('filled');
+
+            })
 
         })
 

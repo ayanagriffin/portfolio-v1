@@ -78,6 +78,7 @@ main #contact fieldset #msg-label{
 }
 main #contact fieldset input:focus ~ label,
 main #contact fieldset input:active ~ label, 
+main #contact fieldset input:valid ~ label, 
 main #contact fieldset input.filled ~ label
 {
     color: #0a466b;
@@ -97,6 +98,7 @@ main #contact button{
 
 main #contact fieldset textarea:focus ~ label,
 main #contact fieldset textarea:active ~ label, 
+main #contact fieldset textarea:valid ~ label, 
 main #contact fieldset textarea.filled ~ label{
     color: #0a466b;
     font-size: 12px;
