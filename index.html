@@ -321,7 +321,7 @@
 
         </section>
 
-      
+
 
         <!------------------------ HOME PAGE ---------------------------->
         <!-- <section id="home">
@@ -510,7 +510,7 @@
                         <div class="title">
                             <h2>contact me</h2>
                             <h1 style="margin-bottom: 50px; white-space: nowrap;">Get in touch!</h1>
-            
+
                             <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, quasi!</p> -->
                         </div>
                         <div class="form-elements">
@@ -562,7 +562,8 @@
                     <div class="content">
                         <div>
                             <h3>school</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat, magnam maxime voluptatibus in officiis ipsum error cumque vitae nemo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat, magnam maxime
+                                voluptatibus in officiis ipsum error cumque vitae nemo.</p>
                         </div>
                     </div>
                 </div>
@@ -641,15 +642,15 @@
             responsive: {
                 0: {
                     nav: false,
-                   
+
                 },
                 640: {
                     nav: true,
-                    
+
                 },
                 1048: {
                     autoplay: false,
-                   
+
                 }
             }
 
@@ -683,6 +684,8 @@
             $('#navbar').load('navbar.html');
             $('#footer').load('footer.html');
 
+
+            // HANDLES SWITCH BETWEEN HOME AND ABOUT ME PAGES
             const back_btn = document.querySelector('#back-home-btn');
             const about_btn = document.querySelector('#about-me-btn');
 
@@ -706,6 +709,18 @@
             }
 
 
+            // IF THE INPUT FIELDS ON THE CONTACT FORM ARE FILLED, ADD CLASS TO MAKE THE LABELS MOVE UP
+            $('input').blur(function () {
+                if ($(this).val()) {
+                   $(this).addClass('filled')
+                }
+            });
+
+            $('textarea').blur(function () {
+                if ($(this).val()) {
+                   $(this).addClass('filled')
+                }
+            });
 
         })
 

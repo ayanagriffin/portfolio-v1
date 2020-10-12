@@ -71,14 +71,16 @@ main #contact fieldset label{
 
 }
 
+
 main #contact fieldset #msg-label{
     margin-top: -45px;
     transition: 0.75s;
 }
 main #contact fieldset input:focus ~ label,
-main #contact fieldset input:valid ~ label
+main #contact fieldset input:active ~ label, 
+main #contact fieldset input.filled ~ label
 {
-    color: #e17970;
+    color: #0a466b;
     font-size: 12px;
     transform: translateY(-20px);
     background: transparent;
@@ -94,10 +96,19 @@ main #contact button{
 }
 
 main #contact fieldset textarea:focus ~ label,
-main #contact fieldset textarea:valid ~ label{
-    color: #e17970;
+main #contact fieldset textarea:active ~ label, 
+main #contact fieldset textarea.filled ~ label{
+    color: #0a466b;
     font-size: 12px;
     transform: translateY(-105px);
+}
+
+/* Removes the light blue background that is put in with autocomplete */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #fafafa inset !important;
 }
 
 main #contact .container{
@@ -246,6 +257,7 @@ main #contact .thankyou_message{
 
 @media only screen and (max-width: 1130px){
     main #contact fieldset label{
+       
         position: relative;
     
     }
