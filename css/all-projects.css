@@ -228,7 +228,7 @@
 @media only screen and (max-width: 640px){
 
     #all-projects .card, #featured-projects .card{
-        margin: 20px 0;
+        margin: 10px 0;
     }
     #all-projects .card .right-content, #featured-projects .card .right-content{
         flex-direction: column;
