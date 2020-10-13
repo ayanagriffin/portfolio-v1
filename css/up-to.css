@@ -228,8 +228,8 @@
     /* width: 80%; */
     margin-top: 70px;
     width: 900px;
-    padding: 0 4%;
-    /* background-color:lightblue; */
+    padding: 10px 4%;
+    
     
 }
 #up-to .cards .card{
@@ -246,10 +246,17 @@
     overflow: hidden;
     /* left: -10%!important;
     transform: translateX(-50%)!important; */
+    transition: .3s;
+    border-bottom: 5px solid #fff;
+    
     
     
 }
 
+#up-to .cards .card:hover{
+    transform: translateY(-5px);
+    border-bottom: 5px solid #60bef5;
+}
 #up-to .cards .card p{
     font-size: .8rem;
 }
@@ -299,7 +306,7 @@
 
 #up-to .owl-dots{
    
-    bottom: -20%;
+    bottom: -15%;
     
     
 }
