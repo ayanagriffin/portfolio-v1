@@ -84,6 +84,11 @@
     color: #3F3D56;
 }
 
+body.dark h1, body.dark h2, body.dark p{
+    color: #f7f7f7!important;
+}
+
+
 #home .container .home-content h2{
     font-size: 3rem;
     color: #3F3D56;

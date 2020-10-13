@@ -42,6 +42,7 @@
                             <p>site under major construction :)</p>
                             <a class="btn" target="_blank" href="all-projects"> View All Projects</a>
                             <img src="./images/main-site/home-small.svg" alt="">
+                            <p class = "btn" id="darkmode">test</p>
                         </div>
                         <div class="about-me-content">
                             <h2>About me</h2>
@@ -550,12 +551,67 @@
 
 
         </section>
-        <!-- <section id="up-to">
+        <section id="up-to">
             <div class="title">
                 <h2>current work</h2>
                 <h1>What I've Been Up To!</h1>
             </div>
-            <div class="container">
+            <div class="cards owl-carousel owl-theme">
+                <div class="card">
+                    <!-- <h1>School</h1> -->
+                    <div class="imgBox">
+                        <img src="./images/main-site/up-to/school.svg" alt="">
+                    </div>
+                    <h3>School</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem sequi iste?</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+                <div class="card">
+                     <!-- <h1>School</h1> -->
+                     <div class="imgBox">
+                        <img src="./images/main-site/up-to/work.svg" alt="">
+                    </div>
+                    <h3>Work</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem sequi iste?</p>
+                    <a href="" class="btn">Learn More</a>
+
+                </div>
+                <div class="card">
+                     <!-- <h1>School</h1> -->
+                     <div class="imgBox">
+                        <img src="./images/main-site/up-to/projects.svg" alt="">
+                    </div>
+                    <h3>Projects</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem sequi iste?</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+                <div class="card">
+                     <!-- <h1>School</h1> -->
+                     <div class="imgBox">
+                        <img src="./images/main-site/up-to/activities.svg" alt="">
+                    </div>
+                    <h3>Activities</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem sequi iste?</p>
+                    <a href="" class="btn">Learn More</a>
+
+
+                </div>
+                <div class="card">
+                     <!-- <h1>School</h1> -->
+                     <div class="imgBox">
+                        <img src="./images/main-site/up-to/school.svg" alt="">
+                    </div>
+                    <h3>School</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem sequi iste?</p>
+                    <a href="" class="btn">Learn More</a>
+
+
+                </div>
+
+
+
+            </div>
+            <!-- <div class="container">
                 <div class="card">
                     <div class="imgBox" data-text="school">
                         <img src="./images/main-site/up-to/school.svg" alt="">
@@ -608,8 +664,8 @@
                 </div>
 
 
-            </div>
-        </section> -->
+            </div> -->
+        </section>
         <!---------X-------------- CONTACT ME PAGE -------------X---------->
     </main>
     <!-------------X-------- MAIN PAGE CONTENT ------------X------------->
@@ -657,8 +713,38 @@
 
 
         });
+
+        $(".cards").owlCarousel({
+            
+            loop: true,
+            items: 3,
+            nav: true,
+            dots: true,
+            margin: 15,
+           
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                600:{
+                    items: 2,
+                    margin: 25,
+                },
+                900: {
+                    items: 3,
+
+                },
+            }
+           
+            
+
+        });
         $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
         $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
+
+       
         const iconBox = document.querySelectorAll('.iconBox');
         const contentBox = document.querySelectorAll('.contentBox');
 
@@ -685,6 +771,15 @@
             $('#navbar').load('navbar.html');
             $('#footer').load('footer.html');
 
+            const dark_btn = document.querySelector('#darkmode');
+            const body = document.querySelector('body');
+            const home = document.querySelector('#home');
+
+            dark_btn.addEventListener('click', () => {
+                body.classList.toggle('dark');
+                home.classList.toggle('dark');
+                console.log('click')
+            })
 
             // HANDLES SWITCH BETWEEN HOME AND ABOUT ME PAGES
             const back_btn = document.querySelector('#back-home-btn');

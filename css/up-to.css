@@ -1,5 +1,5 @@
 #up-to{
-    min-height: 100vh;
+    min-height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     transform: translateX(-50%);
 }
 
-
+/* 
 #up-to .container{
     position: relative;
     width: 80%;
@@ -36,8 +36,7 @@
     flex-wrap: wrap;
     margin: 20px 80px;
     margin-top: 9.5rem;
-    /* background: #fff; */
-    /* padding: 0 80px; */
+   
     
     
 }
@@ -74,7 +73,7 @@
 
 #up-to .container .card .imgBox img{
     position: absolute;
-    /* background: #60BEF5; */
+  
     top: 0;
     max-width: 125px;
     margin-top: 20px;
@@ -215,4 +214,139 @@
 
     
     
+}
+
+
+ */
+
+
+#up-to .cards{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* width: 100%; */
+    /* width: 80%; */
+    margin-top: 70px;
+    width: 900px;
+    padding: 0 4%;
+    /* background-color:lightblue; */
+    
+}
+#up-to .cards .card{
+    width: 260px;
+    height: 350px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 40px 25px;
+    text-align: center;
+    overflow: hidden;
+    /* left: -10%!important;
+    transform: translateX(-50%)!important; */
+    
+    
+}
+
+#up-to .cards .card p{
+    font-size: .8rem;
+}
+
+#up-to .cards .card h1{
+    position: absolute;
+    font-size: 4rem;
+    top: -7%;
+    left: 15%;
+    color: rgba(89, 120, 135, .05);
+    font-weight: 800;
+}
+
+#up-to .cards .card h3{
+    font-size: 1.5rem;
+}
+
+#up-to .cards .card .btn{
+    font-size: .8rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#up-to .cards .card .imgBox{
+    width: 40%;
+}
+
+#up-to .owl-prev, #up-to .owl-next{
+    top: 45%;
+    transform: translateY(-50%);
+   
+    
+}
+
+#up-to .owl-prev{
+    left: calc(50% - 440px);
+   
+   
+}
+
+#up-to .owl-next{
+  
+    left: calc(50% + 415px);
+    
+}
+
+
+#up-to .owl-dots{
+   
+    bottom: -20%;
+    
+    
+}
+
+@media only screen and (max-width: 900px){
+
+
+    #up-to .cards{
+        width: 600px;
+        /* padding: 0 4%; */
+        /* background-color:lightblue; */
+        
+    }
+
+    #up-to .owl-prev{
+        left: calc(50% - 300px);
+       
+       
+    }
+    
+    #up-to .owl-next{
+      
+        left: calc(50% + 285px);
+        
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    #up-to .cards .card{
+       
+        left: 50%!important;
+        transform: translateX(-50%)!important;
+        
+        
+        
+    }
+
+    #up-to .owl-prev{
+        display: none;
+       
+       
+    }
+    
+    #up-to .owl-next{
+      
+        display: none;
+        
+    }
 }
