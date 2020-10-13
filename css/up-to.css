@@ -14,21 +14,9 @@
     
 }
 
-#up-to .title h2, #featured-projects .title h2, #contact .title h2{
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #48b1ee;
-    font-weight: 500;
-    font-size: .9rem;
-}
 
-#up-to .title h1, #featured-projects .title h1, #contact .title h1{
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #000;
-}
 
-#up-to .title h1:before{
+#up-to .title h1:before, #all-projects .title h1:before{
     width: 80px;
     position: absolute;
     height: 4px;
