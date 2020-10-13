@@ -217,6 +217,10 @@ header a{
     
 }
 
+#github{
+    width: 1.85rem;
+}
+
 .socials li img:hover {
     opacity: 100%;
     transform: scale(1.25);
@@ -431,6 +435,10 @@ header a{
         width: 2.25rem;
         
     
+    }
+
+    #github{
+        width: 2.4rem;
     }
 
     /* ------------X------- NAVIGATION ------------X----------- */
