@@ -34,11 +34,6 @@ body.dark{
 }
 
 
-body.dark ~ h1{
-    
-    color: #f7f7f7;
-}
-
 ul{
     list-style: none;
 }

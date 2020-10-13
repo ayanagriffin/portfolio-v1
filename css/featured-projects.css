@@ -23,6 +23,10 @@
     margin-bottom: 20px;
 }
 
+body.dark #featured-projects .title h1{
+    color: #fff;
+}
+
 
 #featured-projects .title h1:before{
     width: 80px;
@@ -40,16 +44,22 @@
     font-size: .9rem;
 }
 
-
-
-
-
-#featured-projects .title a{
-    /* text-decoration: underline; */
-
+body.dark #featured-projects .title p, body.dark #featured-projects .title a{
+    color: rgba(255,255,255,0.5)!important;
+    
 }
+
+
+
+
+
+
 #featured-projects .title a:hover{
     color: rgba(0,0,0,0.7);
+}
+
+body.dark #featured-projects .title a:hover{
+    color: rgba(255,255,255,.7)!important;
 }
 #featured-projects .container{
     position: relative;
@@ -88,9 +98,17 @@
     overflow: hidden;
 }
 
+body.dark #featured-projects .container .icon .iconBox{
+    box-shadow: 4px 4px 10px rgba(252, 252, 252, 0.3);
+}
+
 #featured-projects .container .icon .iconBox h3{
     align-self: center;
     justify-self: right;
+}
+
+body.dark #featured-projects .container .icon .iconBox h3{
+    color: #fcfcfc;
 }
 #featured-projects .container .icon .iconBox.active{
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
@@ -132,6 +150,10 @@
     justify-content: space-around;
     align-items: flex-start;
     
+}
+
+body.dark #featured-projects .text{
+    color: #fcfcfc;
 }
 
 #featured-projects .container .content .contentBox.active{
@@ -180,7 +202,9 @@
     
     
 }
-
+body.dark #featured-projects .card{
+    box-shadow: 5px 5px 10px rgba(252, 252, 252, 0.3);
+}
 #featured-projects .card .card-info{
     position: relative;
     display: flex;
@@ -190,6 +214,9 @@
     
 }
 
+body.dark #featured-projects .card .card-info{
+    color: #fcfcfc;
+}
 /* #featured-projects .projects{
     display: flex;
     margin: 0 5%;

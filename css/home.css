@@ -84,7 +84,7 @@
     color: #3F3D56;
 }
 
-body.dark h1, body.dark h2, body.dark p{
+body.dark #home h1, body.dark #home h2, body.dark #home p{
     color: #f7f7f7!important;
 }
 
