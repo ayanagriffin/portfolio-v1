@@ -10,10 +10,17 @@ footer.footer{
     font-weight: 400;
 }
 
+body.dark footer.footer{
+    background: rgba(96, 190, 245, 0.5);
+}
+
 footer .logo{
     color: #60BEF5;
 }
 
+body.dark footer .logo{
+    color: #fcfcfc;
+}
 footer .back-to-top{
     display: flex;
     flex-direction: column;

@@ -15,6 +15,10 @@
     
 }
 
+body.dark #up-to .title h1{
+    color: #fcfcfc;
+}
+
 
 
 #up-to .title h1:before, #all-projects .title h1:before{
@@ -254,9 +258,18 @@
     
 }
 
+body.dark #up-to .cards .card{
+    background: #20304d;
+    border-bottom: 5px solid #20304d;
+}
 #up-to .cards .card:hover{
     transform: translateY(-5px);
     border-bottom: 5px solid #60bef5;
+}
+
+body.dark #up-to .cards .card:hover{
+    
+    border-bottom: 5px solid #fcfcfc;
 }
 #up-to .cards .card p{
     font-size: .8rem;
@@ -274,6 +287,15 @@
 #up-to .cards .card h3{
     font-size: 1.5rem;
 }
+
+body.dark #up-to .cards .card h3{
+    color: #fcfcfc;
+}
+
+body.dark #up-to .cards .card p{
+    color: #d4d4d4;
+}
+
 
 #up-to .cards .card .btn{
     font-size: .8rem;

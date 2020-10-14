@@ -30,6 +30,9 @@ main #contact{
     /* transform: translateX(-50%); */
 }
 
+body.dark #contact .title h1{
+    color: #fcfcfc;
+}
 
 main #contact fieldset{
     border: none;
@@ -57,10 +60,17 @@ main #contact fieldset input, main #contact textarea{
     outline: none;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    background: #fafafa
+    background: #fafafa;
 
 }
 
+body.dark main #contact fieldset input, body.dark main #contact textarea{
+    border-bottom: 2px solid #9c9c9c;
+   
+}
+body.dark main #contact fieldset input, body.dark main #contact textarea{
+    background: #0F1C33;
+}
 main #contact fieldset label{
     position: absolute;
     left: 0;
@@ -88,6 +98,15 @@ main #contact fieldset input.filled ~ label
     background: transparent;
 }
 
+body.dark main #contact fieldset input:focus ~ label,
+body.dark main #contact fieldset input:active ~ label, 
+body.dark main #contact fieldset input:valid ~ label, 
+body.dark main #contact fieldset input.filled ~ label
+{
+    color: #9c9c9c;
+
+}
+
 main #contact button{
     width: 100px;
     height: 40px;
@@ -106,6 +125,14 @@ main #contact fieldset textarea.filled ~ label{
     transform: translateY(-105px);
 }
 
+body.dark main #contact fieldset textarea:focus ~ label,
+body.dark main #contact fieldset textarea:active ~ label, 
+body.dark main #contact fieldset textarea:valid ~ label, 
+body.dark main #contact fieldset textarea.filled ~ label{
+    color: #9c9c9c;
+    
+}
+
 /* Removes the light blue background that is put in with autocomplete */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -114,6 +141,16 @@ input:-webkit-autofill:active  {
     -webkit-box-shadow: 0 0 0 30px #fafafa inset !important;
 }
 
+body.dark input:-webkit-autofill,
+body.dark input:-webkit-autofill:hover, 
+body.dark input:-webkit-autofill:focus, 
+body.dark input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #0F1C33 inset !important;
+}
+
+body.dark input{
+    color: #fff;
+}
 main #contact .container{
     width: 100%;
     padding: 0 60px;

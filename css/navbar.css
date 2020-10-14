@@ -149,7 +149,7 @@ body.dark a{
 
 }
 
-.dropdown-link > a{
+body.dark .dropdown-link > a{
     
     background-color: #0F1C33;
 }
