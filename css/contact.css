@@ -66,6 +66,7 @@ main #contact fieldset input, main #contact textarea{
 
 body.dark main #contact fieldset input, body.dark main #contact textarea{
     border-bottom: 2px solid #9c9c9c;
+    color: #fff;
    
 }
 body.dark main #contact fieldset input, body.dark main #contact textarea{

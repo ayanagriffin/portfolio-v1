@@ -39,10 +39,14 @@
                         <div class="home-content main-home-content">
                             <h2>Hey! I'm</h2>
                             <h1>Ayana</h1>
+
                             <p>site under major construction :)</p>
+
+
                             <a class="btn" target="_blank" href="all-projects"> View All Projects</a>
                             <img src="./images/main-site/home-small.svg" alt="">
-                            <p style="position: absolute; width: 70px; top: 0%; font-size: .8rem; height: 20px; white-space: nowrap;" id="darkmode"><i class="fas fa-cloud-sun"></i></p>
+                            <p style="position: absolute; width: 70px; top: 0%; font-size: .8rem; height: 20px; white-space: nowrap;"
+                                id="darkmode"><i class="fas fa-cloud-sun"></i></p>
                         </div>
                         <div class="about-me-content">
                             <h2 style="margin-bottom: 15px">About me</h2>
@@ -84,7 +88,8 @@
                 <h2>my work</h2>
                 <h1>Featured Projects</h1>
 
-                <p><span style="display:none">check out some of my current favorites, or </span><a href="all-projects">view
+                <p><span style="display:none">check out some of my current favorites, or </span><a
+                        href="all-projects">view
                         all projects</a></p>
             </div>
             <div class="container">
@@ -536,8 +541,9 @@
 
                             <button id="send-btn" class="button-success pure-button button-xlarge">
                                 Send</button>
-                            <p class="thankyou_message" style="color: #000">Thanks for reaching out, I'll get back to you soon!</p>
-                           
+                            <p class="thankyou_message" style="color: #000">Thanks for reaching out, I'll get back to
+                                you soon!</p>
+
                         </div>
 
 
@@ -567,8 +573,8 @@
                     <a href="" class="btn">Learn More</a>
                 </div>
                 <div class="card">
-                     <!-- <h1>School</h1> -->
-                     <div class="imgBox">
+                    <!-- <h1>School</h1> -->
+                    <div class="imgBox">
                         <img src="./images/main-site/up-to/work.svg" alt="">
                     </div>
                     <h3>Work</h3>
@@ -577,8 +583,8 @@
 
                 </div>
                 <div class="card">
-                     <!-- <h1>School</h1> -->
-                     <div class="imgBox">
+                    <!-- <h1>School</h1> -->
+                    <div class="imgBox">
                         <img src="./images/main-site/up-to/projects.svg" alt="">
                     </div>
                     <h3>Projects</h3>
@@ -586,8 +592,8 @@
                     <a href="" class="btn">Learn More</a>
                 </div>
                 <div class="card">
-                     <!-- <h1>School</h1> -->
-                     <div class="imgBox">
+                    <!-- <h1>School</h1> -->
+                    <div class="imgBox">
                         <img src="./images/main-site/up-to/activities.svg" alt="">
                     </div>
                     <h3>Activities</h3>
@@ -597,8 +603,8 @@
 
                 </div>
                 <div class="card">
-                     <!-- <h1>School</h1> -->
-                     <div class="imgBox">
+                    <!-- <h1>School</h1> -->
+                    <div class="imgBox">
                         <img src="./images/main-site/up-to/school.svg" alt="">
                     </div>
                     <h3>School</h3>
@@ -715,20 +721,20 @@
         });
 
         $(".cards").owlCarousel({
-            
+
             loop: true,
             items: 3,
             nav: true,
             dots: true,
             margin: 15,
-           
+
             responsiveClass: true,
             responsive: {
                 0: {
                     items: 1,
 
                 },
-                600:{
+                600: {
                     items: 2,
                     margin: 25,
                 },
@@ -737,14 +743,14 @@
 
                 },
             }
-           
-            
+
+
 
         });
         $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
         $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
 
-       
+
         const iconBox = document.querySelectorAll('.iconBox');
         const contentBox = document.querySelectorAll('.contentBox');
 
@@ -772,7 +778,7 @@
             $('#footer').load('footer.html');
 
             // REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK)
-            if(localStorage.getItem("darkmode") == "true"){
+            if (localStorage.getItem("darkmode") == "true") {
                 $('body').addClass('dark');
             }
 
@@ -782,9 +788,9 @@
 
             dark_btn.addEventListener('click', () => {
                 body.classList.toggle('dark');
-                if($('body').hasClass('dark')){
+                if ($('body').hasClass('dark')) {
                     localStorage.setItem("darkmode", "true");
-                }else{
+                } else {
                     localStorage.setItem("darkmode", "false");
                 }
 
@@ -817,16 +823,16 @@
             // IF THE INPUT FIELDS ON THE CONTACT FORM ARE FILLED, ADD CLASS TO MAKE THE LABELS MOVE UP
             $('input').blur(function () {
                 if ($(this).val()) {
-                   $(this).addClass('filled')
-                }else{
+                    $(this).addClass('filled')
+                } else {
                     $(this).removeClass('filled')
                 }
             });
 
             $('textarea').blur(function () {
                 if ($(this).val()) {
-                   $(this).addClass('filled')
-                }else{
+                    $(this).addClass('filled')
+                } else {
                     $(this).removeClass('filled')
                 }
             });
