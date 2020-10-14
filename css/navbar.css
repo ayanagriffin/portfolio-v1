@@ -154,7 +154,7 @@ body.dark .dropdown-link > a{
     background-color: #0F1C33;
 }
 
-.dropdown-link:hover > a{
+body.dark .dropdown-link:hover > a, .dropdown-link:hover > a{
     background-color: #60BEF5;
     color: #ffffff;
 }
