@@ -771,14 +771,23 @@
             $('#navbar').load('navbar.html');
             $('#footer').load('footer.html');
 
+            // REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK)
+            if(localStorage.getItem("darkmode") == "true"){
+                $('body').addClass('dark');
+            }
+
+            //SWITCH TO DARK MODE BY ADDING CLASS 'DARK' TO BODY WHEN BTN IS CLICKED
             const dark_btn = document.querySelector('#darkmode');
             const body = document.querySelector('body');
-            const home = document.querySelector('#home');
 
             dark_btn.addEventListener('click', () => {
                 body.classList.toggle('dark');
-                home.classList.toggle('dark');
-                console.log('click')
+                if($('body').hasClass('dark')){
+                    localStorage.setItem("darkmode", "true");
+                }else{
+                    localStorage.setItem("darkmode", "false");
+                }
+
             })
 
             // HANDLES SWITCH BETWEEN HOME AND ABOUT ME PAGES
