@@ -24,6 +24,10 @@
     transition: 1.8s ease-in-out;
 }
 
+body.dark #home .container:before{
+    background: #5ab1e6;
+}
+
 #home .container .info-container{
     position: absolute;
     width: 100%;

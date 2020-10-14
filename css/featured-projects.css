@@ -24,7 +24,7 @@
 }
 
 body.dark #featured-projects .title h1{
-    color: #fff;
+    color: #fcfcfc;
 }
 
 
@@ -48,11 +48,6 @@ body.dark #featured-projects .title p, body.dark #featured-projects .title a{
     color: rgba(255,255,255,0.5)!important;
     
 }
-
-
-
-
-
 
 #featured-projects .title a:hover{
     color: rgba(0,0,0,0.7);
@@ -154,6 +149,10 @@ body.dark #featured-projects .container .icon .iconBox h3{
 
 body.dark #featured-projects .text{
     color: #fcfcfc;
+}
+
+body.dark #featured-projects .text p{
+    color: #d4d4d4;
 }
 
 #featured-projects .container .content .contentBox.active{
