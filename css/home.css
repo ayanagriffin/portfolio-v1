@@ -26,9 +26,7 @@
     transition: 1.8s ease-in-out;
 }
 
-body.dark #home .container:before{
-    background: #5ab1e6;
-}
+
 
 #home .container .info-container{
     position: absolute;
@@ -90,9 +88,7 @@ body.dark #home .container:before{
     color: #3F3D56;
 }
 
-body.dark #home h1, body.dark #home h2, body.dark #home p{
-    color: #f7f7f7!important;
-}
+
 
 
 #home .container .home-content h2{
@@ -214,6 +210,18 @@ body.dark #home h1, body.dark #home h2, body.dark #home p{
     z-index: 1;
     opacity: 0;
 }
+
+/* -------------------------------- DARK MODE ------------------------------------ */
+
+body.dark #home .container:before{
+    background: #5ab1e6;
+}
+body.dark #home h1, body.dark #home h2, body.dark #home p{
+    color: #f7f7f7!important;
+}
+
+/* -------------------------------- MEDIA QUERY ------------------------------------ */
+
 
 @media only screen and (max-width: 870px){
     #home .container{

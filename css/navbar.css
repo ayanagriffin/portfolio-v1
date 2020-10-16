@@ -1,4 +1,3 @@
-/* ------------------------- TOP MENU ------------------------------ */
 header{
     position: sticky;
     top: 0px;
@@ -10,18 +9,13 @@ header{
     transition: .7s;
 }
 
-body.dark header{
-    background-color:#0F1C33!important;
-    box-shadow: .05rem 0rem .75rem #2da5ea;
-}
+
 
 header a{
     color: #0F1C33;
 }
 
-body.dark a{
-    color:#fcfcfc!important;
-}
+
 .nav-bar-container {
     max-width: 65rem;
     padding: 0 2rem;
@@ -149,15 +143,7 @@ body.dark a{
 
 }
 
-body.dark .dropdown-link > a{
-    
-    background-color: #0F1C33;
-}
 
-body.dark .dropdown-link:hover > a, .dropdown-link:hover > a{
-    background-color: #60BEF5;
-    color: #ffffff;
-}
 
 .dropdown-link > a > i{
     transform: rotate(-90deg);
@@ -175,9 +161,7 @@ body.dark .dropdown-link:hover > a, .dropdown-link:hover > a{
     transition: .3s;
 }
 
-body.dark .arrow{
-    background-color: #0F1C33;
-}
+
 .dropdown-link:first-child:hover ~ .arrow {
     background-color: #60BEF5;
 }
@@ -234,10 +218,6 @@ body.dark .arrow{
     
 }
 
-body.dark .socials li i {
-    color: #f7f7f7;
-    
-}
 
 
 .socials li i:hover {
@@ -284,11 +264,7 @@ body.dark .socials li i {
     border-radius: inherit;
     transition: 0.5s;
 }
-body.dark .hamburger-menu div,
-body.dark .hamburger-menu div:before,
-body.dark .hamburger-menu div:after{
-    background-color: #fcfcfc;
-}
+
 
 .hamburger-menu div:before{
     transform: translateY(-7px);
@@ -328,6 +304,39 @@ body.dark .hamburger-menu div:after{
 
 /* -----------XX----------HAMBURGER MENU-----------XX-------------- */
 
+/* -------------------------------- DARK MODE ------------------------------------ */
+body.dark header{
+    background-color:#0F1C33!important;
+    box-shadow: .05rem 0rem .75rem #2da5ea;
+}
+
+body.dark a{
+    color:#fcfcfc!important;
+}
+
+body.dark .dropdown-link > a{
+    
+    background-color: #0F1C33;
+}
+
+body.dark .dropdown-link:hover > a, .dropdown-link:hover > a{
+    background-color: #60BEF5;
+    color: #ffffff;
+}
+
+body.dark .arrow{
+    background-color: #0F1C33;
+}
+
+body.dark .socials li i {
+    color: #f7f7f7;
+    
+}
+body.dark .hamburger-menu div,
+body.dark .hamburger-menu div:before,
+body.dark .hamburger-menu div:after{
+    background-color: #fcfcfc;
+}
 /* --------------------------------- MEDIA QUERIES -------------------------------- */
 
 @keyframes menuGradualAppear{
@@ -363,11 +372,7 @@ body.dark .hamburger-menu div:after{
         transform: translateX(-50%);
     }
 
-    body.dark .nav-bar-container .socials:before{
-        
-        background-color: rgba(255,255,255,0.2);
-       
-    }
+    
     .nav-links-container{
         position: fixed;
         height: calc(100vh -  3.5rem);
@@ -390,9 +395,6 @@ body.dark .hamburger-menu div:after{
 
     }
 
-    body.dark .nav-links-container{
-        background-color: #0F1C33;
-    }
 
     .nav-links-container .socials{
         align-self: center;
@@ -472,8 +474,19 @@ body.dark .hamburger-menu div:after{
     
     }
 
-    /* ------------X------- NAVIGATION ------------X----------- */
+    /* -------------------- DARK MODE ------------------------ */
 
+
+    body.dark .nav-bar-container .socials:before{
+        
+        background-color: rgba(255,255,255,0.2);
+       
+    }
+
+
+    body.dark .nav-links-container{
+        background-color: #0F1C33;
+    }
 }
 
 @media only screen and (min-height: 800px){

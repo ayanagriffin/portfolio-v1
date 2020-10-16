@@ -13,9 +13,6 @@
     align-items: center;
   }
 
-  body.dark .preloader{
-    background-color: #0F1C33;
-  }
 
   .preloader h3 {
     color: #0f1c33;
@@ -28,9 +25,7 @@
     transform: translateX(-50%);
   }
 
-  body.dark h3{
-    color: #f7f7f7;
-  }
+  
   
   .preloader.preload-finish {
     opacity: 0;
@@ -120,9 +115,7 @@
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
   }
 
-  body.dark .lds-ellipsis div{
-    background: #fff;
-  }
+  
   .lds-ellipsis div:nth-child(1) {
     left: 8px;
     animation: lds-ellipsis1 0.6s infinite;
@@ -203,6 +196,22 @@
       opacity: 0;
     }
   }
+
+    /* -------------------- DARK MODE ------------------------ */
+
+  body.dark .lds-ellipsis div{
+    background: #fff;
+  }
+
+  body.dark .preloader{
+    background-color: #0F1C33;
+  }
+  body.dark h3{
+    color: #f7f7f7;
+  }
+
+      /* -------------------- MEDIA QUERY ------------------------ */
+
   
 @media only screen and (max-width: 1100px){
     .preloader h3 {

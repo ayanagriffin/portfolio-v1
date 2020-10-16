@@ -30,9 +30,7 @@ body{
 
 }
 
-body.dark{
-    background-color: #0f1c33;
-}
+
 
 
 ul{
@@ -122,3 +120,20 @@ a{
 } */
 
 
+/* -------------------------------- DARK MODE ------------------------------------ */
+body.dark{
+    background-color: #0f1c33;
+}
+
+/* -------------------------------- MEDIA QUERY ------------------------------------ */
+@media (prefers-color-scheme: dark) {
+    body{
+        
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    body{
+        
+    }
+  }

@@ -18,9 +18,7 @@
    
 }
 
-body.dark #all-projects .title h1{
-    color: #fcfcfc;
-}
+
 #all-projects .categories ul{
     display: flex;
     flex-wrap: wrap;
@@ -63,9 +61,7 @@ body.dark #all-projects .title h1{
     color: #000;
 }
 
-body.dark #all-projects .categories ul li:hover{
-    color: #fcfcfc;
-}
+
 #all-projects .categories ul li:hover > i{
     color: #c5edfa;
     
@@ -75,10 +71,7 @@ body.dark #all-projects .categories ul li:hover{
     color: #000;
 }
 
-body.dark #all-projects  .categories ul li.active{
-    
-    color: #fcfcfc;
-}
+
 #all-projects  .categories ul li.active > i{
     color: #c5edfa;
 }
@@ -158,17 +151,6 @@ body.dark #all-projects  .categories ul li.active{
     
 }
 
-body.dark #all-projects .card{
-    box-shadow: 5px 5px 10px rgba(255,255,255,.1);
-    color: #fcfcfc;
-}
-
-body.dark #all-projects .card p{
-    color: #bfbfbf!important;
-}
-body.dark #all-projects .card h2{
-    color: #60BEF5;
-}
 
 
 #all-projects .card:hover{
@@ -249,6 +231,34 @@ body.dark #all-projects .card h2{
 #all-projects .card ul li, #featured-projects .card ul li{
     font-size: 12px;
 }
+
+/* -------------------------------- DARK MODE ------------------------------------ */
+body.dark #all-projects .title h1{
+    color: #fcfcfc;
+}
+
+body.dark #all-projects .categories ul li:hover{
+    color: #fcfcfc;
+}
+
+body.dark #all-projects  .categories ul li.active{
+    
+    color: #fcfcfc;
+}
+
+body.dark #all-projects .card{
+    box-shadow: 5px 5px 10px rgba(255,255,255,.1);
+    color: #fcfcfc;
+}
+
+body.dark #all-projects .card p{
+    color: #bfbfbf!important;
+}
+body.dark #all-projects .card h2{
+    color: #60BEF5;
+}
+
+/* -------------------------------- MEDIA QUERY ------------------------------------ */
 @media only screen and (max-width: 640px){
 
     #all-projects .card, #featured-projects .card{
