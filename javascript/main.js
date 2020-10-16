@@ -1,5 +1,8 @@
  
-
+// REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK)
+if (localStorage.getItem("darkmode") == "true") {
+    $('body').addClass('dark');
+}
 // CAROUSELS FOR MINIMIZED FEATURED PROJECTS PAGE AND UP TO PAGE
  $(".projects").owlCarousel({
      margin: 10,
@@ -86,10 +89,7 @@
      $('#footer').load('footer.html');
      $('.preloader').load('preloader.html');
 
-     // REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK)
-     if (localStorage.getItem("darkmode") == "true") {
-         $('body').addClass('dark');
-     }
+     
 
      //SWITCH TO DARK MODE BY ADDING CLASS 'DARK' TO BODY WHEN BTN IS CLICKED
      const dark_btn = document.querySelector('#darkmode');

@@ -11,9 +11,7 @@
 </head>
 
 <body>
-    <div class="preloader">
-       
-    </div>
+    <div class="preloader"></div>
     <!------------------------ NAVIGATION BAR ---------------------------->
     <header>
         <div id="navbar"></div>
@@ -185,6 +183,10 @@
             preloader.classList.add("preload-finish");
 
         });
+
+        if (localStorage.getItem("darkmode") == "true") {
+            $('body').addClass('dark');
+        }
         $(document).ready(function () {
             // LOAD THE HEADER AND FOOTER
             $('#navbar').load('navbar.html');
