@@ -8,6 +8,9 @@
     overflow: hidden;
     z-index: 1005;
     transition: opacity 0.5s 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   body.dark .preloader{
@@ -113,8 +116,12 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background: #fff;
+    background: #0F1C33;
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+
+  body.dark .lds-ellipsis div{
+    background: #fff;
   }
   .lds-ellipsis div:nth-child(1) {
     left: 8px;
