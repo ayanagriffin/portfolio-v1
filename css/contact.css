@@ -104,7 +104,7 @@ body.dark main #contact fieldset input:active ~ label,
 body.dark main #contact fieldset input:valid ~ label, 
 body.dark main #contact fieldset input.filled ~ label
 {
-    color: #9c9c9c;
+    color: #60BEF5;
 
 }
 
@@ -130,7 +130,7 @@ body.dark main #contact fieldset textarea:focus ~ label,
 body.dark main #contact fieldset textarea:active ~ label, 
 body.dark main #contact fieldset textarea:valid ~ label, 
 body.dark main #contact fieldset textarea.filled ~ label{
-    color: #9c9c9c;
+    color: #60BEF5;
     
 }
 

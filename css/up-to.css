@@ -5,6 +5,8 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    margin-bottom: 50px;
+
 }
 
 #up-to .title{
@@ -354,6 +356,11 @@ body.dark #up-to .cards .card p{
       
         left: calc(50% + 285px);
         
+    }
+
+    #up-to{
+        margin-bottom: 100px;
+
     }
 }
 
