@@ -1,5 +1,5 @@
 
-// REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK), OR CHECK THEIR PREFERENCE IF IT'S THEIR FIRST TIME VISITING
+// REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK), OR CHECK THEIR PREFERENCE IF IT'S THEIR FIRST TIME
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem("darkmode") !== "false") {
 
     $('body').addClass('dark');
@@ -96,20 +96,7 @@ $(document).ready(function () {
 
 
 
-    //SWITCH TO DARK MODE BY ADDING CLASS 'DARK' TO BODY WHEN BTN IS CLICKED
-    const dark_btn = document.querySelector('#darkmode');
-    const body = document.querySelector('body');
-
-
-    dark_btn.addEventListener('click', () => {
-        $('body').toggleClass('dark');
-        if ($('body').hasClass('dark')) {
-            localStorage.setItem("darkmode", "true");
-        } else {
-            localStorage.setItem("darkmode", "false");
-        }
-
-    })
+   
 
 
 

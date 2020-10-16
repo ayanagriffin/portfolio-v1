@@ -337,6 +337,10 @@ body.dark .hamburger-menu div:before,
 body.dark .hamburger-menu div:after{
     background-color: #fcfcfc;
 }
+
+#darkmode{
+    cursor: pointer;
+}
 /* --------------------------------- MEDIA QUERIES -------------------------------- */
 
 @keyframes menuGradualAppear{
