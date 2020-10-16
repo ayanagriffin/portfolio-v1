@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div class="preloader">
+       
+    </div>
     <!------------------------ NAVIGATION BAR ---------------------------->
     <header>
         <div id="navbar"></div>
@@ -18,13 +21,13 @@
     </header>
     <!------------X---------- NAVIGATION BAR ------------X-------------->
 
-   
+
     <section id="all-projects">
         <div class="title">
             <h2>my work</h2>
             <h1>All Projects</h1>
         </div>
-        
+
         <div class="categories">
 
 
@@ -159,7 +162,7 @@
 
 
             </div>
-            
+
 
 
 
@@ -177,12 +180,18 @@
     <script src="javascript/card-project-slider.js"></script>
 
     <script type="text/javascript">
+        window.addEventListener("load", () => {
+            const preloader = document.querySelector(".preloader");
+            preloader.classList.add("preload-finish");
+
+        });
         $(document).ready(function () {
             // LOAD THE HEADER AND FOOTER
             $('#navbar').load('navbar.html');
             $('#footer').load('footer.html');
-             // REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK)
-             if(localStorage.getItem("darkmode") == "true"){
+            $('.preloader').load('preloader.html');
+            // REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK)
+            if (localStorage.getItem("darkmode") == "true") {
                 $('body').addClass('dark');
             }
             // APPLYING FILTERS
@@ -204,7 +213,7 @@
             })
 
 
-           
+
 
 
         })

@@ -1,3 +1,177 @@
 bright blue: 60BEF5
 bright blue hover: 48b1ee
 2da4ea
+
+old pages
+
+ <!------------------------ HOME PAGE ---------------------------->
+        <!-- <section id="home">
+            <div class="textBox">
+                <h2>hey! i'm</h2>
+                <h1><span>Hey! I'm</span> Ayana</h1>
+                <p id="subText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil numquam expedita a
+                    temporibus blanditiis? Ipsum excepturi vero voluptatem natus minus.</b></p>
+                <a class="btn" target="_blank" href="all-projects"> View All Projects</a>
+            </div>
+            <div class="imgBox">
+                <img src="../images/main-site/home.png" class="home mainPicture">
+            </div>
+
+        </section> -->
+        <!------------X----------- HOME PAGE ------------X--------------->
+        <!------------------- FEATURED PROJECTS PAGE --------------------->
+        <!-- <section id="projects">
+            <div class="container">
+                <h1>Featured Projects</h1>
+                <a class="btn title-btn" target="_blank" href="all-projects">View All projects</a>
+                <div class="card-container">
+                    <div class="card card1">
+                        <div class="imgBox">
+                            <img src="../images/main-site/featured-projects/happyturtle.png" alt="">
+                        </div>
+                        <div class="cardContent">
+                            <h2>EcoBuds</h2>
+                            <p>EcoBuds makes living sustainably and fighting environmental issues enjoyable with an
+                                adorable companion that is counting on YOU to take action. </p>
+                            <a class="btn card-footer learnMore" id="ecobud" href="project">learn more</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/main-site/me-computer.png" alt="">
+                        </div>
+                        <div class="cardContent">
+                            <h2>Portfolio</h2>
+                            <p>EcoBuds makes living sustainably and fighting environmental issues enjoyable with an
+                                adorable companion that is counting on YOU to take action. </p>
+                            <a class="btn card-footer" href="">learn more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/main-site/featured-projects/bee.png" alt="">
+                        </div>
+                        <div class="cardContent">
+                            <h2>Browserbug</h2>
+                            <p>EcoBuds makes living sustainably and fighting environmental issues enjoyable with an
+                                adorable companion that is counting on YOU to take action. </p>
+                            <a class="btn card-footer" href="">learn more</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            </div>
+
+        </section> -->
+        <!---------X---------- FEATURED PROJECTS PAGE ---------X---------->
+        <!------------------------ ABOUT ME PAGE ------------------------->
+        <!-- <section id="about-me">
+            <div class="container" id="about-me-container">
+                <div class="textContainer">
+                    <div class="about-me-test">
+                        <div class="textBox tb1">
+                            <h1>About Me</h1>
+                            <div class="icons">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis
+                                assumenda
+                                minus
+                                eveniet amet voluptates doloremque voluptas harum id aperiam voluptatem, perspiciatis
+                                eligendi
+                                reprehenderit numquam quos quibusdam exercitationem? Necessitatibus, perferendis.</p>
+                            <div class="icons">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="quote">
+
+                                <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing.<i class="fas fa-quote-right"></i></p>
+                                <p><span>- Author</span></p>
+                            </div>
+                        </div>
+                        <div class="textBox tb2">
+                            <h1>About Me2</h1>
+                            <div class="icons">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis
+                                assumenda
+                                minus
+                                eveniet amet voluptates doloremque voluptas harum id aperiam voluptatem, perspiciatis
+                                eligendi
+                                reprehenderit numquam quos quibusdam exercitationem? Necessitatibus, perferendis.</p>
+                            <div class="icons">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="quote">
+
+                                <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing.<i class="fas fa-quote-right"></i></p>
+                                <p><span>- Author</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panels-container">
+                   <div class="panel left-panel">
+                       <div class="content">
+                           <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium unde quasi voluptatem! Praesentium, iure nobis.</p>
+                           <button class="btn" id="btn-1">Lorem, ipsum.</button>
+
+                       </div>
+
+                       <img src="/images/main-site/home.png" alt="home">
+                   </div>
+
+                   <div class="panel right-panel">
+                    <div class="content">
+                        <h3>some test text for the panel on the right</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium unde quasi voluptatem! Praesentium, iure nobis.</p>
+                        <button class="btn" id="btn-2">Lorem, IPSUMM.</button>
+
+                    </div>
+
+                    <img src="/images/main-site/home.png" alt="home">
+                </div>
+                </div>
+            </div>
+        </section> -->
+        <!------------X----------- ABOUT ME PAGE -------------X----------->
+
+  <!-- <h1>Contact me!</h1>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker"></i></div>
+                        <div class="text">
+                            <h3>Location</h3>
+                            <p>Mountain View, CA</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum quo unde
+                                dolores dolor eum? </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="text">
+                            <h3>LinkedIn</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta.</p>
+                        </div>
+                    </div> -->
