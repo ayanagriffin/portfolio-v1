@@ -388,6 +388,7 @@ body.dark .hamburger-menu div:after{
         /* padding-bottom: 8vh; */
         padding-right: 30px;
         padding-top: 15px;
+        
 
     }
 
@@ -479,4 +480,10 @@ body.dark .hamburger-menu div:after{
 
     /* ------------X------- NAVIGATION ------------X----------- */
 
+}
+
+@media only screen and (min-height: 800px){
+    .nav-links-container{
+        padding-bottom: 4vh;
+    }
 }
