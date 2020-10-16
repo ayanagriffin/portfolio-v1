@@ -224,27 +224,25 @@ body.dark .arrow{
 }
 
 .socials li {
-    padding: 0 .4rem;
+    padding: 0 .6rem;
     
 }
 
-.socials li img {
-    width: 1.75rem;
+.socials li i {
+    font-size: 1.65rem;
+    
     
 }
 
-body.dark .socials li img {
-    filter: invert(1);
+body.dark .socials li i {
+    color: #f7f7f7;
     
 }
 
-#github{
-    width: 1.85rem;
-}
 
-.socials li img:hover {
+.socials li i:hover {
     opacity: 100%;
-    transform: scale(1.25);
+    font-size: 1.8rem;
 }
 
 
@@ -468,14 +466,10 @@ body.dark .hamburger-menu div:after{
        
         
     }
-    .nav-links-container .socials li img {
-        width: 2.25rem;
+    .nav-links-container .socials li i {
+        font-size: 2rem;
         
     
-    }
-
-    #github{
-        width: 2.4rem;
     }
 
     /* ------------X------- NAVIGATION ------------X----------- */
@@ -486,4 +480,5 @@ body.dark .hamburger-menu div:after{
     .nav-links-container{
         padding-bottom: 4vh;
     }
+
 }
