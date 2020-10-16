@@ -220,6 +220,10 @@ body.dark #home h1, body.dark #home h2, body.dark #home p{
     color: #f7f7f7!important;
 }
 
+body.light #home h1, body.light #home h2, body.light #home p{
+    color: #3f3d56;
+}
+
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
 
 

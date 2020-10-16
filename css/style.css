@@ -128,7 +128,7 @@ body.dark{
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
 @media (prefers-color-scheme: dark) {
     body{
-        
+        /* background: #0f1c33; */
     }
   }
 
