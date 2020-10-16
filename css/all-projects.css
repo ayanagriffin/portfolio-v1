@@ -253,6 +253,8 @@ body.dark #all-projects .card h2{
 
     #all-projects .card, #featured-projects .card{
         margin: 10px 0;
+        width: 300px;
+        
     }
     #all-projects .card .right-content, #featured-projects .card .right-content{
         flex-direction: column;

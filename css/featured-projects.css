@@ -254,6 +254,7 @@ body.dark #featured-projects .card .card-info{
 @media only screen and (max-width: 550px){
     #featured-projects .card{
         min-width: 250px;
+        
         width: 80vw!important;
         
     }
