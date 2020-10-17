@@ -346,6 +346,17 @@ header a{
 
 }
 
+.nav-bar-container .socials:before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    width: 200px;
+    height: 1px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* -----------XX----------HAMBURGER MENU-----------XX-------------- */
 
 /* -------------------------------- DARK MODE ------------------------------------ */
@@ -419,17 +430,7 @@ body.dark #darkmode-tip:before{
         display: block;
     }
 
-    .nav-bar-container .socials:before{
-        content: '';
-        position: absolute;
-        background-color: rgba(0,0,0,0.2);
-        width: 80%;
-        height: 1px;
-        top: 75vh;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
+    
     
     .nav-links-container{
         position: fixed;
