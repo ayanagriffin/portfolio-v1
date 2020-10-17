@@ -245,7 +245,7 @@ body.dark input{
 }
 
 body.dark main #contact .thankyou_message{
-    color: #fff;
+    color: #fff!important;
 }
 
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
