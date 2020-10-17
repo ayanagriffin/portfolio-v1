@@ -1,3 +1,19 @@
+$(document).ready(function () {
+
+    
+    const links = document.querySelectorAll('.nav-links');
+
+    links.forEach((link) => {
+        link.addEventListener('click', function () {
+            document.querySelector('#check').checked = false;
+        })
+
+    });
+
+
+   
+});
+ 
  // TAKE THE USER TO THE ABOUT ME PAGE IF THEY NAVIGATE TO IT ON THE NAVBAR
  const aboutBtn = document.querySelector("#about");
  aboutBtn.addEventListener('click', () => {
@@ -35,18 +51,3 @@
 // CLOSES RESPONSIVE MENU WHEN USER CLICKS LINK
 
 
-$(document).ready(function () {
-
-    
-    const links = document.querySelectorAll('.nav-links');
-
-    links.forEach((link) => {
-        link.addEventListener('click', function () {
-            document.querySelector('#check').checked = false;
-        })
-
-    });
-
-
-   
-});

@@ -2,7 +2,7 @@ header{
     position: sticky;
     top: 0px;
     background-color:#fcfcfc;
-    
+    white-space: nowrap;
     width: 100%;
     z-index: 1001;
     box-shadow: .1rem 0rem .5rem rgba(0,0,0,0.2);
@@ -229,7 +229,7 @@ header a{
     padding: 2px 8px;
     border-radius: 10px;
     left: 50%;
-    top: 110%;
+    top: 100%;
     transform: translateX(-50%);
     white-space: nowrap;
     font-size: .8rem;
@@ -258,7 +258,7 @@ header a{
 
 #darkmode:hover ~ #darkmode-tip{
     opacity: 1;
-    top: 115%;
+    top: 110%;
     
 }
 
@@ -394,6 +394,7 @@ body.dark #darkmode-tip{
 
 body.dark #darkmode-tip:before{
     border-bottom: 5px solid rgba(247, 247, 247, 0.6);
+}
 /* --------------------------------- MEDIA QUERIES -------------------------------- */
 
 @keyframes menuGradualAppear{
