@@ -1,10 +1,9 @@
 
 // REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK), OR CHECK THEIR PREFERENCE IF IT'S THEIR FIRST TIME
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem("darkmode") !== "false") {
-
     $('body').addClass('dark');
-
 }
+
 if (localStorage.getItem("darkmode") == "true") {
     $('body').addClass('dark');
 }
@@ -94,12 +93,6 @@ $(document).ready(function () {
     $('#footer').load('footer.html');
     $('.preloader').load('preloader.html');
 
-
-
-   
-
-
-
     // HANDLES SWITCH BETWEEN HOME AND ABOUT ME PAGES
     const back_btn = document.querySelector('#back-home-btn');
     const about_btn = document.querySelector('#about-me-btn');
@@ -148,6 +141,6 @@ $(document).ready(function () {
         $('input').removeClass('filled');
         $('textarea').removeClass('filled');
 
-    })
+    });
 
-})
+});

@@ -523,9 +523,7 @@ body.dark #darkmode-tip:before{
 
 
     .nav-links-container .socials li {
-        padding: 0 .75rem;
-       
-        
+        padding: 0 .75rem; 
     }
     .nav-links-container .socials li i {
         font-size: 2rem;
