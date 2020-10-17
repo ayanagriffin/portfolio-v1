@@ -533,6 +533,11 @@ body.dark #darkmode-tip:before{
     
     }
 
+    #darkmode:hover ~ #darkmode-tip{
+        opacity: 0;
+        
+    }
+
     /* -------------------- DARK MODE ------------------------ */
 
 
