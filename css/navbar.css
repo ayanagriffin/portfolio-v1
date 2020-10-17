@@ -203,18 +203,62 @@ header a{
     align-items: center; */
     padding-top: .5rem;
     flex: .65;
+    position: relative;
     
     
 }
 
 .socials li {
     padding: 0 .6rem;
+    position: relative;
     
 }
 
 .socials li i {
     font-size: 1.65rem;
     
+    
+}
+
+#darkmode-tip{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    background: rgba(15, 28, 51, 0.6);
+    padding: 2px 8px;
+    border-radius: 10px;
+    left: 50%;
+    top: 110%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: .8rem;
+    color: #f7f7f7;
+}
+
+#darkmode-tip:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    background: transparent;
+    left: 50%;
+    /* transform: translateX(-50%) rotate(45deg); */
+    transition: 0.5s;
+
+    width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-bottom: 5px solid rgba(15, 28, 51, 0.6);
+
+}
+
+
+
+#darkmode:hover ~ #darkmode-tip{
+    opacity: 1;
+    top: 115%;
     
 }
 
@@ -341,6 +385,15 @@ body.dark .hamburger-menu div:after{
 #darkmode{
     cursor: pointer;
 }
+
+body.dark #darkmode-tip{
+    background: rgba(247, 247, 247, 0.6);
+    color: #0f1c33;
+    
+}
+
+body.dark #darkmode-tip:before{
+    border-bottom: 5px solid rgba(247, 247, 247, 0.6);
 /* --------------------------------- MEDIA QUERIES -------------------------------- */
 
 @keyframes menuGradualAppear{

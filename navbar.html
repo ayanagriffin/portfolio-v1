@@ -100,9 +100,8 @@
             </div>
 
             <!-- SOCIAL MEDIA ICONS -->
-            <!-- <div class="line" style="position: absolute; width: 100%; height: 5px; background-color: red;"></div> -->
             <ul class="socials">
-                <li><i id="darkmode"></i></li>
+                <li><i id="darkmode"></i><span id="darkmode-tip">switch to dark mode</span></li>
                 <li><a target="_blank" href="https://www.linkedin.com/in/ayana-griffin/"> <i
                             class="fab fa-linkedin-in"></i></a></li>
                 <li><a target="_blank" href="https://github.com/ayanagriffin"> <i class="fab fa-github"></i></a>
@@ -123,39 +122,6 @@
     <script src="../javascript/menu.js" defer></script>
     <script src="../javascript/project-selector.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript">
-
-       
-        // TAKE THE USER TO THE ABOUT ME PAGE IF THEY NAVIGATE TO IT ON THE NAVBAR
-        const aboutBtn = document.querySelector("#about");
-        aboutBtn.addEventListener('click', () => {
-            localStorage.setItem('about-me', 'true');
-
-        });
-
-        //CHECK THE ORIGINAL COLOR SETTING TO DETERMINE WHICH ICON SHOULD BE DISPLAYED
-        if ($('body').hasClass('dark')) {
-            $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
-        } else {
-            $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
-        }
-        //SWITCH TO DARK MODE BY ADDING CLASS 'DARK' TO BODY WHEN BTN IS CLICKED
-        const dark_btn = document.querySelector('#darkmode');
-        const body = document.querySelector('body');
-
-
-        dark_btn.addEventListener('click', () => {
-            $('body').toggleClass('dark');
-            if ($('body').hasClass('dark')) {
-                localStorage.setItem("darkmode", "true");
-                $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
-            } else {
-                localStorage.setItem("darkmode", "false");
-                $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
-            }
-
-        })
-    </script>
 </body>
 
 </html>
