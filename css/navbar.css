@@ -346,16 +346,6 @@ header a{
 
 }
 
-.nav-bar-container .socials:before{
-    content: '';
-    position: absolute;
-    background-color: rgba(0,0,0,0.2);
-    width: 200px;
-    height: 1px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 /* -----------XX----------HAMBURGER MENU-----------XX-------------- */
 
@@ -454,6 +444,17 @@ body.dark #darkmode-tip:before{
 
     }
 
+
+.nav-bar-container .socials:before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    width: 200px;
+    height: 1px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
     .nav-links-container .socials{
         align-self: center;
