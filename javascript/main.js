@@ -18,7 +18,7 @@ $(".projects").owlCarousel({
     responsiveClass: true,
     responsive: {
         0: {
-            nav: false,
+            nav: true,
 
         },
         640: {

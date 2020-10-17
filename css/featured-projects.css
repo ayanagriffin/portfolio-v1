@@ -271,15 +271,23 @@ body.dark #featured-projects .title p, body.dark #featured-projects .title a{
         top: 5rem;
     }
 
+    
 }
 
 @media only screen and (max-width: 640px){
-    /* .owl-prev, .owl-next{
-        display: none!important;
-    } */
+    
 
     .owl-dots{
         bottom: -5%;
+    }
+    #featured-projects .owl-prev{
+        left: 5%;
+        
+    }
+    
+    #featured-projects .owl-next{
+        left: 90%!important;
+       
     }
 }
 

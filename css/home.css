@@ -15,12 +15,12 @@
 #home .container:before{
     content: '';
     position: absolute;
-    width: 2000px;
-    height: 2000px;
+    width: 1100px;
+    height: 1100px;
     border-radius: 50%;
     background: #73CBFF;
-    top: -10%;
-    right: 48%;
+    top:10%;
+    right: 60%;
     transform: translateY(-50%);
     z-index: 6;
     transition: 1.8s ease-in-out;
@@ -53,7 +53,7 @@
     grid-row: 1 / 2;
     padding: 0 5rem;
     overflow: hidden;
-    transition: 0.2s 0.7s ease-in-out;
+    transition: 0.65s 0.7s ease-in-out;
 }
 
 #home .container .main-home-content{
@@ -176,7 +176,7 @@
 
 #home .container.home-mode:before{
     transform: translate(100%, -50%);
-    right: 52%;
+    right: 45%;
 }
 
 #home .container.home-mode .left-panel img, 
