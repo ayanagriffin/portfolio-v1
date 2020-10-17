@@ -35,14 +35,14 @@ body {
     width: 60vw;
     max-width: 600px;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   
   .rocket-container {
     position: absolute;
-    bottom: 52%;
+    bottom: 57%;
     left: 49%;
     transform: translate(-50%, 50%);
   }
@@ -81,7 +81,7 @@ body {
   font-weight: 600;
   font-size: 1.5rem;
   position: absolute;
-  top: calc(50% + 15vw);
+  top: calc(50% + 12vw);
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -89,7 +89,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .title a{
