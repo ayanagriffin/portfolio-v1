@@ -244,6 +244,10 @@ body.dark input{
     color: #fcfcfc;
 }
 
+body.dark main #contact .thankyou_message{
+    color: #fff;
+}
+
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
 
 @media only screen and (max-width: 1000px){
