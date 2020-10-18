@@ -125,4 +125,12 @@ body.dark{
     background-color: #0f1c33;
 }
 
+body.dark .owl-dot{
+    color: #869791!important;
+}
+
+body.dark .owl-dot.active{
+    color: #d6d6d6!important;
+}
+
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
