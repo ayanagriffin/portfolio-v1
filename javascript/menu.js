@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     
+// CLOSES RESPONSIVE MENU WHEN USER CLICKS LINK
     const links = document.querySelectorAll('.nav-links');
 
     links.forEach((link) => {
@@ -48,6 +49,5 @@ $(document).ready(function () {
 
  })
 
-// CLOSES RESPONSIVE MENU WHEN USER CLICKS LINK
 
 
