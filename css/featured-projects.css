@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: calc(max(45vw, 500px));
+    margin-bottom: 100px;
     /* background-color: #f7f7f7 */
 }
 
