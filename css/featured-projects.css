@@ -18,11 +18,11 @@
     display: flex;
     justify-content: space-around;
     padding-bottom: 50px;
-     background: url('/images/main-site/featured-projects/project-bg.png');
+     /* background: url('/images/main-site/featured-projects/project-bg.png');
     background-size: 300px;
     background-repeat: no-repeat;
-    background-position: 20% 55%;
-    overflow-x: hidden;
+    background-position: 20% 55%; */
+    overflow: hidden;
 }
 
 #new-project .owl-dot{
@@ -282,12 +282,19 @@ body.dark #featured-projects .title p, body.dark #featured-projects .title a{
     }
     
     #new-project .ft-project .left-content .device.phone{
-        width: 157px!important;
-        height: 303px!important;
+        width: 110px!important;
+        height: 227px!important;
         transform: translate(-50%, -50%) rotate(35deg);
     }
-
+    #new-project .ft-project .right-content{ 
+        /* background-color: gray; */
+        margin-top: -150px!important;
+    }
     
+    #new-project .ft-project{ 
+        padding-top: 0px!important;
+        margin-top: 100px!important;
+    }
 }
 @media only screen and (max-width: 1100px){
     #new-project .owl-prev{
@@ -297,6 +304,8 @@ body.dark #featured-projects .title p, body.dark #featured-projects .title a{
     #new-project .owl-next{
         left: 97%!important;
     }
+
+    
 }
 
 @media only screen and (max-width: 920px){
@@ -304,12 +313,27 @@ body.dark #featured-projects .title p, body.dark #featured-projects .title a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 200px;
+        padding-top: 100px;
+        height: 700px!important;
+        background: none!important;
+        margin-top: 150px!important;
+        padding-top: 0;
+        padding-bottom: 0!important;
+        margin-bottom: 0!important;
+        /* background-color: lightblue!important; */
     }
 
     #new-project .ft-project .right-content{ 
+        /* background-color: gray; */
+        margin-top: -100px!important;
+        align-items: center;
+        text-align: center;
+    }
+
+    #new-project .ft-project .left-content{ 
         /* background-color: lightblue; */
-        margin-top: 150px;
+        /* margin-top: 150px; */
+        /* background-color: red; */
     }
 
     #new-project{
@@ -319,6 +343,12 @@ body.dark #featured-projects .title p, body.dark #featured-projects .title a{
     #new-project .ft-project .right-content{
         width: 90%!important;
         
+    }
+
+    #new-project .ft-project .left-content .device.phone{
+        width: 137px!important;
+        height: 283px!important;
+        transform: translate(-50%, -50%) rotate(35deg);
     }
 }
 
