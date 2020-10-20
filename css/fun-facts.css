@@ -1,0 +1,215 @@
+#new-project .proj-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+#new-project .ft-project{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    justify-content: center;
+    /* background: lightblue; */
+    margin-top: 14rem;
+    padding-bottom: 10rem;
+}
+
+#new-project .ft-project .left-content{
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+
+#new-project .ft-project .left-content .device{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(17deg) rotateY(-17deg) rotateZ(12deg);
+    height: 210px;
+    width: 405px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 25px;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.4);
+    transition: .5s;
+    
+}
+
+#new-project .ft-project .left-content .device.phone{
+    width: 210px;
+    height: 405px;
+}
+
+#new-project .ft-project .left-content .device:hover{
+    transform: translate(-50%, -50%) rotateX(0) rotateY(0) rotateZ(0) scale(1.05);
+    
+}
+#new-project .ft-project .right-content{
+    /* background-color: #0E91DD; */
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#new-project .ft-project .right-content h1{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#new-project .ft-project .right-content h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+#new-project .ft-project .right-content p{
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: .9rem;
+    max-width: 500px;
+}
+
+#new-project .owl-prev, #new-project .owl-next{
+    position: absolute;
+    top: 50%;
+}
+
+#new-project .owl-prev{
+    left: 6%;
+}
+
+#new-project .owl-next{
+    left: 92%;
+}
+
+
+#new-project{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+     background: url('/images/main-site/featured-projects/project-bg.png');
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 17% 55%;
+    overflow: hidden;
+}
+
+#new-project .btn{
+    width: 175px;
+}
+#new-project .owl-dot{
+    margin-top: -350px;
+}
+
+#new-project .title{
+    left: 90px;
+}
+
+body.dark #new-project h1{
+    color: #f7f7f7;
+}
+
+body.dark #new-project h2{
+    color: #0E91DD;
+}
+
+body.dark #new-project .title a:hover{
+    color: rgba(255,255,255,.7)!important;
+}
+body.dark #new-project p, body.dark #new-project .title a{
+    color: rgba(255,255,255,0.5)!important;
+    
+}
+
+@media only screen and (max-width: 550px){
+    #new-project .ft-project .left-content .device{
+        height: 157px!important;
+        width: 303px!important;
+       
+    }
+    
+    #new-project .ft-project .left-content .device.phone{
+        width: 110px!important;
+        height: 227px!important;
+        transform: translate(-50%, -50%) rotate(35deg);
+    }
+    #new-project .ft-project .right-content{ 
+        /* background-color: gray; */
+        margin-top: -150px!important;
+    }
+    
+    #new-project .ft-project{ 
+        padding-top: 0px!important;
+        margin-top: 100px!important;
+    }
+}
+@media only screen and (max-width: 1100px){
+    #new-project .owl-prev{
+        left: 5%!important;
+    }
+    
+    #new-project .owl-next{
+        left: 95%!important;
+    }
+
+    
+}
+
+@media only screen and (max-width: 920px){
+    #new-project{
+        background-position: 45% 35%!important;
+        background-size: 270px;
+    }
+    #new-project .ft-project{ 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        height: 700px!important;
+        margin-top: 150px!important;
+        padding-top: 0;
+        padding-bottom: 0!important;
+        margin-bottom: 0!important;
+        
+        /* background-color: lightblue!important; */
+    }
+
+    #new-project .ft-project .right-content{ 
+        /* background-color: gray; */
+        margin-top: -100px!important;
+        align-items: center;
+        text-align: center;
+    }
+
+    #new-project .ft-project .left-content{ 
+        /* background-color: lightblue; */
+        /* margin-top: 150px; */
+        /* background-color: red; */
+    }
+
+    #new-project{
+        background-position: center 10%;
+    }
+
+    #new-project .ft-project .right-content{
+        width: 90%!important;
+        
+    }
+
+    #new-project .ft-project .left-content .device.phone{
+        width: 137px!important;
+        height: 283px!important;
+        transform: translate(-50%, -50%) rotate(35deg);
+    }
+
+    #new-project .owl-dot{
+        margin-top: -200px;
+    }
+}
