@@ -66,7 +66,7 @@ main #contact fieldset label{
     position: absolute;
     left: 0;
     font-size: .9rem;
-    margin-top: -38px;
+    margin-top: 18px;
     z-index:1000;
     transition: 0.5s;
     color: #9c9c9c;
@@ -75,7 +75,7 @@ main #contact fieldset label{
 
 
 main #contact fieldset #msg-label{
-    margin-top: -45px;
+    margin-top: 100px;
     transition: 0.75s;
 }
 main #contact fieldset input:focus ~ label,
