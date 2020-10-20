@@ -34,6 +34,16 @@ $(".projects").owlCarousel({
 
 });
 
+$(".proj-container").owlCarousel({
+    
+    loop: true,
+    items: 1,
+    nav: true,
+    dots: true,
+
+
+});
+
 $(".cards").owlCarousel({
 
     loop: true,

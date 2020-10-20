@@ -54,6 +54,7 @@ a{
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+    max-width: 200px;
 }
 
 .btn.transparent{
@@ -62,6 +63,8 @@ a{
 }
 .btn:hover, button:hover{
     background: #0E91DD;
+    
+    
 }
 
 .btn.transparent:hover{
@@ -72,7 +75,7 @@ a{
 }
 
 
-#up-to .title h2, #featured-projects .title h2, #contact .title h2, #all-projects .title h2{
+#up-to .title h2, #featured-projects .title h2, #contact .title h2, #all-projects .title h2, #new-project .title h2{
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #48b1ee;
@@ -114,6 +117,7 @@ a{
     color: #d6d6d6!important;
     outline: none;
     border: none;
+    transform: translate(-50%, -50%);
    
 }
 
