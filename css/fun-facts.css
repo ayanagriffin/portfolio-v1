@@ -121,10 +121,15 @@ body.dark #new-project h2{
 }
 
 body.dark #new-project .title a:hover{
-    color: rgba(255,255,255,.7)!important;
+    color: #d4d4d4!important;
 }
 body.dark #new-project p, body.dark #new-project .title a{
-    color: rgba(255,255,255,0.5)!important;
+    color: #d4d4d4!important;
+    
+}
+
+body.dark #new-project .ft-project .left-content .device{
+    box-shadow: 0 40px 100px rgba(255,255,255,.4);
     
 }
 
