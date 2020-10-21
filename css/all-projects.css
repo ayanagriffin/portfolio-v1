@@ -129,7 +129,7 @@
     transform: scaleX(1);
     width: 100%;
 }
-#all-projects .card .right-content .imgBox img, #featured-projects .card .right-content .imgBox img{
+#all-projects .card .right-content .imgBox img, #fun-facts .card .right-content .imgBox img{
     width: 100%;
 }
 
@@ -163,14 +163,14 @@
     transform: scale(1.05);
 }
 
-#all-projects .card .right-content, #featured-projects .card .right-content{
+#all-projects .card .right-content, #fun-facts .card .right-content{
     display: flex;
     justify-content: space-between;
     
 }
 
 
-#all-projects .card .imgBox, #featured-projects .card .imgBox{
+#all-projects .card .imgBox, #fun-facts .card .imgBox{
     min-width: 12rem;
     max-width:12rem;
     height: 217px;
@@ -181,7 +181,7 @@
     overflow: hidden;
 }
 
-#all-projects .card .imgBox img, #featured-projects .card .imgBox img{
+#all-projects .card .imgBox img, #fun-facts .card .imgBox img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -193,7 +193,7 @@
 
 }
 
-#featured-projects .projects{
+#fun-facts .projects{
     display: block;
     /* flex-direction: row; */
     /* margin: 0 5%;
@@ -202,33 +202,33 @@
     justify-content: space-around; */
 }
 
-#all-projects .card .card-info, #featured-projects .card .card-info{
+#all-projects .card .card-info, #fun-facts .card .card-info{
     margin-left: 20px;
 }
 
-#all-projects .date-and-categories, #all-projects .card h2, #featured-projects .date-and-categories, #featured-projects .card h2 {
+#all-projects .date-and-categories, #all-projects .card h2, #fun-facts .date-and-categories, #fun-facts .card h2 {
     margin-bottom: 10px;
 }
 
 
-#all-projects .card a, #featured-projects .card a{
+#all-projects .card a, #fun-facts .card a{
 
     color: #aaa;
 }
-#all-projects .date-and-categories ul, #featured-projects .date-and-categories ul{
+#all-projects .date-and-categories ul, #fun-facts .date-and-categories ul{
     display: flex;
     flex-wrap: wrap;
 }
 
-#all-projects .date-and-categories ul li, #featured-projects .date-and-categories ul li{
+#all-projects .date-and-categories ul li, #fun-facts .date-and-categories ul li{
     margin-right: 5px;
 }
 
-#all-projects .card p, #featured-projects .card p{
+#all-projects .card p, #fun-facts .card p{
     font-size: 14px;
 }
 
-#all-projects .card ul li, #featured-projects .card ul li{
+#all-projects .card ul li, #fun-facts .card ul li{
     font-size: 12px;
 }
 
@@ -261,31 +261,31 @@ body.dark #all-projects .card h2{
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
 @media only screen and (max-width: 640px){
 
-    #all-projects .card, #featured-projects .card{
+    #all-projects .card, #fun-facts .card{
         margin: 10px 0;
         width: 300px;
         
     }
-    #all-projects .card .right-content, #featured-projects .card .right-content{
+    #all-projects .card .right-content, #fun-facts .card .right-content{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    #all-projects .card .imgBox img, #featured-projects .card .imgBox img{
+    #all-projects .card .imgBox img, #fun-facts .card .imgBox img{
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    #all-projects .card .imgBox, #featured-projects .card .imgBox{
+    #all-projects .card .imgBox, #fun-facts .card .imgBox{
         min-width: 10rem;
         max-width:10rem;
         height: 175px;
         
     }
 
-    #all-projects .card-info, #featured-projects .card-info{
+    #all-projects .card-info, #fun-facts .card-info{
         margin-top: 80px;
     }
 

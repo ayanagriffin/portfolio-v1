@@ -5,7 +5,7 @@
 @import url('home.css');
 @import url('up-to.css');
 @import url('contact.css');
-@import url('featured-projects.css');
+@import url('ft-projects.css');
 @import url('fun-facts.css');
 
 
@@ -77,7 +77,7 @@ a{
 }
 
 
-#up-to .title h2, #featured-projects .title h2, #contact .title h2, #all-projects .title h2, #new-project .title h2{
+#up-to .title h2, #fun-facts .title h2, #contact .title h2, #all-projects .title h2, #ft-projects .title h2{
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #48b1ee;
@@ -85,7 +85,7 @@ a{
     font-size: .9rem;
 }
 
-#up-to .title h1, #featured-projects .title h1, #contact .title h1, #all-projects .title h1{
+#up-to .title h1, #fun-facts .title h1, #contact .title h1, #all-projects .title h1{
     font-size: 1.8rem;
     font-weight: 700;
     color: #000;
