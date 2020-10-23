@@ -324,12 +324,10 @@ body.dark #fun-facts .title p, body.dark #fun-facts .title a, body.dark #ft-proj
         display: block!important;
     }
 
-    #ft-projects .title a{
-        text-decoration: underline;
-    }
+    
     #ft-projects .title h1:before{
     
-        top: 55%;
+        /* top: 55%; */
         /* left: 50%;
         transform: translateX(-50%); */
     }
