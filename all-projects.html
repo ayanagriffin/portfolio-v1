@@ -185,18 +185,18 @@
 
         });
 
-        if (sessionStorage.getItem("darkmode") == "true") {
-            $('body').addClass('dark');
-        }
+        // if (sessionStorage.getItem("darkmode") == "true") {
+        //     $('body').addClass('dark');
+        // }
         $(document).ready(function () {
             // LOAD THE HEADER AND FOOTER
             $('#navbar').load('navbar.html');
             $('#footer').load('footer.html');
             $('.preloader').load('preloader.html');
             // REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK)
-            if (sessionStorage.getItem("darkmode") == "true") {
-                $('body').addClass('dark');
-            }
+            // if (sessionStorage.getItem("darkmode") == "true") {
+            //     $('body').addClass('dark');
+            // }
             // APPLYING FILTERS
             $('.list').click(function () {
                 const value = $(this).attr('data-filter');

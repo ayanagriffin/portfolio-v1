@@ -38,11 +38,11 @@ $(document).ready(function () {
  dark_btn.addEventListener('click', () => {
      $('body').toggleClass('dark');
      if ($('body').hasClass('dark')) {
-         sessionStorage.setItem("darkmode", "true");
+        //  sessionStorage.setItem("darkmode", "true");
          $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
          $("#darkmode-tip").html('switch to light mode')
      } else {
-         sessionStorage.setItem("darkmode", "false");
+        //  sessionStorage.setItem("darkmode", "false");
          $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
          $("#darkmode-tip").html('switch to dark mode')
      }

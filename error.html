@@ -260,7 +260,8 @@
     <script type="text/javascript">
 
     // REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK), OR CHECK THEIR PREFERENCE IF IT'S THEIR FIRST TIME
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && sessionStorage.getItem("darkmode") !== "false") {
+    // && sessionStorage.getItem("darkmode") !== "false"
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ) {
     $('body').addClass('dark');
 }
 

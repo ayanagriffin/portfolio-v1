@@ -102,7 +102,7 @@
         $(document).ready(function () {
             $('#navbar').load('navbar.html');
             $('#footer').load('footer.html');
-            const projectId = sessionStorage.getItem('project');
+            // const projectId = sessionStorage.getItem('project');
             const project = allProjects[projectId];
             document.title = project.name;
             $("h1").html(project.name);
