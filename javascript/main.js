@@ -98,6 +98,8 @@ for (let i = 0; i < iconBox.length; i++) {
         this.className = "iconBox active";
     })
 }
+
+
 $(document).ready(function () {
     // LOAD THE HEADER AND FOOTER
     $('#navbar').load('navbar.html');

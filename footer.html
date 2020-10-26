@@ -12,61 +12,6 @@
 <body>
     <div>
         <div class="container">
-            <!-- <div class="quick-links">
-                <h2>quick links</h2>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/#about-me">About Me</a></li>
-                    <li><a href="/#projects">Featured Projects</a></li>
-                    <li><a href="all-projects">All Projects</a></li>
-                    <li><a href="/#contact">Contact Me</a></li>
-                    
-                </ul>
-            </div>
-            <div class="about">
-                <h2>about me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt suscipit perspiciatis ea cumque,
-                    velit sed recusandae tempora est necessitatibus!</p>
-            </div>
-            <div class="projects">
-                <h2>projects</h2>
-                <div class="project-images">
-                    <a href="project" target="_blank"><img class="learnMore" id="ecobud" src="../images/main-site/featured-projects/bee.png" alt="bee"></a>
-                    <a href="project" target="_blank"><img class="learnMore" id="ecobud" src="../images/main-site/featured-projects/bee.png" alt="bee"></a>
-                    <a href="project" target="_blank"><img class="learnMore" id="ecobud" src="../images/main-site/featured-projects/bee.png" alt="bee"></a>
-                    <a href="project" target="_blank"><img class="learnMore" id="ecobud" src="../images/main-site/featured-projects/bee.png" alt="bee"></a>
-                    <a href="project" target="_blank"><img class="learnMore" id="ecobud" src="../images/main-site/featured-projects/bee.png" alt="bee"></a>
-                    <a href="project" target="_blank"><img class="learnMore" id="ecobud" src="../images/main-site/featured-projects/bee.png" alt="bee"></a>
-                </div>
-            </div>
-            <div class="contact-me">
-                <h2>let's connect</h2>
-                <p>Want to get in touch? <a href="/#contact" >Send me a message!</a></p>
-                
-                <ul class="socials">
-                    <li><a class="social" target="_blank" href="https://www.facebook.com/ayana.griffin.315"> <img
-                                src="../images/socials/fb-logo.png"></a></li>
-                    <li><a class="social" target="_blank" href="https://www.linkedin.com/in/ayana-griffin/"> <img
-                                src="../images/socials/li-logo.png"></a></li>
-                    <li><a class="social" target="_blank" href="https://github.com/ayanagriffin"> <img src="../images/socials/gh-logo.png"></a>
-                    </li>
-
-                </ul>
-                <p>See what I've been up to!</p>
-            </div>
-            
-            
-        </div>
-        <div class="bottom">
-            <ul>
-                <p>made by Ayana Griffin</p>
-                <p>|</p>
-                <p>2020</p>
-
-            </ul>
-
-        </div> -->
-
             <div class="name">
                 <h3 class="logo">Ayana <span>Griffin</span></h3>
             </div>
@@ -84,7 +29,7 @@
                     <p>Made by Ayana Griffin </p>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/#about-me">About Me</a></li>
+                        <li><a id="about-footer" href="/">About Me</a></li>
                         <li><a href="/#projects">Featured Projects</a></li>
                         <li><a href="all-projects">All Projects</a></li>
                         <li><a href="/#contact">Contact Me</a></li>
@@ -109,7 +54,9 @@
                 <p>back to top</p>
             </div>
         </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="javascript/menu.js"></script> -->
         <script type="text/javascript">
 
             if ($('body').hasClass('dark')) {
@@ -130,14 +77,22 @@
                 if ($('body').hasClass('dark')) {
                     localStorage.setItem("darkmode", "true");
                     $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-sun"></i>');
-                    $("#darkmode-footer-tip").html('switch to light mode')
+                    $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
+                    $("#darkmode-tip").html('switch to light mode')
                 } else {
                     localStorage.setItem("darkmode", "false");
                     $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-moon"></i>');
-                    $("#darkmode-footer-tip").html('switch to dark mode')
+                    $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
+                    $("#darkmode-tip").html('switch to dark mode')
                 }
 
             })
+
+            const aboutBtnFooter = document.querySelector("#about-footer");
+
+            aboutBtnFooter.addEventListener('click', function () {
+                sessionStorage.setItem('about-me', 'true');
+            });
 
         </script>
 </body>

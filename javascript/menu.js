@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-    
-// CLOSES RESPONSIVE MENU WHEN USER CLICKS LINK
+
+    // CLOSES RESPONSIVE MENU WHEN USER CLICKS LINK
     const links = document.querySelectorAll('.nav-links');
 
     links.forEach((link) => {
@@ -12,42 +12,53 @@ $(document).ready(function () {
     });
 
 
-   
+
 });
- 
- // TAKE THE USER TO THE ABOUT ME PAGE IF THEY NAVIGATE TO IT ON THE NAVBAR
- const aboutBtn = document.querySelector("#about");
- aboutBtn.addEventListener('click', () => {
-     sessionStorage.setItem('about-me', 'true');
 
- });
+// TAKE THE USER TO THE ABOUT ME PAGE IF THEY NAVIGATE TO IT ON THE NAVBAR
 
- //CHECK THE ORIGINAL COLOR SETTING TO DETERMINE WHICH ICON SHOULD BE DISPLAYED
- if ($('body').hasClass('dark')) {
-     $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
-     $("#darkmode-tip").html('switch to light mode')
- } else {
-     $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
-     $("#darkmode-tip").html('switch to dark mode')
- }
- //SWITCH TO DARK MODE BY ADDING CLASS 'DARK' TO BODY WHEN BTN IS CLICKED
- const dark_btn = document.querySelector('#darkmode');
- const body = document.querySelector('body');
+//  aboutBtn.addEventListener('click', () => {
+//      sessionStorage.setItem('about-me', 'true');
+
+//  });
+const aboutBtn = document.querySelector("#about");
+
+aboutBtn.addEventListener('click', function () {
+    sessionStorage.setItem('about-me', 'true');
+});
 
 
- dark_btn.addEventListener('click', () => {
-     $('body').toggleClass('dark');
-     if ($('body').hasClass('dark')) {
-         localStorage.setItem("darkmode", "true");
-         $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
-         $("#darkmode-tip").html('switch to light mode')
-     } else {
-         localStorage.setItem("darkmode", "false");
-         $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
-         $("#darkmode-tip").html('switch to dark mode')
-     }
 
- })
+//CHECK THE ORIGINAL COLOR SETTING TO DETERMINE WHICH ICON SHOULD BE DISPLAYED
+if ($('body').hasClass('dark')) {
+    $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
+    $("#darkmode-tip").html('switch to light mode')
+    $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-sun"></i>');
+
+} else {
+    $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
+    $("#darkmode-tip").html('switch to dark mode')
+    $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-moon"></i>');
+
+}
+//SWITCH TO DARK MODE BY ADDING CLASS 'DARK' TO BODY WHEN BTN IS CLICKED
+const dark_btn = document.querySelector('#darkmode');
+const body = document.querySelector('body');
+
+
+dark_btn.addEventListener('click', () => {
+    $('body').toggleClass('dark');
+    if ($('body').hasClass('dark')) {
+        localStorage.setItem("darkmode", "true");
+        $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
+        $("#darkmode-tip").html('switch to light mode')
+    } else {
+        localStorage.setItem("darkmode", "false");
+        $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
+        $("#darkmode-tip").html('switch to dark mode')
+    }
+
+})
 
 
 

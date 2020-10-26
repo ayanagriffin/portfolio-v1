@@ -114,7 +114,7 @@
 }
 
 #ft-projects .title{
-    left: calc(max(5vw, 40px));
+    left: calc(max(10vw, 40px));
     z-index: 50;
 }
 
@@ -141,8 +141,8 @@ body.dark #ft-projects .ft-project .left-content .device{
 
 @media only screen and (max-width: 550px){
     #ft-projects .ft-project .left-content .device{
-        height: 157px!important;
-        width: 303px!important;
+        height: 141px!important;
+        width: 273px!important;
        
     }
     
