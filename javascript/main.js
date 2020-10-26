@@ -121,11 +121,11 @@ $(document).ready(function () {
 
     })
 
-    // if (sessionStorage.getItem('about-me') == 'true') {
-    //     container.classList.add("about-mode");
-    //     container.classList.remove("home-mode");
-    //     sessionStorage.setItem('about-me', 'false');
-    // }
+    if (sessionStorage.getItem('about-me') == 'true') {
+        container.classList.add("about-mode");
+        container.classList.remove("home-mode");
+        sessionStorage.setItem('about-me', 'false');
+    }
 
 
     // IF THE INPUT FIELDS ON THE CONTACT FORM ARE FILLED, ADD CLASS TO MAKE THE LABELS MOVE UP

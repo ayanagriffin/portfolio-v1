@@ -17,10 +17,10 @@ $(document).ready(function () {
  
  // TAKE THE USER TO THE ABOUT ME PAGE IF THEY NAVIGATE TO IT ON THE NAVBAR
  const aboutBtn = document.querySelector("#about");
-//  aboutBtn.addEventListener('click', () => {
-//      sessionStorage.setItem('about-me', 'true');
+ aboutBtn.addEventListener('click', () => {
+     sessionStorage.setItem('about-me', 'true');
 
-//  });
+ });
 
  //CHECK THE ORIGINAL COLOR SETTING TO DETERMINE WHICH ICON SHOULD BE DISPLAYED
  if ($('body').hasClass('dark')) {
