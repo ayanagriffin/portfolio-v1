@@ -1,13 +1,13 @@
 
 // REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK), OR CHECK THEIR PREFERENCE IF IT'S THEIR FIRST TIME
-// && sessionStorage.getItem("darkmode") !== "false"
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ) {
+// 
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem("darkmode") !== "false") {
     $('body').addClass('dark');
 }
 
-// if (sessionStorage.getItem("darkmode") == "true") {
-//     $('body').addClass('dark');
-// }
+if (localStorage.getItem("darkmode") == "true") {
+    $('body').addClass('dark');
+}
 // CAROUSELS FOR MINIMIZED FEATURED PROJECTS PAGE AND UP TO PAGE
 $(".projects").owlCarousel({
     margin: 10,
