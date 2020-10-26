@@ -152,7 +152,7 @@
 }
 
 
-#fun-facts .btn.learnMore{
+#fun-facts .btn{
     width: 140px;
     height: 40px;
     justify-self: flex-end;
