@@ -128,11 +128,11 @@
             dark_btn2.addEventListener('click', () => {
                 $('body').toggleClass('dark');
                 if ($('body').hasClass('dark')) {
-                    localStorage.setItem("darkmode", "true");
+                    sessionStorage.setItem("darkmode", "true");
                     $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-sun"></i>');
                     $("#darkmode-footer-tip").html('switch to light mode')
                 } else {
-                    localStorage.setItem("darkmode", "false");
+                    sessionStorage.setItem("darkmode", "false");
                     $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-moon"></i>');
                     $("#darkmode-footer-tip").html('switch to dark mode')
                 }

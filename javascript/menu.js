@@ -18,7 +18,7 @@ $(document).ready(function () {
  // TAKE THE USER TO THE ABOUT ME PAGE IF THEY NAVIGATE TO IT ON THE NAVBAR
  const aboutBtn = document.querySelector("#about");
  aboutBtn.addEventListener('click', () => {
-     localStorage.setItem('about-me', 'true');
+     sessionStorage.setItem('about-me', 'true');
 
  });
 
@@ -38,11 +38,11 @@ $(document).ready(function () {
  dark_btn.addEventListener('click', () => {
      $('body').toggleClass('dark');
      if ($('body').hasClass('dark')) {
-         localStorage.setItem("darkmode", "true");
+         sessionStorage.setItem("darkmode", "true");
          $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
          $("#darkmode-tip").html('switch to light mode')
      } else {
-         localStorage.setItem("darkmode", "false");
+         sessionStorage.setItem("darkmode", "false");
          $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
          $("#darkmode-tip").html('switch to dark mode')
      }
