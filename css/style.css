@@ -31,9 +31,6 @@ body{
 
 }
 
-
-
-
 ul{
     list-style: none;
 }
@@ -139,3 +136,9 @@ body.dark .owl-dot.active{
 }
 
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
+
+@media only screen and (max-width: 500px){
+    .owl-prev, .owl-next{
+        display: none!important;
+    }
+}

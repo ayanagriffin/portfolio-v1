@@ -264,7 +264,7 @@ header a{
 
 
 
-.socials li i:hover {
+.nav-links-container .socials li i:hover {
     opacity: 100%;
     font-size: 1.8rem;
 }

@@ -42,6 +42,9 @@
     /* transform: translateX(-50%); */
 }
 
+#fun-facts .title h1:before{
+    top: 70px;
+}
 #fun-facts .title p, #fun-facts .title a, #ft-projects .title p, #ft-projects .title a{
     color: rgba(0,0,0,0.5);
     font-size: .9rem;

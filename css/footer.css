@@ -87,12 +87,12 @@ footer .back-to-top p{
     
 }
 
-.quick-links ul li a{
+.quick-links ul li a, .quick-links ul li i{
     color: rgba(0, 0, 0, 0.7);
     white-space: nowrap;
 }
 
-.quick-links ul li a:hover{
+.quick-links ul li a:hover, .quick-links ul li i:hover{
     color: rgba(0, 0, 0, 0.9);
 }
 
@@ -104,6 +104,12 @@ footer .socials{
     
 }
 
+#darkmode-footer{
+    font-size: 1.65rem;
+   position: relative;
+   top: -2.5px;
+   cursor: pointer;
+}
 
 /* -------------------------------- DARK MODE ------------------------------------ */
 
@@ -113,10 +119,29 @@ body.dark footer.footer{
 body.dark footer .logo{
     color: #fcfcfc;
 }
+
+body.dark .quick-links ul li a{
+    color: rgba(255, 255, 255, 0.7)!important;
+}
+
+body.dark .quick-links ul li i{
+    color: #fff;
+}
+
+body.dark .quick-links ul li a:hover{
+    color: rgba(255, 255, 255, 0.9)!important;
+}
+
+body.dark .quick-links ul li i:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
 
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 675px){
+    footer.footer{
+        padding-left: 45px;
+    }
     .quick-links ul:not(.socials), .quick-links .left, .quick-links{
         flex-direction: column;
         align-items: flex-start;

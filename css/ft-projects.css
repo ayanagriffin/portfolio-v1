@@ -178,7 +178,7 @@ body.dark #ft-projects .ft-project .left-content .device{
     
 }
 
-@media only screen and (max-width: 920px){
+@media only screen and (max-width: 1000px){
     #ft-projects{
         background-position: 45% 35%!important;
         background-size: 270px;
