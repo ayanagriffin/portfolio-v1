@@ -51,11 +51,15 @@ dark_btn.addEventListener('click', () => {
     if ($('body').hasClass('dark')) {
         localStorage.setItem("darkmode", "true");
         $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
-        $("#darkmode-tip").html('switch to light mode')
+        $("#darkmode-tip").html('switch to light mode');
+        $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-sun"></i>');
+
     } else {
         localStorage.setItem("darkmode", "false");
         $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
         $("#darkmode-tip").html('switch to dark mode')
+        $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-moon"></i>');
+
     }
 
 })
