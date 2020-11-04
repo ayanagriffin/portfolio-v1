@@ -19,7 +19,9 @@
 
 
 
-
+#up-to .owl-dots:nth-child(1){
+    background-color: red!important;
+}
 
 #up-to .title h1:before, #all-projects .title h1:before{
     width: 80px;

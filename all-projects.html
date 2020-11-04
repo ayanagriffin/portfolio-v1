@@ -201,11 +201,13 @@
             $('.list').click(function () {
                 const value = $(this).attr('data-filter');
                 if (value == 'all') {
-                    $('.card').show(100);
+                    $('.card').show();
+                    
                 }
                 else {
-                    $('.card').not('.' + value).hide(100);
-                    $('.card').filter('.' + value).show(100);
+                    $('.card').not('.' + value).hide();
+                    $('.card').filter('.' + value).show();
+                   
                 }
 
             })

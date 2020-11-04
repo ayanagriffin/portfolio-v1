@@ -58,7 +58,8 @@ header a{
 .nav-links-container{
     flex: 3;
     display: flex;
-    
+    align-items: center;
+    padding: 0!important;    
     
 }
 
@@ -438,8 +439,8 @@ body.dark #darkmode-tip:before{
         transform: translateX(350%);
         transition: 1.5s;
         /* padding-bottom: 8vh; */
-        padding-right: 30px;
-        padding-top: 15px;
+        padding-right: 30px!important;
+        padding-top: 15px!important;
         
 
     }
