@@ -17,8 +17,8 @@ header a{
 
 
 .nav-bar-container {
-    max-width: 65rem;
-    padding: 0 2rem;
+    /* max-width: 65rem; */
+    padding: 0 8vw;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -574,4 +574,33 @@ body.dark #darkmode-tip:before{
         padding-bottom: 4vh;
     }
 
+}
+
+
+@media only screen and (min-width: 1950px){
+    .logo{
+        line-height: 5.5rem;
+        font-size: 2rem;
+    }
+
+    .nav-link > a{
+        line-height: 5.5rem;
+        padding: 0 .8rem;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .socials li i {
+        font-size: 2.3rem;
+        
+        
+    }
+
+    .dropdown-link > a{
+        font-size: 1.6rem;
+        width: 15.75rem;
+    }
 }
