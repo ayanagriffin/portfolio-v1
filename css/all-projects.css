@@ -1,301 +1,305 @@
-
-#all-projects{
-    margin: 2% 0;
-    min-height: calc(100vh - 3rem);
-    position: relative;
+#all-projects {
+  margin: 2% 0;
+  min-height: calc(100vh - 3rem);
+  position: relative;
 }
 
-
-
-#all-projects .title{
-    text-align: center;
-    margin: 30px 0;
-    position: relative;
+#all-projects .title {
+  text-align: center;
+  margin: 30px 0;
+  position: relative;
 }
 
-#all-projects .title h1:before{
-    width: 60px;
-   
+#all-projects .title h1:before {
+  width: 60px;
 }
 
-
-#all-projects .categories ul{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 4%;
-    justify-content: center;
-
+#all-projects .categories ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 4%;
+  justify-content: center;
 }
 
-#all-projects .categories ul li{
-    position: relative;
-   color: #999;
-    padding: 8px 20px;
-    margin: 5px;
-    cursor: pointer;
+#all-projects .categories ul li {
+  position: relative;
+  color: #999;
+  padding: 8px 20px;
+  margin: 5px;
+  cursor: pointer;
 }
 
 #all-projects .categories ul li::before {
-    content: "";
-    position: absolute;
-    width: 87%;
-    height: 2px;
-    bottom: 0;
-    left: 10%;
-    background-color: #ccc;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-    
-  }
-
- #all-projects .categories ul li.active::before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
-#all-projects .categories ul li i{
-    padding-right: 10px;
+  content: "";
+  position: absolute;
+  width: 87%;
+  height: 2px;
+  bottom: 0;
+  left: 10%;
+  background-color: #ccc;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
 }
 
-#all-projects .categories ul li:hover{
-    color: #000;
+#all-projects .categories ul li.active::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+#all-projects .categories ul li i {
+  padding-right: 10px;
 }
 
-
-#all-projects .categories ul li:hover > i{
-    color: #c5edfa;
-    
-}
-#all-projects  .categories ul li.active{
-    transition: .3s;
-    color: #000;
+#all-projects .categories ul li:hover {
+  color: #000;
 }
 
+#all-projects .categories ul li:hover > i {
+  color: #c5edfa;
+}
+#all-projects .categories ul li.active {
+  transition: 0.3s;
+  color: #000;
+}
 
-#all-projects  .categories ul li.active > i{
-    color: #c5edfa;
+#all-projects .categories ul li.active > i {
+  color: #c5edfa;
 }
 
 /* -------------------------------------------- CARD -------------------------------------------- */
 
-#all-projects .projects{
-    display: flex;
-    margin: 0 5%;
-    margin-top: 2%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-   
+#all-projects .projects {
+  display: flex;
+  margin: 0 5%;
+  margin-top: 2%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.sliders{
-    position: absolute;
-    white-space: nowrap;
-    bottom: 5px;
-    left: 65%;
-    transform: translateX(-50%);
+.sliders {
+  position: absolute;
+  white-space: nowrap;
+  bottom: 5px;
+  left: 65%;
+  transform: translateX(-50%);
 }
 
-.sliders .tap{
-    position: relative;
-    height: 10px;
-    width: 35px;
-    background: #d9d9d9; 
-    z-index: 1000;
-    border-radius: 5px;
-    display: inline-flex;
-    margin: 0 2px;
-    cursor: pointer;
+.sliders .tap {
+  position: relative;
+  height: 10px;
+  width: 35px;
+  background: #d9d9d9;
+  z-index: 1000;
+  border-radius: 5px;
+  display: inline-flex;
+  margin: 0 2px;
+  cursor: pointer;
 }
 
-.sliders .tap.active-slide{
-    background-color: #60BEF5;
+.sliders .tap.active-slide {
+  background-color: #60bef5;
 }
 
-.sliders .tap:before{
-    position: absolute;
-    content:'';
-    top:0;
-    left:0;
-    height:100%;
-    width: -100%;
-    background: #60BEF5;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: transform .3s;
-    transform-origin: left;
+.sliders .tap:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: -100%;
+  background: #60bef5;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  transform-origin: left;
 }
 
-.sliders .tap:hover:before{
-    transform: scaleX(1);
-    width: 100%;
+.sliders .tap:hover:before {
+  transform: scaleX(1);
+  width: 100%;
 }
-#all-projects .card .right-content .imgBox img, #fun-facts .card .right-content .imgBox img{
-    width: 100%;
-}
-
-#all-projects .card{
-    width: 100%;
-    max-width: 550px;
-    padding:1rem;
-    background: transparent;
-    box-shadow: 0 .05rem 1rem rgba(0,0,0,.05);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: .8rem;
-    position: relative;
-    padding-bottom: 30px;
-    margin: 0 1% 3% 1%;
-    transform: scale(.9);
-    
-    
+#all-projects .card .right-content .imgBox img,
+#fun-facts .card .right-content .imgBox img {
+  width: 100%;
 }
 
-
-
-#all-projects .card:hover{
-    transform: scale(.91);
-    box-shadow: .1rem 1rem 1rem rgba(0,0,0,.05);
-
+#all-projects .card {
+  width: 100%;
+  max-width: 550px;
+  padding: 1rem;
+  background: transparent;
+  box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.8rem;
+  position: relative;
+  padding-bottom: 30px;
+  margin: 0 1% 3% 1%;
+  transform: scale(0.9);
 }
 
-#all-projects .card:hover img{
-    transform: scale(1.05);
+#all-projects .card:hover {
+  transform: scale(0.91);
+  box-shadow: 0.1rem 1rem 1rem rgba(0, 0, 0, 0.05);
 }
 
-#all-projects .card .right-content, #fun-facts .card .right-content{
-    display: flex;
-    justify-content: space-between;
-    
+#all-projects .card:hover img {
+  transform: scale(1.05);
 }
 
-
-#all-projects .card .imgBox, #fun-facts .card .imgBox{
-    min-width: 12rem;
-    max-width:12rem;
-    height: 217px;
-    position: relative;
-    margin-left: -1rem;
-    margin-top: -1rem;
-    margin-bottom: calc(-1rem - 30px);
-    overflow: hidden;
+#all-projects .card .right-content,
+#fun-facts .card .right-content {
+  display: flex;
+  justify-content: space-between;
 }
 
-#all-projects .card .imgBox img, #fun-facts .card .imgBox img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: .8rem;
-    position: relative;
-    transition: .1s;
-    
-    
-
+#all-projects .card .imgBox,
+#fun-facts .card .imgBox {
+  min-width: 12rem;
+  max-width: 12rem;
+  height: 217px;
+  position: relative;
+  margin-left: -1rem;
+  margin-top: -1rem;
+  margin-bottom: calc(-1rem - 30px);
+  overflow: hidden;
 }
 
-#fun-facts .projects{
-    display: block;
-    /* flex-direction: row; */
-    /* margin: 0 5%;
+#all-projects .card .imgBox img,
+#fun-facts .card .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  position: relative;
+  transition: 0.1s;
+}
+
+#fun-facts .projects {
+  display: block;
+  /* flex-direction: row; */
+  /* margin: 0 5%;
     margin-top: 2%;
     flex-wrap: wrap;
     justify-content: space-around; */
 }
 
-#all-projects .card .card-info, #fun-facts .card .card-info{
-    margin-left: 20px;
+#all-projects .card .card-info,
+#fun-facts .card .card-info {
+  margin-left: 20px;
 }
 
-#all-projects .date-and-categories, #all-projects .card h2, #fun-facts .date-and-categories, #fun-facts .card h2 {
-    margin-bottom: 10px;
+#all-projects .date-and-categories,
+#all-projects .card h2,
+#fun-facts .date-and-categories,
+#fun-facts .card h2 {
+  margin-bottom: 10px;
 }
 
-
-#all-projects .card a, #fun-facts .card a{
-
-    color: #aaa;
+#all-projects .card a,
+#fun-facts .card a {
+  color: #aaa;
 }
-#all-projects .date-and-categories ul, #fun-facts .date-and-categories ul{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#all-projects .date-and-categories ul li, #fun-facts .date-and-categories ul li{
-    margin-right: 5px;
+#all-projects .date-and-categories ul,
+#fun-facts .date-and-categories ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#all-projects .card p, #fun-facts .card p{
-    font-size: 14px;
+#all-projects .date-and-categories ul li,
+#fun-facts .date-and-categories ul li {
+  margin-right: 5px;
 }
 
-#all-projects .card ul li, #fun-facts .card ul li{
-    font-size: 12px;
+#all-projects .card p,
+#fun-facts .card p {
+  font-size: 14px;
+}
+
+#all-projects .card ul li,
+#fun-facts .card ul li {
+  font-size: 12px;
 }
 
 /* -------------------------------- DARK MODE ------------------------------------ */
-body.dark #all-projects .title h1{
-    color: #fcfcfc;
+body.dark #all-projects .title h1 {
+  color: #fcfcfc;
 }
 
-body.dark #all-projects .categories ul li:hover{
-    color: #fcfcfc;
+body.dark #all-projects .categories ul li:hover {
+  color: #fcfcfc;
 }
 
-body.dark #all-projects  .categories ul li.active{
-    
-    color: #fcfcfc;
+body.dark #all-projects .categories ul li.active {
+  color: #fcfcfc;
 }
 
-body.dark #all-projects .card{
-    box-shadow: 5px 5px 10px rgba(255,255,255,.1);
-    color: #fcfcfc;
+body.dark #all-projects .card {
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.1);
+  color: #fcfcfc;
 }
 
-body.dark #all-projects .card p{
-    color: #bfbfbf!important;
+body.dark #all-projects .card p {
+  color: #bfbfbf !important;
 }
-body.dark #all-projects .card h2{
-    color: #60BEF5;
+body.dark #all-projects .card h2 {
+  color: #60bef5;
 }
 
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 640px) {
+  #all-projects .card,
+  #fun-facts .card {
+    margin: 10px 0;
+    width: 300px;
+  }
+  #all-projects .card .right-content,
+  #fun-facts .card .right-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    #all-projects .card, #fun-facts .card{
-        margin: 10px 0;
-        width: 300px;
-        
-    }
-    #all-projects .card .right-content, #fun-facts .card .right-content{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  #all-projects .card .imgBox img,
+  #fun-facts .card .imgBox img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    #all-projects .card .imgBox img, #fun-facts .card .imgBox img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  #all-projects .card .imgBox,
+  #fun-facts .card .imgBox {
+    min-width: 10rem;
+    max-width: 10rem;
+    height: 175px;
+  }
 
-    #all-projects .card .imgBox, #fun-facts .card .imgBox{
-        min-width: 10rem;
-        max-width:10rem;
-        height: 175px;
-        
-    }
+  #all-projects .card-info,
+  #fun-facts .card-info {
+    margin-top: 80px;
+  }
 
-    #all-projects .card-info, #fun-facts .card-info{
-        margin-top: 80px;
-    }
-
-    .sliders{
-        bottom: 5px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
+  .sliders {
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
+@media only screen and (min-width: 2000px) {
+  #all-projects .title,
+  #all-projects .categories ul li {
+    transform: scale(1.3);
+    margin: 30px;
+    max-width: 80%;
+  }
 
-
+  #all-projects .title {
+    margin-left: 10%;
+  }
+  #all-projects .card {
+    transform: scale(1.1);
+    margin: 50px 40px;
+  }
+}

@@ -19,7 +19,7 @@ $(".projects").owlCarousel({
     responsiveClass: true,
     responsive: {
         0: {
-            nav: true,
+            nav: false,
 
         },
         640: {
@@ -42,36 +42,51 @@ $(".proj-container").owlCarousel({
     nav: true,
     dots: true,
 
-
-});
-
-$(".cards").owlCarousel({
-
-    loop: true,
-    items: 3,
-    nav: true,
-    dots: true,
-    margin: 15,
-
     responsiveClass: true,
     responsive: {
         0: {
-            items: 1,
+            nav: false,
 
         },
-        600: {
-            items: 2,
-            margin: 25,
-        },
-        900: {
-            items: 3,
+        640: {
+            nav: true,
 
         },
+        1048: {
+            autoplay: false,
+
+        }
     }
 
-
-
 });
+
+// $(".cards").owlCarousel({
+
+//     loop: true,
+//     items: 3,
+//     nav: true,
+//     dots: true,
+//     margin: 15,
+
+//     responsiveClass: true,
+//     responsive: {
+//         0: {
+//             items: 1,
+
+//         },
+//         600: {
+//             items: 2,
+//             margin: 25,
+//         },
+//         900: {
+//             items: 3,
+
+//         },
+//     }
+
+
+
+// });
 $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
 $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
 

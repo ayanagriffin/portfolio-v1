@@ -1,323 +1,321 @@
-main #contact{
-    min-height: 750px;
+main #contact {
+  min-height: 750px;
 
-    width: 100%;
-    position: relative;
-    padding: 3rem 2rem 1rem 2rem;
-    
-    /* background:url(./images/bg.jpg);
+  width: 100%;
+  position: relative;
+  margin: 0 !important;
+  /* background:url(./images/bg.jpg);
     background-size: cover; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-    
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#contact .title{
-    position: relative;;
+#contact .title {
+  position: relative;
 }
-#contact .title h1:before{
-    width: 80px;
-    position: absolute;
-    height: 4px;
-    content: '';
-    background-color: #48b1ee;
-    top: 70px;
-    left: 0%;
-    /* transform: translateX(-50%); */
-}
-
-
-
-main #contact fieldset{
-    border: none;
-    position: relative;
-    width: 100%;
-    margin-top: 5px;
-    
-    
+#contact .title h1:before {
+  width: 80px;
+  position: absolute;
+  height: 4px;
+  content: "";
+  background-color: #48b1ee;
+  top: 70px;
+  left: 0%;
+  /* transform: translateX(-50%); */
 }
 
-main #contact h1{
-    /* padding-left: 55px; */
-    font-weight: 500;
+main #contact fieldset {
+  border: none;
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
 }
 
-
-main #contact fieldset input, main #contact textarea{
-    width: 100%;
-    padding: 5px 0;
-    margin: 10px 0;
-    font-size: .9rem;
-    border: none;
-    border-bottom: 2px solid #e3e3e3;
-    resize: none;
-    outline: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    background: #fafafa;
-
+main #contact h1 {
+  /* padding-left: 55px; */
+  font-weight: 500;
 }
 
-main #contact fieldset label{
-    position: absolute;
-    left: 0;
-    font-size: .9rem;
-    margin-top: 18px;
-    z-index:1000;
-    transition: 0.5s;
-    color: #9c9c9c;
-
+main #contact fieldset input,
+main #contact textarea {
+  width: 100%;
+  padding: 5px 0;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  border: none;
+  border-bottom: 2px solid #e3e3e3;
+  resize: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  background: #fafafa;
 }
 
+main #contact fieldset label {
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+  margin-top: 18px;
+  z-index: 1000;
+  transition: 0.5s;
+  color: #9c9c9c;
+}
 
-main #contact fieldset #msg-label{
-    margin-top: 100px;
-    transition: 0.75s;
+main #contact fieldset #msg-label {
+  margin-top: 100px;
+  transition: 0.75s;
 }
 main #contact fieldset input:focus ~ label,
-main #contact fieldset input:active ~ label, 
-main #contact fieldset input:valid ~ label, 
-main #contact fieldset input.filled ~ label
-{
-    color: #0a466b;
-    font-size: 12px;
-    transform: translateY(-20px);
-    background: transparent;
+main #contact fieldset input:active ~ label,
+main #contact fieldset input:valid ~ label,
+main #contact fieldset input.filled ~ label {
+  color: #0a466b;
+  font-size: 12px;
+  transform: translateY(-20px);
+  background: transparent;
 }
 
-
-
-main #contact button{
-    width: 100px;
-    height: 40px;
-    margin-top: 20px;
-    border: none;
-    cursor: pointer;
-    
+main #contact button {
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 main #contact fieldset textarea:focus ~ label,
-main #contact fieldset textarea:active ~ label, 
-main #contact fieldset textarea:valid ~ label, 
-main #contact fieldset textarea.filled ~ label{
-    color: #0a466b;
-    font-size: 12px;
-    transform: translateY(-105px);
+main #contact fieldset textarea:active ~ label,
+main #contact fieldset textarea:valid ~ label,
+main #contact fieldset textarea.filled ~ label {
+  color: #0a466b;
+  font-size: 12px;
+  transform: translateY(-105px);
 }
-
-
 
 /* Removes the light blue background that is put in with autocomplete */
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 30px #fafafa inset !important;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fafafa inset !important;
 }
 
-main #contact .container{
-    width: 100%;
-    padding: 0 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+main #contact .container {
+  width: 90%;
+  width: 60%;
+  min-width: 1100px;
+  max-width: 1750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
-main #contact .container .contactInfo{
-    width: 50%;
-    padding-left: 125px;
-    display: flex;
-    flex-direction: column;
-    order: 1;
-    
+main #contact .container .contactInfo {
+  width: 50%;
+  padding-left: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  order: 1;
 }
-main #contact .container .contactInfo img{
-    width: 100%;
-}
-
-main #contact .container .contactInfo .box{
-    padding: 10px 0;
-    position: relative;
-    display: flex;
+main #contact .container .contactInfo img {
+  width: 35vw;
+  max-width: 500px !important;
 }
 
-main #contact .container .contactInfo .box .icon{
-    background: #ffffff;
-    height: 50px;
-    min-width: 50px;
-    border-radius: 50%;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main #contact .container .contactInfo .box {
+  padding: 10px 0;
+  position: relative;
+  display: flex;
 }
 
-main #contact .container .contactInfo .box .text{
-    margin-left: 10px;
+main #contact .container .contactInfo .box .icon {
+  background: #ffffff;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main #contact .container .contactInfo .box i{
-    color: #3F3D56;
+main #contact .container .contactInfo .box .text {
+  margin-left: 10px;
 }
 
-main #contact .container .contactInfo .box .text h3{
-    color: #2DA4EA;
-    font-weight: 400;
+main #contact .container .contactInfo .box i {
+  color: #3f3d56;
 }
 
-main #contact .container .contactInfo .box .text p{
-    color: rgba(0, 0, 0, .7);
+main #contact .container .contactInfo .box .text h3 {
+  color: #2da4ea;
+  font-weight: 400;
 }
 
-main #contact .container .contact-form{
-    width:50%;
-    /* background: #fff; */
-    border-radius: 15px;
-    padding: 40px;
-    /* box-shadow: 0 3px 15px rgba(0, 0, 0, .3); */
-    margin-bottom: 20px;
-    transition: .3s;
-
+main #contact .container .contactInfo .box .text p {
+  color: rgba(0, 0, 0, 0.7);
 }
 
-main #contact .container .contact-form:hover{
-    /* box-shadow: 0 2px 15px rgba(0, 0, 0, .1); */
+main #contact .container .contact-form {
+  width: 50%;
+  /* background: #fff; */
+  border-radius: 15px;
+  padding: 40px 0;
+  /* box-shadow: 0 3px 15px rgba(0, 0, 0, .3); */
+  margin-bottom: 20px;
+  transition: 0.3s;
 }
 
-main #contact .container .contact-form h2{
-    font-weight: 500;
+main #contact .container .contact-form:hover {
+  /* box-shadow: 0 2px 15px rgba(0, 0, 0, .1); */
 }
 
-main #contact .thankyou_message{
-    display: none; 
-    color: #777; 
-    padding-top: 20px; 
-    font-size: 1rem;
-    margin-bottom: -10px;
+main #contact .container .contact-form h2 {
+  font-weight: 500;
+}
+
+main #contact .thankyou_message {
+  display: none;
+  color: #777;
+  padding-top: 20px;
+  font-size: 1rem;
+  margin-bottom: -10px;
 }
 
 /* -------------------------------- DARK MODE ------------------------------------ */
-body.dark #contact .title h1{
-    color: #fcfcfc;
+body.dark #contact .title h1 {
+  color: #fcfcfc;
 }
 
-body.dark main #contact fieldset input, body.dark main #contact textarea{
-    border-bottom: 2px solid #9c9c9c;
-    color: #fff;
-   
+body.dark main #contact fieldset input,
+body.dark main #contact textarea {
+  border-bottom: 2px solid #9c9c9c;
+  color: #fff;
 }
-body.dark main #contact fieldset input, body.dark main #contact textarea{
-    background: #0F1C33;
+body.dark main #contact fieldset input,
+body.dark main #contact textarea {
+  background: #0f1c33;
 }
 
 body.dark main #contact fieldset input:focus ~ label,
-body.dark main #contact fieldset input:active ~ label, 
-body.dark main #contact fieldset input:valid ~ label, 
-body.dark main #contact fieldset input.filled ~ label
-{
-    color: #60BEF5;
-
+body.dark main #contact fieldset input:active ~ label,
+body.dark main #contact fieldset input:valid ~ label,
+body.dark main #contact fieldset input.filled ~ label {
+  color: #60bef5;
 }
 
-
 body.dark main #contact fieldset textarea:focus ~ label,
-body.dark main #contact fieldset textarea:active ~ label, 
-body.dark main #contact fieldset textarea:valid ~ label, 
-body.dark main #contact fieldset textarea.filled ~ label{
-    color: #60BEF5;
-    
+body.dark main #contact fieldset textarea:active ~ label,
+body.dark main #contact fieldset textarea:valid ~ label,
+body.dark main #contact fieldset textarea.filled ~ label {
+  color: #60bef5;
 }
 
 body.dark input:-webkit-autofill,
-body.dark input:-webkit-autofill:hover, 
-body.dark input:-webkit-autofill:focus, 
-body.dark input:-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 30px #0F1C33 inset !important;
+body.dark input:-webkit-autofill:hover,
+body.dark input:-webkit-autofill:focus,
+body.dark input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #0f1c33 inset !important;
 }
 
-body.dark input{
-    color: #fcfcfc;
+body.dark input {
+  color: #fcfcfc;
 }
 
-body.dark main #contact .thankyou_message{
-    color: #fff!important;
+body.dark main #contact .thankyou_message {
+  color: #fff !important;
 }
 
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
 
-@media only screen and (max-width: 1000px){
-    main #contact .container{
-        flex-direction: column;
-        
-    }
- 
-    #contact .title{
-        text-align: center;
-    }
-
-    #contact .title h1:before{
-        top: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    main #contact .container .contactInfo{
-        /* text-align: center;
-        padding-right: 0;
-        margin-bottom: 2rem; */
-        /* display: none; */
-        order: 1;
-        padding-left: 20px;
-        justify-content: center;
-        align-items: center;
-    }
- 
-    main #contact .container .contactInfo img{
-        width: 60vw;
-        max-width: 300px;
-    }
-    main #contact .container .contact-form, main #contact .container .contactInfo{
-        width: 80vw;
-    }
- 
-
-    main #contact .container .contact-form{
-        order: 2;
-    }
-    main #contact .container .contactInfo .box .text{
-        text-align: left;
-    }
- 
-    main #contact .container .contact-form{
-        margin-bottom: 3rem;
-    }
-
-    main #contact h1{
-        padding-left: 0;
-        
-    }
- 
-}    
-
-
-@media only screen and (max-width: 750px){
-
-    main #contact .container .contact-form, main #contact .container .contactInfo{
-        width: 90vw;
-    }
+@media only screen and (min-width: 1500px) {
+  main #contact {
+    margin-bottom: 7vw;
+  }
 }
 
-@media only screen and (max-width: 1130px){
-    main #contact fieldset label{
-       
-        position: relative;
-    
-    }
+/* @media only screen and (min-width: 2000px) {
+  main #contact .contact-form {
+    transform: scale(1.3);
+  }
+} */
+
+@media only screen and (max-width: 1175px) {
+  main #contact .contact-form {
+    padding: 3rem 2rem 1rem 2rem !important;
+  }
+  main #contact .container {
+    flex-direction: column;
+  }
+
+  #contact .title {
+    text-align: center;
+  }
+
+  #contact .title h1:before {
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  main #contact .container .contactInfo {
+    /* text-align: center;
+        padding-right: 0;
+        margin-bottom: 2rem; */
+    /* display: none; */
+    order: 1;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main #contact .container .contactInfo img {
+    width: 60vw;
+    max-width: 400px !important;
+  }
+  main #contact .container .contact-form,
+  main #contact .container .contactInfo {
+    width: 80vw;
+  }
+
+  main #contact .container .contact-form {
+    order: 2;
+  }
+  main #contact .container .contactInfo .box .text {
+    text-align: left;
+  }
+
+  main #contact .container .contact-form {
+    margin-bottom: 3rem;
+  }
+
+  main #contact h1 {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  main #contact .container .contact-form,
+  main #contact .container .contactInfo {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  main #contact fieldset label {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main #contact .container {
+    min-width: 100%;
+  }
 }
 
 /* @media only screen and (max-width: 400px){
@@ -325,3 +323,24 @@ body.dark main #contact .thankyou_message{
         max-width: 90vw;
     }
 } */
+
+@media only screen and (min-width: 2000px) {
+  main #contact .container {
+    transform: scale(1.3);
+  }
+
+  main section:not(#home) {
+    margin: 100px 0;
+  }
+
+  main #contact .container img {
+    max-width: 600px !important;
+  }
+
+  #contact {
+    padding: 200px 0 !important;
+  }
+  /* #fun-facts .title {
+      transform: scale(1.3);
+    } */
+}
