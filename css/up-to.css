@@ -144,7 +144,7 @@ body.dark #up-to .cards .card:hover {
 
 @media only screen and (max-width: 587px) {
   #up-to {
-    min-height: 1300px;
+    min-height: 1350px;
     margin-bottom: 200px;
   }
   #up-to .cards {
