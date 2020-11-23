@@ -41,7 +41,7 @@
   transform: translate(-50%, -50%) rotateX(17deg) rotateY(-17deg) rotateZ(12deg);
   height: 210px;
   width: 405px;
-  background: rgba(114, 112, 112, 0.6);
+  background: rgba(114, 112, 112, 0.2);
   border-radius: 25px;
   /* box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4); */
   transition: 0.5s;
