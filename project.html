@@ -1,119 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/project.css">
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"> </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/project.css" />
+    <link rel="stylesheet" type="text/css" href="../css/all-projects.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" href="./images/main-site/head-logo.svg" />
 
-    <title>Document</title>
-</head>
+    <title>Title</title>
+  </head>
 
-<body>
+  <body>
+    <div class="preloader"></div>
     <header>
-
-        <div id="navbar"></div>
-
+      <div id="navbar"></div>
     </header>
-    <section>
-
-        <!-- <div class="content">
-            <div class="post">
-                <div class="post-content">
-                    <div class="post-image">
-                        <div>
-                            <img src="../images/projects/ecobud.png" alt="logo">
-                        </div>
-                        <div class="caption-container">
-                            <div class="post-info">
-                                <span><i class="fas fa-user"></i>&nbsp;&nbsp;Solo Project&nbsp;&nbsp;</span>
-                                <span><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;August 2020</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-text">
-                        <h1>EcoBuds</h1>
-                        <h2>What it Does</h2>
-                        <p id="function"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora incidunt
-                            blanditiis
-                            perferendis commodi
-                            nesciunt quaerat possimus exercitationem eos ab id, autem sit aperiam doloremque quae nam
-                            sunt est eius.
-                            Rem totam est molestiae repellat ut deleniti ipsa ipsum tempore nemo?</p>
-                        <h2>How it was built</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo blanditiis nam sapiente maxime
-                            rerum libero
-                            aliquid dolore earum consectetur facere enim, eaque incidunt ducimus eveniet ullam
-                            consequatur. Maxime,
-                            magnam pariatur.</p>
-                        <h2>What I learned</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo blanditiis nam sapiente maxime
-                            rerum libero
-                            aliquid dolore earum consectetur facere enim, eaque incidunt ducimus eveniet ullam
-                            consequatur. Maxime,
-                            magnam pariatur.</p>
-                        <h2>Accomplishments/What I'm Proud Of</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo blanditiis nam sapiente maxime
-                            rerum libero
-                            aliquid dolore earum consectetur facere enim, eaque incidunt ducimus eveniet ullam
-                            consequatur. Maxime,
-                            magnam pariatur.</p>
-                    </div>
-                </div>
-
-            </div>
-            <aside class="sidebar">
-                <div class="category">
-                    <h2>Category </h2>
-                    <ul class="category-list">
-                        <li class="list-item">Category 1</li>
-                        <li class="list-item">Category 1</li>
-                        <li class="list-item">Category 1</li>
-                    </ul>
-                </div>
-
-                <div class="built-with">
-                    <h2>Built with</h2>
-                    <ul class="built-with-list">
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                    </ul>
-                </div>
-            </aside>
-        </div> -->
+    <section id="proj-header">
+      <h1>Project Title</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio atque
+        vero nihil quis aspernatur dignissimos voluptatem, quaerat nulla, soluta
+        porro architecto tempora debitis obcaecati iste quos optio, beatae est
+        praesentium iusto? Consequuntur blanditiis temporibus excepturi rerum
+        molestias. Commodi, non modi.
+      </p>
+    </section>
+    <section id="proj-info">
+      <div class="categories">
+        <ul>
+          <li class="list active" data-filter="overview">
+            <i class="far fa-file-alt"></i>Overview
+          </li>
+          <li class="list" data-filter="built">
+            <i class="fas fa-tools"></i>How it was Built
+          </li>
+          <li class="list" data-filter="learned">
+            <i class="far fa-lightbulb"></i>What I Learned
+          </li>
+          <li class="list" data-filter="accomp">
+            <i class="fas fa-trophy"></i>Accomplishments
+          </li>
+        </ul>
+      </div>
+      <div class="info-container">
+        <div class="card overview">
+          <h1>Overview</h1>
+        </div>
+        <div class="card built"><h1>How it was Built</h1></div>
+        <div class="card learned"><h1>What I Learned</h1></div>
+        <div class="card accomp"><h1>Accomplishments</h1></div>
+      </div>
     </section>
     <footer class="footer">
-
-        <div id="footer"></div>
+      <div id="footer"></div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
 
     <script type="text/javascript">
+      window.addEventListener("load", () => {
+        const preloader = document.querySelector(".preloader");
+        preloader.classList.add("preload-finish");
+      });
+      if (localStorage.getItem("darkmode") == "true") {
+        $("body").addClass("dark");
+      }
+      $(document).ready(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+        $(".preloader").load("preloader.html");
 
-        const ecobud = { "name": "EcoBud", "function": "some sample text" };
-        const allProjects = { "ecobud": ecobud }
+        $(".card").not(".overview").hide();
+        $(".list").click(function () {
+          const value = $(this).attr("data-filter");
 
-        $(document).ready(function () {
-            $('#navbar').load('navbar.html');
-            $('#footer').load('footer.html');
-            // const projectId = sessionStorage.getItem('project');
-            const project = allProjects[projectId];
-            document.title = project.name;
-            $("h1").html(project.name);
-            $("#function").html(project.function);
+          $(".card")
+            .not("." + value)
+            .hide();
+          $(".card")
+            .filter("." + value)
+            .show();
+        });
 
-
-
-
-        })
-
+        $(".list").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      });
     </script>
-</body>
-
+  </body>
 </html>

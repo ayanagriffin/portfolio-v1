@@ -14,14 +14,14 @@
   width: 60px;
 }
 
-#all-projects .categories ul {
+.categories ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0 4%;
   justify-content: center;
 }
 
-#all-projects .categories ul li {
+.categories ul li {
   position: relative;
   color: #999;
   padding: 8px 20px;
@@ -29,7 +29,7 @@
   cursor: pointer;
 }
 
-#all-projects .categories ul li::before {
+.categories ul li::before {
   content: "";
   position: absolute;
   width: 87%;
@@ -42,28 +42,28 @@
   transition: all 0.3s ease-in-out 0s;
 }
 
-#all-projects .categories ul li.active::before {
+.categories ul li.active::before {
   visibility: visible;
   transform: scaleX(1);
 }
-#all-projects .categories ul li i {
+.categories ul li i {
   padding-right: 10px;
 }
 
-#all-projects .categories ul li:hover {
+.categories ul li:hover {
   color: #000;
 }
 
-#all-projects .categories ul li:hover > i {
-  color: #c5edfa;
+.categories ul li:hover > i {
+  color: #a1d8f9;
 }
-#all-projects .categories ul li.active {
+.categories ul li.active {
   transition: 0.3s;
   color: #000;
 }
 
-#all-projects .categories ul li.active > i {
-  color: #c5edfa;
+.categories ul li.active > i {
+  color: #a1d8f9;
 }
 
 /* -------------------------------------------- CARD -------------------------------------------- */
@@ -227,11 +227,11 @@ body.dark #all-projects .title h1 {
   color: #fcfcfc;
 }
 
-body.dark #all-projects .categories ul li:hover {
+body.dark .categories ul li:hover {
   color: #fcfcfc;
 }
 
-body.dark #all-projects .categories ul li.active {
+body.dark .categories ul li.active {
   color: #fcfcfc;
 }
 
@@ -289,7 +289,7 @@ body.dark #all-projects .card h2 {
 
 @media only screen and (min-width: 2000px) {
   #all-projects .title,
-  #all-projects .categories ul li {
+  .categories ul li {
     transform: scale(1.3);
     margin: 30px;
     max-width: 80%;

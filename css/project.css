@@ -1,7 +1,37 @@
 /* ----------- FOR THE SINGULAR PROJECT BLOG PAGE ------------------ */
 
+#proj-header {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 75px;
+  /* padding-top: 60px; */
+  background-color: #a1d8f9;
+}
 
-h1{
+#proj-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+#proj-header p {
+  font-weight: 300;
+}
+
+#proj-info {
+  min-height: 80vh;
+  padding: 50px;
+}
+
+#proj-info .info-container {
+  padding: 40px;
+}
+
+#proj-info .info-container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+/* h1{
     text-align: left;
 }
 
@@ -103,4 +133,4 @@ section .content{
     .post-image{
         width: 100%;
     }
-}
+} */
