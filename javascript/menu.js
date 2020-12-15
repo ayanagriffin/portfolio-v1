@@ -54,11 +54,22 @@ dark_btn.addEventListener('click', () => {
         $("#darkmode-tip").html('switch to light mode');
         $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-sun"></i>');
 
+        // CHANGE SRC OF ICONS ON PROJECT PAGE TO ENSURE VISIBILITY
+        $("#role").attr("src", "images/projects/icons/role-dark.svg");
+        $("#date").attr("src", "images/projects/icons/calendar-dark.svg");
+        $("#type").attr("src", "images/projects/icons/computer-dark.svg");
+        $("#tools").attr("src", "images/projects/icons/tools-dark.svg");
+
     } else {
         localStorage.setItem("darkmode", "false");
         $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
         $("#darkmode-tip").html('switch to dark mode')
         $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-moon"></i>');
+
+        $("#role").attr("src", "images/projects/icons/role.svg");
+        $("#date").attr("src", "images/projects/icons/calendar.svg");
+        $("#type").attr("src", "images/projects/icons/computer.svg");
+        $("#tools").attr("src", "images/projects/icons/tools.svg");
 
     }
 

@@ -22,13 +22,7 @@
     </header>
     <section id="proj-header">
       <h1>Project Title</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio atque
-        vero nihil quis aspernatur dignissimos voluptatem, quaerat nulla, soluta
-        porro architecto tempora debitis obcaecati iste quos optio, beatae est
-        praesentium iusto? Consequuntur blanditiis temporibus excepturi rerum
-        molestias. Commodi, non modi.
-      </p>
+      
     </section>
     <section id="proj-info">
       <div class="categories">
@@ -49,9 +43,41 @@
       </div>
       <div class="info-container">
         <div class="card overview">
-          <h1>Overview</h1>
+          <h1>Lorem ipsum dolor sit amet consectetur <span>adipisicing elit.</span> Dicta, quos.</h1>
+         <div class="proj-facts">
+            <div class="fact">
+              <img src="images/projects/icons/role.svg" id="role">
+              <h3>Role</h3>
+              <p>Front-end Developer</p>
+            </div>
+            <div class="fact">
+              <img src="images/projects/icons/calendar.svg" id="date">
+              <h3>Date</h3>
+              <p>June 2020 - August 2020</p>
+            </div>
+            <div class="fact">
+              <img src="images/projects/icons/computer.svg" id="type">
+              <h3>Type</h3>
+              <p>Web Application</p>
+            </div>
+            <div class="fact">
+              <img src="images/projects/icons/tools.svg" id="tools">
+              <h3>Main Tools</h3>
+              <p>JavaScript, HTML, CSS</p>
+            </div>
+            
+          </div>
         </div>
-        <div class="card built"><h1>How it was Built</h1></div>
+        <div class="card built">
+          <h1>Frontend</h1>
+          <h2>Lorem ipsum dolor sit.</h2>
+          <p style="padding-bottom: 50px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius veritatis rem recusandae quisquam vel nesciunt pariatur numquam sed voluptates accusantium dolorum eveniet rerum corporis commodi sunt suscipit, asperiores fugiat nisi aliquid itaque? Maiores expedita repellendus reiciendis, iusto fugiat adipisci aperiam dolorum libero a sit consequuntur. Vitae ratione adipisci consectetur alias. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro repellendus hic ratione vitae eligendi dolorum ad accusantium sint consectetur eos.</p>
+          
+          <h1>Backend</h1>
+          <h2>Lorem ipsum dolor sit.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius veritatis rem recusandae quisquam vel nesciunt pariatur numquam sed voluptates accusantium dolorum eveniet rerum corporis commodi sunt suscipit, asperiores fugiat nisi aliquid itaque? Maiores expedita repellendus reiciendis, iusto fugiat adipisci aperiam dolorum libero a sit consequuntur. Vitae ratione adipisci consectetur alias. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro repellendus hic ratione vitae eligendi dolorum ad accusantium sint consectetur eos.</p>
+          
+        </div>
         <div class="card learned"><h1>What I Learned</h1></div>
         <div class="card accomp"><h1>Accomplishments</h1></div>
       </div>
@@ -73,6 +99,7 @@
       if (localStorage.getItem("darkmode") == "true") {
         $("body").addClass("dark");
       }
+
       $(document).ready(function () {
         $("#navbar").load("navbar.html");
         $("#footer").load("footer.html");
