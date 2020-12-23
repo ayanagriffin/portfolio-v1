@@ -6,13 +6,15 @@
   justify-content: center;
   flex-direction: column;
   padding: 75px;
-  /* padding-top: 60px; */
-  background-color: #a1d8f9;
+  background-color: #2DA4EA;
+  
 }
+
 
 #proj-header h1 {
   font-size: 3rem;
   font-weight: 700;
+  z-index: 2;
 }
 #proj-header p {
   font-weight: 300;
@@ -23,12 +25,16 @@
   padding: 50px;
 }
 
+#proj-info .info-container{
+    margin: 70px 0;
+}
+
 #proj-info .info-container .overview{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 70px 0;
+    
 }
 #proj-info .info-container .overview h1{
     font-size: 2rem;
@@ -60,9 +66,48 @@
 
 .proj-facts h3{
     font-weight: 600;
+    padding-top: 10px;
     /* text-transform: uppercase; */
 }
 
+.built {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.built .step{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 0 20px 20px 20px;
+}
+
+.built .step h1{
+    font-weight: 400;
+    font-size: 4rem;
+    color: #2DA4EA;
+    position: relative;
+    padding-bottom: 25px;
+}
+.built .step h1::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    bottom: 15px;
+    left: 2px;
+    background-color: #d7d7d7;
+}
+
+.built .step h2{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.built .step p{
+    color: rgba(0, 0, 0, 0.7)
+}
 /* .proj-facts .fact{
     background: #fff;
     padding: 15px 20px;
@@ -81,6 +126,12 @@
     .proj-facts .fact{
         padding: 20px;
     }
+
+    #proj-header{
+        display: none;
+    }
+
+    .par
 }
 
 @media only screen and (max-width: 550px){
@@ -90,7 +141,7 @@
     }
 
     .proj-facts .fact{
-        padding: 10px 0;
+        padding: 15px 0;
     }
     #proj-info {
         
@@ -106,6 +157,16 @@
       }
 }
 
+body.dark #proj-info h1{
+    color: #f7f7f7
+}
+body.dark .proj-facts h3{
+    color: #2A77A3;
+}
+
+body.dark .proj-facts p{
+    color: #d4d4d4;
+}
 /* h1{
     text-align: left;
 }
