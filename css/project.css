@@ -46,6 +46,22 @@
 #proj-info .info-container .overview h1 span{
     color: #2DA4EA;
 }
+
+.info-container ul{
+    display: flex;
+}
+.info-container ul li{
+    padding: 20px;
+}
+
+.info-container ul a{
+    color: #919191;
+    text-decoration: underline;
+}
+
+.info-container ul a:hover{
+    color: #333;
+}
 .proj-facts{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
