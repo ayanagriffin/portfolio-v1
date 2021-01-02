@@ -1,157 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/project.css" />
-    <link rel="stylesheet" type="text/css" href="../css/all-projects.css" />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/javascript/parallax.min.js"></script>
-    <link rel="icon" href="./images/main-site/head-logo.svg" />
 
-    <title>Title</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/project.css" />
+  <link rel="stylesheet" type="text/css" href="../css/all-projects.css" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="icon" href="./images/main-site/head-logo.svg" />
 
-  <body>
-    <div class="preloader"></div>
-    <header>
-      <div id="navbar"></div>
-    </header>
+  <title>Title</title>
+</head>
 
-    <section id="proj-header">
-      <h1>ProjectTitle</h1>
+<body>
+  <div class="preloader"></div>
+  <header>
+    <div id="navbar"></div>
+  </header>
 
-    </section>
+  <section id="proj-header">
+    <div class="img-box">
+      <!-- <img src="./images/projects/bbug.png" alt=""> -->
+    </div>
+    <h1>Project Title</h1>
 
-    <!-- <section id="proj-header">
+  </section>
+
+  <!-- <section id="proj-header">
             
     </section> -->
-    <section id="proj-info">
-      <div class="categories">
-        <ul>
-          <li class="list active" data-filter="overview">
-            <i class="far fa-file-alt"></i>Overview
-          </li>
-          <li class="list" data-filter="built">
-            <i class="fas fa-tools"></i>How it was Built
-          </li>
-          <li class="list" data-filter="learned">
-            <i class="far fa-lightbulb"></i>What I Learned
-          </li>
-          <li class="list" data-filter="accomp">
-            <i class="fas fa-trophy"></i>Accomplishments
-          </li>
-          <li class="list" data-filter="pics">
-            <i class="far fa-images"></i>Pictures
-          </li>
+  <section id="proj-info">
+    <div class="categories">
+      <ul>
+        <li class="list active" data-filter="overview">
+          <i class="far fa-file-alt"></i>Overview
+        </li>
+        <li class="list" data-filter="built">
+          <i class="fas fa-tools"></i>How it was Built
+        </li>
+        <li class="list" data-filter="learned">
+          <i class="far fa-lightbulb"></i>What I Learned
+        </li>
+        <li class="list" data-filter="accomp">
+          <i class="fas fa-trophy"></i>Accomplishments
+        </li>
+        <li class="list" data-filter="pics">
+          <i class="far fa-images"></i>Pictures
+        </li>
+      </ul>
+    </div>
+    <div class="info-container">
+      <div class="card overview">
+        <h1>Lorem ipsum dolor sit amet consectetur <span>adipisicing elit.</span> Dicta, quos.</h1>
+        <div class="proj-facts">
+          <div class="fact">
+            <img src="images/projects/icons/role.svg" id="role">
+            <h3>Role</h3>
+            <p>Front-end Developer</p>
+          </div>
+          <div class="fact">
+            <img src="images/projects/icons/calendar.svg" id="date">
+            <h3>Date</h3>
+            <p>June 2020 - August 2020</p>
+          </div>
+          <div class="fact">
+            <img src="images/projects/icons/computer.svg" id="type">
+            <h3>Type</h3>
+            <p>Web Application</p>
+          </div>
+          <div class="fact">
+            <img src="images/projects/icons/tools.svg" id="tools">
+            <h3>Main Tools</h3>
+            <p>JavaScript, HTML, CSS</p>
+          </div>
+
+        </div>
+
+        <ul class="links">
+          <li><a href="#">GitHub Repo</a></li>
+          <li><a href="#">Project</a></li>
         </ul>
       </div>
-      <div class="info-container">
-        <div class="card overview">
-          <h1>Lorem ipsum dolor sit amet consectetur <span>adipisicing elit.</span> Dicta, quos.</h1>
-         <div class="proj-facts">
-            <div class="fact">
-              <img src="images/projects/icons/role.svg" id="role">
-              <h3>Role</h3>
-              <p>Front-end Developer</p>
-            </div>
-            <div class="fact">
-              <img src="images/projects/icons/calendar.svg" id="date">
-              <h3>Date</h3>
-              <p>June 2020 - August 2020</p>
-            </div>
-            <div class="fact">
-              <img src="images/projects/icons/computer.svg" id="type">
-              <h3>Type</h3>
-              <p>Web Application</p>
-            </div>
-            <div class="fact">
-              <img src="images/projects/icons/tools.svg" id="tools">
-              <h3>Main Tools</h3>
-              <p>JavaScript, HTML, CSS</p>
-            </div>
-            
-          </div>
+      <div class="card built">
+        <div class="step">
+          <h1>01</h1>
+          <h2>Step One</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, unde nulla. Mollitia soluta porro
+            deleniti, sint odio libero atque totam!</p>
 
-          <ul class="links">
-            <li><a href="#">GitHub Repo</a></li>
-            <li><a href="#">Project</a></li>
-          </ul>
         </div>
-        <div class="card built">
-          <div class="step">
-            <h1>01</h1>
-            <h2>Step One</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, unde nulla. Mollitia soluta porro deleniti, sint odio libero atque totam!</p>
+        <div class="step">
+          <h1>02</h1>
+          <h2>Step One</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, unde nulla. Mollitia soluta porro
+            deleniti, sint odio libero atque totam!</p>
 
-          </div>
-          <div class="step">
-            <h1>02</h1>
-            <h2>Step One</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, unde nulla. Mollitia soluta porro deleniti, sint odio libero atque totam!</p>
-
-          </div>
-          <div class="step">
-            <h1>03</h1>
-            <h2>Step One</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, unde nulla. Mollitia soluta porro deleniti, sint odio libero atque totam!</p>
-
-          </div>
-          <div class="step">
-            <h1>04</h1>
-            <h2>Step One</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, unde nulla. Mollitia soluta porro deleniti, sint odio libero atque totam!</p>
-
-          </div>
         </div>
-        <div class="card learned"><h1>What I Learned</h1></div>
-        <div class="card accomp"><h1>Accomplishments</h1></div>
-        <div class="card pics"><h1>Pictures</h1></div>
+        <div class="step">
+          <h1>03</h1>
+          <h2>Step One</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, unde nulla. Mollitia soluta porro
+            deleniti, sint odio libero atque totam!</p>
+
+        </div>
+        <div class="step">
+          <h1>04</h1>
+          <h2>Step One</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, unde nulla. Mollitia soluta porro
+            deleniti, sint odio libero atque totam!</p>
+
+        </div>
       </div>
-    </section>
-    <footer class="footer">
-      <div id="footer"></div>
-    </footer>
-    
+      <div class="card learned">
+        <h1>What I Learned</h1>
+      </div>
+      <div class="card accomp">
+        <h1>Accomplishments</h1>
+      </div>
+      <div class="card pics">
+        <h1>Pictures</h1>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div id="footer"></div>
+  </footer>
 
-    <script type="text/javascript">
-      window.addEventListener("load", () => {
-        const preloader = document.querySelector(".preloader");
-        preloader.classList.add("preload-finish");
+
+  <script type="text/javascript">
+    window.addEventListener("load", () => {
+      const preloader = document.querySelector(".preloader");
+      preloader.classList.add("preload-finish");
+    });
+    if (localStorage.getItem("darkmode") == "true") {
+      $("body").addClass("dark");
+      // CHANGE SRC OF ICONS ON PROJECT PAGE TO ENSURE VISIBILITY
+      $("#role").attr("src", "images/projects/icons/role-dark.svg");
+      $("#date").attr("src", "images/projects/icons/calendar-dark.svg");
+      $("#type").attr("src", "images/projects/icons/computer-dark.svg");
+      $("#tools").attr("src", "images/projects/icons/tools-dark.svg");
+    }
+
+    $(document).ready(function () {
+      $("#navbar").load("navbar.html");
+      $("#footer").load("footer.html");
+      $(".preloader").load("preloader.html");
+
+      $(".card").not(".overview").hide();
+      $(".list").click(function () {
+        const value = $(this).attr("data-filter");
+
+        $(".card")
+          .not("." + value)
+          .hide();
+        $(".card")
+          .filter("." + value)
+          .show();
       });
-      if (localStorage.getItem("darkmode") == "true") {
-        $("body").addClass("dark");
-      }
 
-      $(document).ready(function () {
-        $("#navbar").load("navbar.html");
-        $("#footer").load("footer.html");
-        $(".preloader").load("preloader.html");
-
-        $(".card").not(".overview").hide();
-        $(".list").click(function () {
-          const value = $(this).attr("data-filter");
-
-          $(".card")
-            .not("." + value)
-            .hide();
-          $(".card")
-            .filter("." + value)
-            .show();
-        });
-
-        $(".list").click(function () {
-          $(this).addClass("active").siblings().removeClass("active");
-        });
+      $(".list").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

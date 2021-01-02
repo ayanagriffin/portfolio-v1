@@ -1,21 +1,33 @@
 /* ----------- FOR THE SINGULAR PROJECT BLOG PAGE ------------------ */
 
-#proj-header {
-  min-height: 30vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 75px;
+#proj-header .img-box{
+  background: url("../images/projects/bbug.png") no-repeat;
+  height: 500px;
   background-color: #2DA4EA;
-  
+  background-attachment: fixed;
+  background-position: center 30%;
+  background-size: calc(min(90vw, 600px));
 }
 
 
 #proj-header h1 {
+  text-align: center;
   font-size: 3rem;
   font-weight: 700;
-  z-index: 2;
+  padding-top: 50px;
+  position: relative;
 }
+
+#proj-header h1::before {
+    width: 120px;
+    position: absolute;
+    height: 4px;
+    content: "";
+    background-color: #48b1ee;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 #proj-header p {
   font-weight: 300;
 }
@@ -143,11 +155,7 @@
         padding: 20px;
     }
 
-    #proj-header{
-        display: none;
-    }
-
-    .par
+   
 }
 
 @media only screen and (max-width: 550px){
@@ -164,17 +172,18 @@
         padding: 50px 0px;
       }
 
-    #proj-header{
-        padding: 40px 30px;
-    }
 
     #proj-info .info-container {
         padding: 40px 30px;
       }
 }
 
-body.dark #proj-info h1{
+body.dark h1, body.dark .step h2{
     color: #f7f7f7
+}
+
+body.dark .step p{
+    color: #FFFFFF80
 }
 body.dark .proj-facts h3{
     color: #2A77A3;
