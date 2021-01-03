@@ -1,11 +1,14 @@
 /* ----------- FOR THE SINGULAR PROJECT BLOG PAGE ------------------ */
 
+#proj-header{
+    position: relative;
+}
 #proj-header .img-box{
   background: url("../images/projects/bbug.png") no-repeat;
   height: 500px;
   background-color: #2DA4EA;
   background-attachment: fixed;
-  background-position: center 30%;
+  background-position: center 150px;
   background-size: calc(min(90vw, 600px));
 }
 
@@ -169,6 +172,10 @@
         left: 50%;
         width: 55px;
         transform: translateX(-50%);
+    }
+
+    #proj-header .img-box{
+        background-position: center 30%;
     }
 }
 
