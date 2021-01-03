@@ -44,18 +44,22 @@
     margin: 70px 0;
 }
 
-#proj-info .info-container .overview{
+#proj-info .info-container .overview, #proj-info .info-container .learned{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     
 }
-#proj-info .info-container .overview h1{
+#proj-info .info-container .overview h1, #proj-info .info-container .learned h1{
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
     width: calc(min(700px, 85vw));
+}
+
+#proj-info .info-container .learned h1{
+    width: 100%;
 }
 
 #proj-info .info-container .overview h1 span{
@@ -140,6 +144,32 @@
 
 .built .step p{
     color: rgba(0, 0, 0, 0.7)
+}
+
+.learned p, .learned li{
+    font-weight: 300;
+    line-height: 2.25rem;
+
+}
+
+.learned p{
+    padding: 30px 0;
+}
+
+.learned ul{
+    display: inline-block;
+    flex-direction: column;
+    width: calc(min(1000px, 85vw));
+
+}
+
+.learned ul li{
+    list-style: initial;
+    padding: 10px;
+}
+
+.learned ul li span{
+    font-weight: 700;
 }
 /* .proj-facts .fact{
     background: #fff;
