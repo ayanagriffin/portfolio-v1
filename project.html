@@ -10,6 +10,12 @@
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
   <link rel="icon" href="./images/main-site/head-logo.svg" />
 
   <title>Title</title>
@@ -137,10 +143,55 @@
         </ul>
       </div>
       <div class="card accomp">
-        <h1>Accomplishments</h1>
+        <div class="metrics-container">
+          <div class="metric">
+            <div class="metric-content">
+              <div class="metric-front">front of card</div>
+              <div class="metric-back">back of card</div>
+
+            </div>
+
+          </div>
+          <div class="metric">
+            <div class="metric-content">
+              <div class="metric-front">front of card</div>
+              <div class="metric-back">back of card</div>
+
+            </div>
+
+          </div>
+          <div class="metric">
+            <div class="metric-content">
+              <div class="metric-front">front of card</div>
+              <div class="metric-back">back of card</div>
+
+            </div>
+
+          </div>
+        </div>
       </div>
       <div class="card pics">
-        <h1>Pictures</h1>
+        <div class="pictures-container owl-carousel owl-theme">
+          <div class="image"><img src="./images/projects/bbug.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, doloribus?</p>
+          </div>
+          <div class="image"><img src="./images/projects/ecobud.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, doloribus?</p>
+          </div>
+          <div class="image"><img src="./images/projects/logo.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, doloribus?</p>
+          </div>
+          <div class="image"><img src="./images/projects/test.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, doloribus?</p>
+          </div>
+          <div class="image"><img src="./images/main-site/home-small.svg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, doloribus?</p>
+          </div>
+          <div class="image"><img src="./images/projects/bbug.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, doloribus?</p>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
@@ -150,6 +201,15 @@
 
 
   <script type="text/javascript">
+
+    $(".pictures-container").owlCarousel({
+      loop: true,
+      items: 1,
+      nav: false,
+      dots: true,
+      center: true,
+
+    });
     window.addEventListener("load", () => {
       const preloader = document.querySelector(".preloader");
       preloader.classList.add("preload-finish");
