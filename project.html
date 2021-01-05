@@ -146,24 +146,36 @@
         <div class="metrics-container">
           <div class="metric">
             <div class="metric-content">
-              <div class="metric-front">front of card</div>
-              <div class="metric-back">back of card</div>
+              <div class="metric-front">
+                <h1>150+ Downloads</h1>
+              </div>
+              <div class="metric-back">
+                <p>It has had 150 downloads</p>
+              </div>
 
             </div>
 
           </div>
           <div class="metric">
             <div class="metric-content">
-              <div class="metric-front">front of card</div>
-              <div class="metric-back">back of card</div>
+              <div class="metric-front">
+                <h1>150+ Downloads</h1>
+              </div>
+              <div class="metric-back">
+                <p>It has had 150 downloads</p>
+              </div>
 
             </div>
 
           </div>
           <div class="metric">
             <div class="metric-content">
-              <div class="metric-front">front of card</div>
-              <div class="metric-back">back of card</div>
+              <div class="metric-front">
+                <h1>150+ Downloads</h1>
+              </div>
+              <div class="metric-back">
+                <p>It has had 150 downloads</p>
+              </div>
 
             </div>
 
@@ -178,10 +190,10 @@
           <div class="image"><img src="./images/projects/ecobud.png" alt="">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, doloribus?</p>
           </div>
-          <div class="image"><img src="./images/projects/logo.png" alt="">
+          <div class="image"><img src="./images/projects/bbug.png" alt="">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, doloribus?</p>
           </div>
-          <div class="image"><img src="./images/projects/test.png" alt="">
+          <div class="image"><img src="./images/projects/ecobud.png" alt="">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, doloribus?</p>
           </div>
           <div class="image"><img src="./images/main-site/home-small.svg" alt="">
@@ -205,11 +217,28 @@
     $(".pictures-container").owlCarousel({
       loop: true,
       items: 1,
-      nav: false,
+      nav: true,
       dots: true,
       center: true,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          nav: false,
+
+        },
+        640: {
+          nav: true,
+
+        },
+        1048: {
+          autoplay: false,
+
+        }
+      }
 
     });
+    $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+    $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
     window.addEventListener("load", () => {
       const preloader = document.querySelector(".preloader");
       preloader.classList.add("preload-finish");
