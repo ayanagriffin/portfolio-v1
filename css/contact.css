@@ -253,8 +253,9 @@ body.dark main #contact .thankyou_message {
     flex-direction: column;
   }
 
-  #contact .title {
-    text-align: center;
+  #contact .title, #ft-projects .title {
+    text-align: center!important;
+    /* background-color: red; */
   }
 
   #contact .title h1:before {

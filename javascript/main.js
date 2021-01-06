@@ -35,30 +35,30 @@ $(".projects").owlCarousel({
 
 });
 
-$(".proj-container").owlCarousel({
-    
-    loop: true,
-    items: 1,
-    nav: true,
-    dots: true,
+// $(".proj-container").owlCarousel({
 
-    responsiveClass: true,
-    responsive: {
-        0: {
-            nav: false,
+//     loop: true,
+//     items: 1,
+//     nav: true,
+//     dots: true,
 
-        },
-        640: {
-            nav: true,
+//     responsiveClass: true,
+//     responsive: {
+//         0: {
+//             nav: false,
 
-        },
-        1048: {
-            autoplay: false,
+//         },
+//         640: {
+//             nav: true,
 
-        }
-    }
+//         },
+//         1048: {
+//             autoplay: false,
 
-});
+//         }
+//     }
+
+// });
 
 // $(".cards").owlCarousel({
 
