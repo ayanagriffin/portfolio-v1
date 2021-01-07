@@ -1,11 +1,8 @@
 main #contact {
   min-height: 750px;
-
   width: 100%;
   position: relative;
   margin: 0 !important;
-  /* background:url(./images/bg.jpg);
-    background-size: cover; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +20,6 @@ main #contact {
   background-color: #48b1ee;
   top: 70px;
   left: 0%;
-  /* transform: translateX(-50%); */
 }
 
 main #contact fieldset {
@@ -34,7 +30,6 @@ main #contact fieldset {
 }
 
 main #contact h1 {
-  /* padding-left: 55px; */
   font-weight: 500;
 }
 
@@ -163,17 +158,12 @@ main #contact .container .contactInfo .box .text p {
 
 main #contact .container .contact-form {
   width: 50%;
-  /* background: #fff; */
   border-radius: 15px;
   padding: 40px 0;
-  /* box-shadow: 0 3px 15px rgba(0, 0, 0, .3); */
   margin-bottom: 20px;
   transition: 0.3s;
 }
 
-main #contact .container .contact-form:hover {
-  /* box-shadow: 0 2px 15px rgba(0, 0, 0, .1); */
-}
 
 main #contact .container .contact-form h2 {
   font-weight: 500;
@@ -192,6 +182,7 @@ body.dark #contact .title h1 {
   color: #fcfcfc;
 }
 
+/* makes sure that the font color is white even if the fields are autofilled */
 body.dark main #contact fieldset input, 
 body.dark main #contact textarea,
 body.dark main #contact input:-webkit-autofill,
@@ -251,11 +242,6 @@ body.dark main #contact .thankyou_message {
   }
 }
 
-/* @media only screen and (min-width: 2000px) {
-  main #contact .contact-form {
-    transform: scale(1.3);
-  }
-} */
 
 @media only screen and (max-width: 1175px) {
   main #contact .contact-form {
@@ -267,7 +253,6 @@ body.dark main #contact .thankyou_message {
 
   #contact .title, #ft-projects .title {
     text-align: center!important;
-    /* background-color: red; */
   }
 
   #contact .title h1:before {
@@ -277,10 +262,6 @@ body.dark main #contact .thankyou_message {
   }
 
   main #contact .container .contactInfo {
-    /* text-align: center;
-        padding-right: 0;
-        margin-bottom: 2rem; */
-    /* display: none; */
     order: 1;
     padding-left: 20px;
     justify-content: center;
@@ -331,11 +312,6 @@ body.dark main #contact .thankyou_message {
   }
 }
 
-/* @media only screen and (max-width: 400px){
-    main #contact .container .contactInfo img{
-        max-width: 90vw;
-    }
-} */
 
 @media only screen and (min-width: 2000px) {
   main #contact .container {
@@ -353,7 +329,4 @@ body.dark main #contact .thankyou_message {
   #contact {
     padding: 200px 0 !important;
   }
-  /* #fun-facts .title {
-      transform: scale(1.3);
-    } */
 }

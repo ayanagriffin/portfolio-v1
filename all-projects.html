@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/all-projects.css">
     <link rel="icon" href="./images/main-site/head-logo.svg" />
+
     <title>All Projects</title>
 </head>
 
@@ -49,7 +50,7 @@
                 </div>
                 <div class="right-content">
                     <div class="imgBox">
-                        <img src="../images/projects/test.png" alt="">
+                        <img src="./images/projects/bbug.png" alt="">
                     </div>
                     <div class="card-info">
                         <div class="date-and-categories">
@@ -62,9 +63,9 @@
 
                             </ul>
                         </div>
-                        <h2 class="ecobud">Title</h2>
-                        <p style="margin-bottom: 10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                            amet fuga omnis!</p>
+                        <h2 class="ecobud">EcoBud</h2>
+                        <p class="ecobud description">First slide: quick description and/or tagline for the project
+                            (what does it do?)</p>
                         <a href="project" class="learnMore" id="ecobud">learn more</a>
                     </div>
                 </div>
@@ -78,7 +79,7 @@
                     <label for="" id="" class="tap tap-3"></label>
                 </div>
                 <div class="right-content">
-                    <div class="imgBox">
+                    <div class="imgBox bottom">
                         <img src="../images/projects/test.png" alt="">
                     </div>
                     <div class="card-info">
@@ -93,7 +94,8 @@
                             </ul>
                         </div>
                         <h2 class="">Title</h2>
-                        <p style="margin-bottom: 10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                        <p class="description">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Totam
                             amet fuga omnis!</p>
                         <a href="project" class="learnMore" id="">learn more</a>
                     </div>
@@ -176,32 +178,33 @@
 
     <!-------------X-------- FOOTER ------------X------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript/app.js"></script>
     <script src="javascript/card-project-slider.js"></script>
 
     <script type="text/javascript">
-        window.addEventListener("load", () => {
-            const preloader = document.querySelector(".preloader");
-            preloader.classList.add("preload-finish");
+        // window.addEventListener("load", () => {
+        //     const preloader = document.querySelector(".preloader");
+        //     preloader.classList.add("preload-finish");
 
 
-        });
+        // });
 
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem("darkmode") !== "false") {
-            $('body').addClass('dark');
-        }
+        // if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem("darkmode") !== "false") {
+        //     $('body').addClass('dark');
+        // }
 
-        if (localStorage.getItem("darkmode") == "true") {
-            $('body').addClass('dark');
-        }
+        // if (localStorage.getItem("darkmode") == "true") {
+        //     $('body').addClass('dark');
+        // }
         $(document).ready(function () {
             // LOAD THE HEADER AND FOOTER
-            $('#navbar').load('navbar.html');
-            $('#footer').load('footer.html');
-            $('.preloader').load('preloader.html');
+            // $('#navbar').load('navbar.html');
+            // $('#footer').load('footer.html');
+            // $('.preloader').load('preloader.html');
             // REMEMBER WHICH MODE THE USER LAST USED (LIGHT OR DARK)
-            if (localStorage.getItem("darkmode") == "true") {
-                $('body').addClass('dark');
-            }
+            // if (localStorage.getItem("darkmode") == "true") {
+            //     $('body').addClass('dark');
+            // }
             // APPLYING FILTERS
             $('.list').click(function () {
                 const value = $(this).attr('data-filter');

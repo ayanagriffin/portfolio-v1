@@ -1,20 +1,18 @@
 $(document).ready(function () {
- 
-    const ecobud = { "t1": "EcoBud1", "t2": "sample2", "t3": "wooo3" };
+
+    const ecobud = { "p1": "First slide: quick description and/or tagline for the project (what does it do?)", "p2": "Second slide: More technical details about the project. What did I use to make it?", "p3": "Third slide: Any other quick details that are specific to the project, like awards!" };
     const allProjects = { "ecobud": ecobud }
     $('.tap').click(function () {
         const id = $(this).attr('id')
         const project = allProjects[id]
-        
-        console.log(project)
         if ($(this).hasClass('tap-2')) {
-            $("h2." + id).html(project.t2);
-        }else if ($(this).hasClass('tap-3')){
-            $("h2." + id).html(project.t3);
-        }else{
-            $("h2." + id).html(project.t1);
+            $("p." + id).html(project.p2);
+        } else if ($(this).hasClass('tap-3')) {
+            $("p." + id).html(project.p3);
+        } else {
+            $("p." + id).html(project.p1);
         }
-        
+
         $(this).addClass('active-slide').siblings().removeClass('active-slide');
     });
 
