@@ -250,6 +250,10 @@
     });
     if (localStorage.getItem("darkmode") == "true") {
       $("body").addClass("dark");
+
+    }
+
+    if ($("body").hasClass("dark")) {
       // CHANGE SRC OF ICONS ON PROJECT PAGE TO ENSURE VISIBILITY
       $("#role").attr("src", "images/projects/icons/role-dark.svg");
       $("#date").attr("src", "images/projects/icons/calendar-dark.svg");
