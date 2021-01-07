@@ -34,7 +34,7 @@
   /* width: 100%; */
   /* width: 80%; */
   margin: 20px;
-  margin-top: 70px;
+  margin-top: 50px;
 
   /* padding: 10px 2.5%; */
   position: relative;
@@ -148,7 +148,7 @@ body.dark #up-to .cards .card:hover {
     margin-bottom: 200px;
   }
   #up-to .cards {
-    top: 100px !important;
+    top: 50px !important;
   }
 }
 
