@@ -56,7 +56,6 @@ footer .back-to-top p {
 
 .quick-links .left {
   display: flex;
-  /* color: #0b1e2b; */
   white-space: nowrap;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -76,7 +75,6 @@ footer .back-to-top p {
 }
 .quick-links ul li {
   padding-right: 10px;
-  /* text-decoration: underline; */
 }
 
 .quick-links ul li a,
@@ -151,29 +149,3 @@ body.dark .quick-links ul li i:hover {
   }
 }
 
-@media only screen and (min-width: 2000px) {
-
-  /* footer h3 {
-    font-size: 2.5rem !important;
-  }
-
-  footer p,
-  footer a {
-    font-size: 1.5rem !important;
-  }
-
-  footer a {
-    padding: 0 20px;
-  }
-
-  footer i {
-    font-size: 2rem;
-    padding: 5px 10px;
-  }
-
-  footer .socials li i,
-  #darkmode-footer {
-    font-size: 3rem;
-    padding: 0 !important;
-  } */
-}

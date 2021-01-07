@@ -166,12 +166,6 @@
   height: 225px;
   margin: -1.25rem 0;
   margin-right: 0;
-  /* height: 217px; */
-  /* position: relative;
-  margin-left: -1rem; */
-  /* margin-top: -1rem; */
-  /* margin-bottom: calc(-1rem - 30px);
-  overflow: hidden; */
 }
 
 /* places image at bottom right corner of card if specified. otherwise, image will be centered */
@@ -182,9 +176,6 @@
 }
 #all-projects .card .imgBox img,
 #fun-facts .card .imgBox img {
-  /* width: 100%;
-  height: 200px;
-  object-fit: cover; */
   border-radius: 0.8rem;
   position: relative;
   transition: 0.1s;
@@ -192,11 +183,6 @@
 
 #fun-facts .projects {
   display: block;
-  /* flex-direction: row; */
-  /* margin: 0 5%;
-    margin-top: 2%;
-    flex-wrap: wrap;
-    justify-content: space-around; */
 }
 
 #all-projects .card .card-info,
@@ -234,7 +220,6 @@
 #all-projects .card p,
 #fun-facts .card p {
   font-size: 14px;
-  /* height: 37px; */
 }
 #all-projects .card p.description,
 #fun-facts .card p.description{
@@ -308,7 +293,6 @@ body.dark #all-projects .card h2 {
     max-width: 10rem;
     max-height: 175px;
     margin: initial;
-    /* background-color: red; */
   }
 
   #all-projects .card-info,
