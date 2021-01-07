@@ -183,7 +183,12 @@
             const preloader = document.querySelector(".preloader");
             preloader.classList.add("preload-finish");
 
+
         });
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem("darkmode") !== "false") {
+            $('body').addClass('dark');
+        }
 
         if (localStorage.getItem("darkmode") == "true") {
             $('body').addClass('dark');
@@ -202,12 +207,12 @@
                 const value = $(this).attr('data-filter');
                 if (value == 'all') {
                     $('.card').show();
-                    
+
                 }
                 else {
                     $('.card').not('.' + value).hide();
                     $('.card').filter('.' + value).show();
-                   
+
                 }
 
             })

@@ -216,6 +216,9 @@
 
   <script type="text/javascript">
 
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem("darkmode") !== "false") {
+      $('body').addClass('dark');
+    }
     $(".pictures-container").owlCarousel({
       loop: true,
       items: 1,
