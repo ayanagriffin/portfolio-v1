@@ -83,7 +83,7 @@
 }
 
 #ft-projects {
-  min-height: 100vh;
+  min-height: 800px;
   position: relative;
   display: flex;
   justify-content: space-around;
