@@ -377,6 +377,6 @@ body.dark .proj-facts h3{
     color: #2A77A3;
 }
 
-body.dark p, body.dark li{
+body.dark #proj-info p, body.dark #proj-info li{
     color: #d4d4d4;
 }
