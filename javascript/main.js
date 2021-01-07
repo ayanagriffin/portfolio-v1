@@ -73,12 +73,6 @@ for (let i = 0; i < iconBox.length; i++) {
 }
 
 
-// $(document).ready(function () {
-// LOAD THE HEADER AND FOOTER
-// $('#navbar').load('navbar.html');
-// $('#footer').load('footer.html');
-// $('.preloader').load('preloader.html');
-
 // HANDLES SWITCH BETWEEN HOME AND ABOUT ME PAGES
 const back_btn = document.querySelector('#back-home-btn');
 const about_btn = document.querySelector('#about-me-btn');

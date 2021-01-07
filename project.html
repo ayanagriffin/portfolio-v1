@@ -213,7 +213,7 @@
     <div id="footer"></div>
   </footer>
 
-
+  <script src="javascript/app.js"></script>
   <script type="text/javascript">
 
     // if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem("darkmode") !== "false") {
@@ -234,38 +234,23 @@
         640: {
           nav: true,
 
-        },
-        1048: {
-          autoplay: false,
-
         }
       }
 
     });
-    // $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
-    // $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
-    // window.addEventListener("load", () => {
-    //   const preloader = document.querySelector(".preloader");
-    //   preloader.classList.add("preload-finish");
-    // });
-    // if (localStorage.getItem("darkmode") == "true") {
-    //   $("body").addClass("dark");
 
-    // }
-
-    if ($("body").hasClass("dark")) {
-      // CHANGE SRC OF ICONS ON PROJECT PAGE TO ENSURE VISIBILITY
-      $("#role").attr("src", "images/projects/icons/role-dark.svg");
-      $("#date").attr("src", "images/projects/icons/calendar-dark.svg");
-      $("#type").attr("src", "images/projects/icons/computer-dark.svg");
-      $("#tools").attr("src", "images/projects/icons/tools-dark.svg");
-    }
 
     $(document).ready(function () {
-      // $("#navbar").load("navbar.html");
-      // $("#footer").load("footer.html");
-      // $(".preloader").load("preloader.html");
 
+      if ($("body").hasClass("dark")) {
+        // CHANGE SRC OF ICONS ON PROJECT PAGE TO ENSURE VISIBILITY
+        $("#role").attr("src", "images/projects/icons/role-dark.svg");
+        $("#date").attr("src", "images/projects/icons/calendar-dark.svg");
+        $("#type").attr("src", "images/projects/icons/computer-dark.svg");
+        $("#tools").attr("src", "images/projects/icons/tools-dark.svg");
+      }
+
+      // displays correct info section
       $(".card").not(".overview").hide();
       $(".list").click(function () {
         const value = $(this).attr("data-filter");
@@ -283,7 +268,7 @@
       });
     });
   </script>
-  <script src="javascript/app.js"></script>
+
 </body>
 
 </html>
