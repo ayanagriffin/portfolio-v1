@@ -152,13 +152,14 @@ body.dark .quick-links ul li i:hover {
 }
 
 @media only screen and (min-width: 2000px) {
-  footer h3 {
-    font-size: 3rem !important;
+
+  /* footer h3 {
+    font-size: 2.5rem !important;
   }
 
   footer p,
   footer a {
-    font-size: 1.8rem !important;
+    font-size: 1.5rem !important;
   }
 
   footer a {
@@ -166,7 +167,7 @@ body.dark .quick-links ul li i:hover {
   }
 
   footer i {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 5px 10px;
   }
 
@@ -174,5 +175,5 @@ body.dark .quick-links ul li i:hover {
   #darkmode-footer {
     font-size: 3rem;
     padding: 0 !important;
-  }
+  } */
 }
