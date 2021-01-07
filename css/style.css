@@ -105,11 +105,13 @@ button:hover {
   left: 50%;
   transform: translateX(-50%);
   bottom: -10%;
+  
 }
 
 .owl-dot {
   outline: none;
   border: none;
+  color: red!important;
 }
 
 .owl-prev,
