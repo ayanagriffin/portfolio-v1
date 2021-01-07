@@ -192,11 +192,23 @@ body.dark #contact .title h1 {
   color: #fcfcfc;
 }
 
-body.dark main #contact fieldset input,
-body.dark main #contact textarea {
+body.dark main #contact fieldset input, 
+body.dark main #contact textarea,
+body.dark main #contact input:-webkit-autofill,
+body.dark main #contact input:-webkit-autofill:hover, 
+body.dark main #contact input:-webkit-autofill:focus,
+body.dark main #contact textarea:-webkit-autofill,
+body.dark main #contact textarea:-webkit-autofill:hover,
+body.dark main #contact textarea:-webkit-autofill:focus,
+body.dark main #contact select:-webkit-autofill,
+body.dark main #contact select:-webkit-autofill:hover,
+body.dark main #contact select:-webkit-autofill:focus
+{
   border-bottom: 2px solid #9c9c9c;
-  color: #fff;
+  color: #fff!important;
+  -webkit-text-fill-color: #fff;
 }
+
 body.dark main #contact fieldset input,
 body.dark main #contact textarea {
   background: #0f1c33;
