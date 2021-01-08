@@ -36,7 +36,6 @@
 }
 
 #proj-info {
-  /* min-height: 80vh; */
   padding: 50px;
 }
 
@@ -275,8 +274,6 @@
       position: relative;
       margin: 20px;
       text-align: center;
-      /* top: 50%;
-      transform: translateY(-50%); */
 
   }
 
