@@ -129,7 +129,7 @@
   height: 225px;
   padding: 1.25rem;
   background: transparent;
-  box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.05);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -247,7 +247,7 @@ body.dark .categories ul li.active {
 }
 
 body.dark #all-projects .card {
-  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
   color: #fcfcfc;
 }
 

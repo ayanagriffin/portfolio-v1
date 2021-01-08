@@ -5,7 +5,7 @@ header{
     white-space: nowrap;
     width: 100%;
     z-index: 1001;
-    box-shadow: .1rem 0rem .5rem rgba(0,0,0,0.2);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: .7s;
 }
 
@@ -353,7 +353,7 @@ header a{
 /* -------------------------------- DARK MODE ------------------------------------ */
 body.dark header{
     background-color:#0F1C33!important;
-    box-shadow: .05rem 0rem .75rem #2da5ea;
+    box-shadow: #2da5ea40 0px 8px 18px;
 }
 
 body.dark a{
