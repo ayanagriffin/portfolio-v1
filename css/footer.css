@@ -6,6 +6,30 @@ footer.footer {
   padding: 75px;
   color: #000;
   font-weight: 400;
+  padding-top: 200px;
+  
+}
+
+.custom-shape-divider-top-1610071760 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+}
+
+.custom-shape-divider-top-1610071760 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 146px;
+}
+
+.custom-shape-divider-top-1610071760 .shape-fill {
+  fill: #fafafa;
 }
 
 footer .logo {
@@ -126,6 +150,10 @@ body.dark .quick-links ul li a:hover {
 body.dark .quick-links ul li i:hover {
   color: rgba(255, 255, 255, 0.7);
 }
+
+body.dark .custom-shape-divider-top-1610071760 .shape-fill {
+  fill: #0f1c33;
+}
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
 
 @media only screen and (max-width: 675px) {
@@ -146,6 +174,10 @@ body.dark .quick-links ul li i:hover {
   footer .back-to-top {
     top: 5%;
     right: 3%;
+  }
+
+  .custom-shape-divider-top-1610071760 svg {
+    height: 100px;
   }
 }
 
