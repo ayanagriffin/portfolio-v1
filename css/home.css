@@ -241,7 +241,7 @@ body.light #home p {
 
 @media only screen and (min-width: 1750px) {
   #home .main-home-content {
-    margin-left: 40px;
+    /* margin-left: 40px; */
   }
 }
 @media only screen and (min-width: 2000px) {
@@ -262,7 +262,8 @@ body.light #home p {
   }
 
   #home .main-home-content {
-    margin-left: 60px;
+    /* margin-left: 60px; */
+
   }
 
   #home .main-home-content .btn {

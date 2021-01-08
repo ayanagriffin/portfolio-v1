@@ -313,9 +313,10 @@ body.dark main #contact .thankyou_message {
 
 
 @media only screen and (min-width: 2000px) {
-  /* main #contact .container {
+  main #contact .container {
+    width: 65%;
     transform: scale(1.3);
-  } */
+  }
 
   main section:not(#home) {
     margin: 100px 0;
