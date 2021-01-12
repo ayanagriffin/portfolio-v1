@@ -1,4 +1,4 @@
-header{
+nav{
     position: sticky;
     top: 0px;
     background-color:#fcfcfc;
@@ -11,7 +11,7 @@ header{
 
 
 
-header a{
+nav a{
     color: #0F1C33;
 }
 
@@ -351,7 +351,7 @@ header a{
 /* -----------XX----------HAMBURGER MENU-----------XX-------------- */
 
 /* -------------------------------- DARK MODE ------------------------------------ */
-body.dark header{
+body.dark nav{
     background-color:#0F1C33!important;
     box-shadow: #2da5ea40 0px 8px 18px;
 }
