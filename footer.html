@@ -10,91 +10,87 @@
 </head>
 
 <body>
-    <div>
-        <div class="container">
-            <div class="name">
-                <h3 class="logo">Ayana <span>Griffin</span></h3>
-            </div>
+    <div class="custom-shape-divider-top-1610071760">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="container">
 
-            <div class="about">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia dignissimos modi, exercitationem
-                    totam illum aspernatur placeat ipsa in quaerat maxime.</p>
+        <h3 class="logo">Ayana <span>Griffin</span></h3>
 
-            </div>
-            <div class="divider">
+        <ul class="quick-links">
+            <li><a href="/">Home</a></li>
+            <li><a id="about-footer" href="/">About Me</a></li>
+            <li><a href="/#ft-projects">Featured Projects</a></li>
+            <li><a href="all-projects">All Projects</a></li>
+            <li><a href="/#contact">Contact Me</a></li>
+            <!-- <li><a href="/#fun-facts">Fun Facts</a></li> -->
 
-            </div>
-            <div class="quick-links">
-                <div class="left">
-                    <p>Made by Ayana Griffin </p>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a id="about-footer" href="/">About Me</a></li>
-                        <li><a href="/#projects">Featured Projects</a></li>
-                        <li><a href="all-projects">All Projects</a></li>
-                        <li><a href="/#contact">Contact Me</a></li>
-                        <li><a href="/#fun-facts">Fun Facts</a></li>
-
-                    </ul>
-                </div>
-                <div class="right">
-                    <ul class="socials">
-                        <li><i id="darkmode-footer"></i></li>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/ayana-griffin/"> <i
-                                    class="fab fa-linkedin-in"></i></a></li>
-                        <li><a target="_blank" href="https://github.com/ayanagriffin"> <i class="fab fa-github"></i></a>
-                        </li>
+        </ul>
 
 
-                    </ul>
-                </div>
-            </div>
-            <div class="back-to-top">
-                <a href="#"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
-                <p>back to top</p>
-            </div>
-        </div>
+        <ul class="socials">
+            <li><i id="darkmode-footer"></i></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/ayanagriffin/"> <i
+                        class="fab fa-linkedin-in"></i></a></li>
+            <li><a target="_blank" href="https://github.com/ayanagriffin"> <i class="fab fa-github"></i></a>
+            </li>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- <script src="javascript/menu.js"></script> -->
-        <script type="text/javascript">
 
+        </ul>
+        <p>Made with ♥ by Ayana</p>
+
+    </div>
+    <!-- <div class="back-to-top">
+        <a href="#"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+        <p>back to top</p>
+    </div> -->
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="javascript/menu.js"></script> -->
+    <script type="text/javascript">
+
+        if ($('body').hasClass('dark')) {
+            $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-sun"></i>');
+            //  $("#darkmode-footer-tip").html('switch to light mode')
+        } else {
+            $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-moon"></i>');
+            //  $("#darkmode-footer-tip").html('switch to dark mode')
+        }
+
+
+        const dark_btn2 = document.querySelector('#darkmode-footer');
+        // const body = document.querySelector('body');
+
+
+        dark_btn2.addEventListener('click', () => {
+            $('body').toggleClass('dark');
             if ($('body').hasClass('dark')) {
+                localStorage.setItem("darkmode", "true");
                 $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-sun"></i>');
-                //  $("#darkmode-footer-tip").html('switch to light mode')
+                $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
+                $("#darkmode-tip").html('switch to light mode')
             } else {
+                localStorage.setItem("darkmode", "false");
                 $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-moon"></i>');
-                //  $("#darkmode-footer-tip").html('switch to dark mode')
+                $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
+                $("#darkmode-tip").html('switch to dark mode')
             }
 
+        })
 
-            const dark_btn2 = document.querySelector('#darkmode-footer');
-            // const body = document.querySelector('body');
+        const aboutBtnFooter = document.querySelector("#about-footer");
 
+        aboutBtnFooter.addEventListener('click', function () {
+            sessionStorage.setItem('about-me', 'true');
+        });
 
-            dark_btn2.addEventListener('click', () => {
-                $('body').toggleClass('dark');
-                if ($('body').hasClass('dark')) {
-                    localStorage.setItem("darkmode", "true");
-                    $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-sun"></i>');
-                    $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-sun"></i>');
-                    $("#darkmode-tip").html('switch to light mode')
-                } else {
-                    localStorage.setItem("darkmode", "false");
-                    $("#darkmode-footer").html('<i id="darkmode-footer" class="fas fa-cloud-moon"></i>');
-                    $("#darkmode").html('<i id="darkmode" class="fas fa-cloud-moon"></i>');
-                    $("#darkmode-tip").html('switch to dark mode')
-                }
-
-            })
-
-            const aboutBtnFooter = document.querySelector("#about-footer");
-
-            aboutBtnFooter.addEventListener('click', function () {
-                sessionStorage.setItem('about-me', 'true');
-            });
-
-        </script>
+    </script>
 </body>
 
 </html>
