@@ -4,22 +4,13 @@
   justify-content: center;
   align-items: flex-start;
   min-height: 70vh;
-  /* background: url("../images/main-site/blob.svg");
-  
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: calc(max(45vw, 500px)); */
   margin-bottom: 200px;
-
-  /* background-color: #f7f7f7 */
 }
 
 #ft-projects .title {
   position: absolute;
   text-align: left;
-  width: 1100px;
   top: 6rem;
-  /* left: 80px; */
 }
 
 #fun-facts .title h1,
@@ -41,7 +32,6 @@
   background-color: #48b1ee;
   top: 65%;
   left: 0%;
-  /* transform: translateX(-50%); */
 }
 
 #fun-facts .title h1:before {
@@ -81,16 +71,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
   flex-wrap: wrap;
-  /* background: lightgray; */
 }
 
 #fun-facts .container .icon .iconBox {
   position: relative;
   width: calc(50% - 40px);
   margin: 0 30px 30px 0;
-  /* padding: 0 25px; */
   height: 140px;
   display: flex;
   justify-content: flex-start;
@@ -99,7 +86,7 @@
   flex-wrap: wrap;
   border-radius: 10px;
   transition: 0.5s;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background: transparent;
   overflow: hidden;
 }
@@ -118,7 +105,9 @@
   max-height: 70%;
   justify-self: flex-start;
   align-self: flex-end;
-  left: 0;
+  left: 10px;
+  bottom: 10px;
+  z-index: -1;
 }
 
 #fun-facts .container .icon .iconBox.active img {
@@ -127,7 +116,6 @@
 #fun-facts .container .content {
   position: relative;
   width: 50%;
-  /* overflow: hidden; */
 }
 
 #fun-facts .container .content .contentBox {
@@ -143,7 +131,6 @@
 
 #fun-facts .text {
   position: relative;
-  /* height: 500px; */
   height: 400px;
   display: flex;
   padding-top: 40px;
@@ -154,8 +141,6 @@
 
 #fun-facts .text p {
   width: 90%;
-  /* margin: 30px 0; */
-  /* padding: 30px 0; */
 }
 #fun-facts .container .content .contentBox.active {
   transform: scale(1);
@@ -189,7 +174,7 @@
   max-width: 550px;
   min-width: 500px;
   padding: 1rem;
-  box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.05);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -205,15 +190,6 @@
   justify-content: space-around;
   height: 185px;
 }
-
-/* #fun-facts .projects{
-    display: flex;
-    margin: 0 5%;
-    margin-top: 2%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    display: none;
-} */
 
 #fun-facts .projects.owl-carousel {
   display: none;
@@ -241,7 +217,7 @@ body.dark #fun-facts .card .card-info {
   color: #fcfcfc;
 }
 body.dark #fun-facts .card {
-  box-shadow: 5px 5px 10px rgba(252, 252, 252, 0.3);
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
 }
 body.dark #fun-facts .text {
   color: #fcfcfc;
@@ -254,7 +230,7 @@ body.dark #fun-facts .container .icon .iconBox h3 {
   color: #fcfcfc;
 }
 body.dark #fun-facts .container .icon .iconBox {
-  box-shadow: 4px 4px 10px rgba(252, 252, 252, 0.3);
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
 }
 body.dark #fun-facts .title a:hover,
 body.dark #ft-projects .title a:hover {
@@ -272,10 +248,6 @@ body.dark #ft-projects .title a {
     transform: scale(1.3);
     margin-top: 100px;
   }
-
-  /* #fun-facts .title {
-    transform: scale(1.3);
-  } */
 }
 @media only screen and (max-width: 550px) {
   #fun-facts .card {
@@ -332,14 +304,8 @@ body.dark #ft-projects .title a {
     display: block !important;
   }
 
-  #ft-projects .title h1:before {
-    /* top: 55%; */
-    /* left: 50%;
-        transform: translateX(-50%); */
-  }
 
   #fun-facts .title h1:before {
-    /* top: 55%; */
     left: 50%;
     transform: translateX(-50%);
   }
@@ -354,9 +320,6 @@ body.dark #ft-projects .title a {
     margin-bottom: 6rem;
     top: 3rem;
     display: block !important;
-    /* text-align: left;
-        width: 1100px;
-        top: 4rem; */
   }
 
   #fun-facts .card {

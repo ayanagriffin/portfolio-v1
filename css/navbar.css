@@ -1,17 +1,17 @@
-header{
+nav{
     position: sticky;
     top: 0px;
     background-color:#fcfcfc;
     white-space: nowrap;
     width: 100%;
     z-index: 1001;
-    box-shadow: .1rem 0rem .5rem rgba(0,0,0,0.2);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: .7s;
 }
 
 
 
-header a{
+nav a{
     color: #0F1C33;
 }
 
@@ -323,9 +323,10 @@ header a{
     position: absolute;
     display: none;
     top: 50%;
-    right: 2rem;
+    right: 6.5vw;
+    
     transform: translateY(-50%);
-    width: 2.5rem;
+    width: 3.5rem;
     height: 2.5rem;
     cursor: pointer;
     z-index: 3;
@@ -351,9 +352,9 @@ header a{
 /* -----------XX----------HAMBURGER MENU-----------XX-------------- */
 
 /* -------------------------------- DARK MODE ------------------------------------ */
-body.dark header{
+body.dark nav{
     background-color:#0F1C33!important;
-    box-shadow: .05rem 0rem .75rem #2da5ea;
+    box-shadow: #2da5ea40 0px 8px 18px;
 }
 
 body.dark a{
