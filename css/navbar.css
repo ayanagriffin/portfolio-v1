@@ -323,9 +323,10 @@ nav a{
     position: absolute;
     display: none;
     top: 50%;
-    right: 2rem;
+    right: 6.5vw;
+    
     transform: translateY(-50%);
-    width: 2.5rem;
+    width: 3.5rem;
     height: 2.5rem;
     cursor: pointer;
     z-index: 3;
