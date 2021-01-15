@@ -419,3 +419,7 @@ body.dark .proj-facts h3{
 body.dark #proj-info p, body.dark #proj-info li{
     color: #d4d4d4;
 }
+
+footer #attribution{
+    display: inline;
+}
