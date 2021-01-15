@@ -100,6 +100,7 @@
 #home .container .home-content .btn {
   width: 200px;
   height: 50px;
+  margin-bottom: 30px; /* gives space for the shadow*/
 }
 
 #home .panels-container {

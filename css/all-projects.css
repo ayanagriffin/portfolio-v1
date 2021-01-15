@@ -267,6 +267,9 @@ body.dark #all-projects .card h2 {
     padding-bottom: 50px;
     height: auto;
   }
+  #fun-facts .card {
+    margin-bottom: 30px;
+  }
   #all-projects .card .right-content,
   #fun-facts .card .right-content {
     flex-direction: column;

@@ -36,8 +36,7 @@ a {
   text-decoration: none;
 }
 
-.btn,
-button {
+.btn{
   text-transform: lowercase;
   color: #fff;
   font-weight: 600;
@@ -52,6 +51,9 @@ button {
   white-space: nowrap;
   max-width: 200px;
   /* min-width: 150px; */
+  
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* margin-bottom: 30px; */
 }
 
 .btn.transparent {
@@ -61,6 +63,7 @@ button {
 .btn:hover,
 button:hover {
   background: #0e91dd;
+  box-shadow: rgba(14, 145, 221, 0.2) 0px 8px 24px;
 }
 
 .btn.transparent:hover {
