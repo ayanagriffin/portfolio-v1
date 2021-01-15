@@ -62,8 +62,7 @@ a {
   background: transparent;
   border: 3px solid #fff;
 }
-.btn:hover,
-button:hover {
+.btn:hover {
   background: #0e91dd;
   box-shadow: rgba(14, 145, 221, 0.2) 0px 8px 24px;
 }
