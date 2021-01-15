@@ -151,8 +151,8 @@
 
 #fun-facts .btn {
   /* width: 140px; */
-  padding: 0 20px;
-  height: 40px;
+  /* padding: 0 20px;
+  height: 40px; */
   justify-self: flex-end;
   /* font-weight: 500; */
   font-size: 1rem;
@@ -161,11 +161,11 @@
 #fun-facts .projects .card .right-content .btn {
   color: #fff;
   background: #60bef5;
-  padding: 0 20px;
+  /* padding: 0 20px;
   border-radius: 25px;
   width: fit-content;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.9rem; */
 }
 
 #fun-facts .projects .card .right-content .btn:hover {

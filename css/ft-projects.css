@@ -98,8 +98,8 @@
 }
 
 #ft-projects .btn {
-  padding: 10px 20px;
-  width: fit-content;
+  /* padding: 10px 20px;
+  width: fit-content; */
   margin-bottom: 30px;
 }
 #ft-projects .owl-dot {

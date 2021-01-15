@@ -76,8 +76,8 @@
 
 #up-to .cards .card .btn {
   font-size: 0.8rem;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
 
 #up-to .cards .card .imgBox {
