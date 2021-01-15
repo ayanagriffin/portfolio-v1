@@ -46,11 +46,15 @@
     position: relative;
 }
 #proj-header .img-box{
-  background: url("../images/projects/ecobud.png") no-repeat;
+  background: url("../images/projects/bbug.png") no-repeat;
   height: 500px;
   background-color: #2DA4EA;
   background-attachment: fixed;
   background-position: center 150px;
+  -webkit-background-size: calc(min(90vw, 600px));
+  -moz-background-size: calc(min(90vw, 600px));
+  -o-background-size: calc(min(90vw, 600px));
+  background-size: calc(min(90vw, 600px));
   background-size: calc(min(90vw, 600px));
 }
 
