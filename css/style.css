@@ -52,10 +52,7 @@ a {
   width: fit-content;
   max-width: 200px;
   height: 40px;
-  /* min-width: 150px; */
-  
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  /* margin-bottom: 30px; */
 }
 
 .btn.transparent {
@@ -158,11 +155,11 @@ body.dark .owl-dot.active {
   font-size: 26px;
   width: 50px;
   height: 50px;
-  background-color: #fff;
-  color: #333;
+  background-color: #f7f7f7;
+  color: #3f3d56;
   cursor: pointer;
   outline: none;
-  border: 3px solid #333;
+  border: 3px solid #3f3d56;
   border-radius: 50%;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -170,8 +167,8 @@ body.dark .owl-dot.active {
   z-index: 10000;
 }
 #back-to-top-btn:hover, #back-to-top-btn:focus {
-  background-color: #333;
-  color: #fff;  
+  background-color: #3f3d56;
+  color: #f7f7f7;  
 }
 
 @media(max-width: 992px) {
