@@ -1,8 +1,14 @@
 #ft-projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 800px;
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: 17% 55%;
+  overflow: hidden;
 }
 #ft-projects .proj-container {
   position: relative;
@@ -83,18 +89,6 @@
 
 #ft-projects .owl-next {
   left: 92%;
-}
-
-#ft-projects {
-  min-height: 800px;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 50px;
-  background-size: 400px;
-  background-repeat: no-repeat;
-  background-position: 17% 55%;
-  overflow: hidden;
 }
 
 #ft-projects .btn {
@@ -206,7 +200,7 @@ body.dark #ft-projects .title a {
   }
 
   #ft-projects .owl-dot {
-    margin-top: -150px;
+    margin-top: calc(min(-160px, -18vw));
   }
 
   #ft-projects .owl-dot {

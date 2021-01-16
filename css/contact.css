@@ -243,6 +243,9 @@ body.dark main #contact .thankyou_message {
 
 
 @media only screen and (max-width: 1175px) {
+  main #contact{
+    padding: 75px 0;
+  }
   main #contact .contact-form {
     padding: 3rem 2rem 1rem 2rem !important;
   }
