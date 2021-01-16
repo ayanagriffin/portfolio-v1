@@ -259,7 +259,7 @@ body.light #home p {
   }
 
   #home p {
-    
+    font-size: 1.725vh !important;
   }
 
   #home .main-home-content {
