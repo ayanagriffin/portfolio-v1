@@ -9,7 +9,7 @@
   padding: 75px 0;
 }
 
-#up-to .title{
+#up-to .title, #doing .title{
   /* position: absolute; */
   /* top: 5rem; */
   position: relative;
@@ -27,7 +27,7 @@
   transform: translateX(-50%);
 }
 
-#up-to .title h1:before{
+#up-to .title h1:before, #doing .title h1:before{
   width: 80px;
   position: absolute;
   height: 4px;
@@ -99,7 +99,7 @@
 
 /* -------------------------------- DARK MODE ------------------------------------ */
 
-body.dark #up-to .title h1 {
+body.dark #up-to .title h1, body.dark #doing .title h1 {
   color: #fcfcfc;
 }
 

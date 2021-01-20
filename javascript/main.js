@@ -129,7 +129,6 @@ const backToTopButton = document.querySelector("#back-to-top-btn");
 
 window.addEventListener("scroll", scrollFunction);
 
-console.log(document.body.scrollHeight);
 function scrollFunction() {
     if (window.pageYOffset > (document.body.scrollHeight / 1.5)) { // Show backToTopButton
         if (!backToTopButton.classList.contains("btnEntrance")) {

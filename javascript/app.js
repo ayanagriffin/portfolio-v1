@@ -26,5 +26,13 @@ $(document).ready(function () {
     $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
     $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
 
+    if ($("body").hasClass("dark") && $("#role")) {
+        // CHANGE SRC OF ICONS ON PROJECT PAGE TO ENSURE VISIBILITY
+        $("#role").attr("src", "images/projects/icons/role-dark.svg");
+        $("#date").attr("src", "images/projects/icons/calendar-dark.svg");
+        $("#type").attr("src", "images/projects/icons/computer-dark.svg");
+        $("#tools").attr("src", "images/projects/icons/tools-dark.svg");
+    }
+
 
 })

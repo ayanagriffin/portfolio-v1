@@ -7,6 +7,7 @@
 @import url("contact.css");
 @import url("ft-projects.css");
 @import url("fun-facts.css");
+@import url("doing.css");
 
 * {
   padding: 0;
@@ -70,7 +71,7 @@ a {
   background: #fff;
 }
 
-#up-to .title h2,
+#up-to .title h2, #doing .title h2,
 #fun-facts .title h2,
 #contact .title h2,
 #all-projects .title h2,
@@ -82,7 +83,7 @@ a {
   font-size: 0.9rem;
 }
 
-#up-to .title h1,
+#up-to .title h1, #doing .title h1,
 #fun-facts .title h1,
 #contact .title h1,
 #all-projects .title h1,

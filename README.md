@@ -1,1 +1,0 @@
-# ayanagriffin.github.io
