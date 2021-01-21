@@ -62,6 +62,7 @@
   overflow: hidden;
   transition: 0.3s;
   border-bottom: 5px solid #fff;
+  border-radius: 10px;
 }
 
 #up-to .cards .card:hover {
