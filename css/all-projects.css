@@ -258,6 +258,14 @@ body.dark #all-projects .card h2 {
   color: #60bef5;
 }
 
+body.dark #all-projects a{
+  color: #fff;
+}
+
+body.dark #all-projects a:hover{
+  color: #aaa;
+}
+
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
 @media only screen and (max-width: 640px) {
   #all-projects .card,
