@@ -10,7 +10,7 @@
 </p>
 <p align="center">
   Most recent iteration:
-  <a href="https://github.com/ayanagriffin/ayanagriffin.github.io" target="_blank">v1</a>
+  <a href="https://github.com/ayanagriffin/ayanagriffin.github.io" target="_blank">v2</a>
 
 </p>
 
