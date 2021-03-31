@@ -1,5 +1,3 @@
-# portfolio-v1
-First iteration of my personal website/portfolio built with JS, HTML, and CSS
 
 <div align="center">
   <img alt="Logo" src="https://user-images.githubusercontent.com/69114559/113196527-75e8e600-9218-11eb-908b-1027c3f3ea62.png" width="100" />
