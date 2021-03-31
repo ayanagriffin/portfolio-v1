@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,209 +11,69 @@
     <link rel="icon" href="./images/main-site/head-logo.svg" />
 
     <title>All Projects</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="preloader"></div>
     <!------------------------ NAVIGATION BAR ---------------------------->
     <nav>
-        <div id="navbar"></div>
-
+      <div id="navbar"></div>
     </nav>
     <!------------X---------- NAVIGATION BAR ------------X-------------->
 
-
     <section id="all-projects">
-        <div class="title">
-            <h2>my work</h2>
-            <h1>All Projects</h1>
-        </div>
 
-        <div class="categories">
+      <header class="title">
+        <h2>my work</h2>
+        <h1>All Projects</h1>
+      </header>
 
+      <div class="categories">
+        <ul>
+          <li class="list active" data-filter="all">
+            <i class="fas fa-globe-americas"></i>All
+          </li>
+          <li class="list" data-filter="personal">
+            <i class="fas fa-user"></i>Personal
+          </li>
+          <li class="list" data-filter="school">
+            <i class="fas fa-graduation-cap"></i>School
+          </li>
+          <li class="list" data-filter="competitive">
+            <i class="fas fa-medal"></i>Competitive
+          </li>
+          <li class="list" data-filter="frontend">
+            <i class="fas fa-magic"></i>Front-end
+          </li>
+          <li class="list" data-filter="backend">
+            <i class="fas fa-tools"></i>Back-end
+          </li>
+          <li class="list" data-filter="design">
+            <i class="fas fa-palette"></i>Design
+          </li>
+        </ul>
+      </div>
+      <div class="proj-container">
 
-            <ul>
-                <li class="list active " data-filter="all"><i class="fas fa-globe-americas"></i>All</li>
-                <li class="list" data-filter="personal"><i class="fas fa-user"></i>Personal</li>
-                <li class="list" data-filter="school"><i class="fas fa-graduation-cap"></i>School</li>
-                <li class="list" data-filter="comp"><i class="fas fa-medal"></i>Competitive</li>
-                <li class="list" data-filter="frontend"><i class="fas fa-magic"></i>Front-end</li>
-                <li class="list" data-filter="backend"><i class="fas fa-tools"></i>Back-end</li>
-                <li class="list" data-filter="design"><i class="fas fa-palette"></i>Design</li>
-            </ul>
-        </div>
-        <div class="projects">
-            <div class="card personal comp">
-                <div class="sliders">
-                    <label for="" id="ecobud" class="active-slide tap tap-1"></label>
-                    <label for="" id="ecobud" class="tap tap-2"></label>
-                    <label for="" id="ecobud" class="tap tap-3"></label>
-                </div>
-                <div class="right-content">
-                    <div class="imgBox">
-                        <img src="./images/projects/bbug.png" alt="">
-                    </div>
-                    <div class="card-info">
-                        <div class="date-and-categories">
-                            <p>August 2020</p>
-                            <ul>
-                                <li>personal</li>
-                                <li>school</li>
-                                <li>frontend</li>
-                                <li>backend</li>
-
-                            </ul>
-                        </div>
-                        <h2 class="ecobud">EcoBud</h2>
-                        <p class="ecobud description">First slide: quick description and/or tagline for the project
-                            (what does it do?)</p>
-                        <a href="./project" class="learnMore" id="ecobud">learn more</a>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="card frontend school">
-                <div class="sliders">
-                    <label for="" id="" class="active-slide tap tap-1"></label>
-                    <label for="" id="" class="tap tap-2"></label>
-                    <label for="" id="" class="tap tap-3"></label>
-                </div>
-                <div class="right-content">
-                    <div class="imgBox bottom">
-                        <img src="./images/projects/test.png" alt="">
-                    </div>
-                    <div class="card-info">
-                        <div class="date-and-categories">
-                            <p>August 2020</p>
-                            <ul>
-                                <li>personal</li>
-                                <li>school</li>
-                                <li>frontend</li>
-                                <li>backend</li>
-
-                            </ul>
-                        </div>
-                        <h2 class="">Title</h2>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Totam
-                            amet fuga omnis!</p>
-                        <a href="./project" class="learnMore" id="">learn more</a>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="card backend frontend school">
-                <div class="sliders">
-                    <label for="" id="test" class="active-slide tap tap-1"></label>
-                    <label for="" id="test" class="tap tap-2"></label>
-                    <label for="" id="test" class="tap tap-3"></label>
-                </div>
-                <div class="right-content">
-                    <div class="imgBox">
-                        <img src="./images/projects/logo.png" alt="">
-                    </div>
-                    <div class="card-info">
-                        <div class="date-and-categories">
-                            <p>August 2020</p>
-                            <ul>
-                                <li>personal</li>
-                                <li>school</li>
-                                <li>frontend</li>
-                                <li>backend</li>
-
-                            </ul>
-                        </div>
-                        <h2>Title</h2>
-                        <p style="margin-bottom: 10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                            amet fuga omnis!</p>
-                        <a href="./project" class="learnMore" id="ecobud">learn more</a>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="card frontend personal design">
-                <div class="sliders">
-                    <label for="" id="" class="active-slide tap tap-1"></label>
-                    <label for="" id="" class="tap tap-2"></label>
-                    <label for="" id="" class="tap tap-3"></label>
-                </div>
-                <div class="right-content">
-                    <div class="imgBox">
-                        <img src="./images/projects/logo.png" alt="">
-                    </div>
-                    <div class="card-info">
-                        <div class="date-and-categories">
-                            <p>August 2020</p>
-                            <ul>
-                                <li>personal</li>
-                                <li>school</li>
-                                <li>frontend</li>
-                                <li>backend</li>
-
-                            </ul>
-                        </div>
-                        <h2>Title</h2>
-                        <p style="margin-bottom: 10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                            amet fuga omnis!</p>
-                        <a href="./project" class="learnMore" id="ecobud">learn more</a>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-
-
-        </div>
+     <!-- Cards dynamically generated here -->
+      
+    </div>
     </section>
     <!---------------------- FOOTER -------------------------->
 
     <footer class="footer">
-        <div id="footer"></div>
+      <div id="footer"></div>
     </footer>
-
 
     <!-------------X-------- FOOTER ------------X------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="./javascript/app.js"></script>
-    <script src="./javascript/card-project-slider.js"></script>
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            // APPLYING FILTERS
-            $('.list').click(function () {
-                const value = $(this).attr('data-filter');
-                if (value == 'all') {
-                    $('.card').show();
-
-                }
-                else {
-                    $('.card').not('.' + value).hide();
-                    $('.card').filter('.' + value).show();
-
-                }
-
-            })
-
-            $('.list').click(function () {
-                $(this).addClass('active').siblings().removeClass('active');
-
-            })
+    <script src="./javascript/all-projects.js"></script>
 
 
-
-
-
-        })
-
-    </script>
-
-</body>
-
+    <!-- <script type="text/javascript">
+      
+    </script> -->
+  </body>
 </html>

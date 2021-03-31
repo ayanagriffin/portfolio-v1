@@ -87,9 +87,12 @@
   font-size: 1.5rem;
 }
 
-#up-to .cards .card .btn {
-  font-size: 0.8rem;
+#up-to .cards .card button{
   height: 38px;
+}
+#up-to .cards .card button a{
+  font-size: 0.8rem;
+  /* height: 38px; */
   /* padding-left: 15px;
   padding-right: 15px; */
 }

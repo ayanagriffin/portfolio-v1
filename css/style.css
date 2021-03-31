@@ -35,11 +35,15 @@ ul {
 
 a {
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  
 }
 
-.btn{
+button, .btn{
   text-transform: lowercase;
   color: #fff;
+  border: none;
+  outline: none;
   font-weight: 600;
   font-size: 1rem;
   background: #60bef5;
@@ -54,6 +58,13 @@ a {
   max-width: 200px;
   height: 40px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+
+button a{
+  color: #fff;
+  font-size: 1rem;
+  
 }
 
 .btn.transparent {
@@ -67,8 +78,12 @@ a {
 
 .btn.transparent:hover {
   border: 3px solid transparent;
-  color: #60bef5;
+  
   background: #fff;
+}
+
+.btn.transparent:hover > a{
+  color: #60bef5;
 }
 
 #up-to .title h2, #doing .title h2,
@@ -108,12 +123,13 @@ a {
   transform: translateX(-50%);
   bottom: -10%;
   
+  
 }
 
 .owl-dot {
   outline: none;
   border: none;
-  color: red!important;
+  box-shadow: none;
 }
 
 .owl-prev,

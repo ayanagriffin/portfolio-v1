@@ -6,7 +6,7 @@
 
 #all-projects .title {
   text-align: center;
-  margin: 30px 0;
+  margin: 4rem 0 40px 0;
   position: relative;
 }
 
@@ -256,6 +256,14 @@ body.dark #all-projects .card p {
 }
 body.dark #all-projects .card h2 {
   color: #60bef5;
+}
+
+body.dark #all-projects a{
+  color: #fff;
+}
+
+body.dark #all-projects a:hover{
+  color: #aaa;
 }
 
 /* -------------------------------- MEDIA QUERY ------------------------------------ */
