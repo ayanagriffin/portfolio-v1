@@ -168,12 +168,16 @@ main #contact .container .contact-form h2 {
   font-weight: 500;
 }
 
-main #contact .thankyou_message {
+ #thankyou_message {
   display: none;
   color: #777;
   padding-top: 20px;
   font-size: 1rem;
   margin-bottom: -10px;
+}
+
+body.dark #thankyou_message{
+  color: #fcfcfc;
 }
 
 /* -------------------------------- DARK MODE ------------------------------------ */

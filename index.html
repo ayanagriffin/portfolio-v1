@@ -17,6 +17,30 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="icon" href="./images/main-site/head-logo.svg" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_4IF04CZQmiVP6b3AubpTu');
+        })();
+    </script>
+     <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_3nbtaa9', 'template_42cdf7y', this)
+                    .then(function() {
+                        document.getElementById('thankyou_message').style.display = 'block';
+                    }, function(error) {
+                        document.getElementById('thankyou_message').style.display = 'block';
+                        document.getElementById('thankyou_message').innerHTML = 'Uh oh, there was an error... please try <a href="mailto:hi@ayanagriffin.com">emailing me</a> instead!';
+                    });
+            });
+        }
+    </script>
     <title>Ayana Griffin</title>
 
 </head>
@@ -225,13 +249,13 @@
                 <div class="contact-form">
 
 
-                    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-                        action="https://script.google.com/macros/s/AKfycbzSS_vsV2PJsdCRZy3SVxFXuSRqkJ71uDzA17A_1OAXhPst4W0/exec">
+                    <form id="contact-form">
                         <header class="title">
                             <h2>contact me</h2>
                             <h1 style="margin-bottom: 50px; white-space: nowrap;">Get in touch!</h1>
 
                         </header>
+                        <input type="hidden" name="contact_number">
                         <div class="form-elements">
                             <fieldset class="pure-group">
 
@@ -254,7 +278,7 @@
 
                             <button id="send-btn" class="button-success pure-button button-xlarge btn">
                                 Send</button>
-                            <p class="thankyou_message" style="color: #000">Thanks for reaching out, I'll get back to
+                            <p id="thankyou_message">Thanks for reaching out, I'll get back to
                                 you soon!</p>
 
                         </div>
@@ -264,9 +288,6 @@
                     </form>
                 </div>
             </div>
-
-
-            <script data-cfasync="false" src="./javascript/form-submission-handler.js"></script>
 
 
         </section>
