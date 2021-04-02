@@ -324,6 +324,7 @@ body.light #home p {
     padding-bottom: 150px;
   }
 
+
   #home .container .home-content .btn {
     display: none;
   }
@@ -467,6 +468,7 @@ body.light #home p {
   }
   #home .container .home-content p {
     padding-bottom: 150px;
+    max-width: 600px;
   }
 
   #home .container .home-content .btn {
@@ -598,6 +600,10 @@ body.light #home p {
   #home .container .home-content {
     align-items: center;
   }
+
+  #home p{
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 570px) {
   #home .container .info-container .home-about-me div {
@@ -611,6 +617,7 @@ body.light #home p {
   #home .panel .content {
     padding: 0.5rem 1rem;
   }
+
 
   #home .container.container.home-mode:before {
     bottom: 32%;
@@ -652,6 +659,6 @@ body.light #home p {
 
   #home .container .home-content p {
     font-size: 1rem;
-    white-space: nowrap;
+   
   }
 }
