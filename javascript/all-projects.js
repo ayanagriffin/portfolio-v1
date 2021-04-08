@@ -26,7 +26,7 @@ function getProjectInfo(){
         Name: "BrowserBug",
         Identifier: "bbug",
         Categories: ["personal", "frontend"],
-        ImgSrc: "../images/projects/test.png",
+        ImgSrc: "./images/projects/test.png",
         Date: "September 2020",
         Desc:
             "First slide: quick description and/or tagline for the project (what does it do?)",
@@ -152,7 +152,7 @@ function populatePage(projects) {
         cardDesc.classList.add(identifier);
         cardDesc.classList.add("description");
         let cardLink = document.createElement("a");
-        cardLink.href = identifier;
+        cardLink.href = "./project";
         cardLink.classList.add("learnMore");
         cardLink.id = identifier;
         cardLink.textContent = "learn more";
